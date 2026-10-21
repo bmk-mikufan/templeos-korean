@@ -77,7 +77,8 @@ sudo cp -r ../src/* "$TMPMOUNT/Tmp/OSBuild/"
 umount_tempdisk
 
 echo "Rebuilding kernel headers, kernel, OS, and building Distro ISO ..."
-"$QEMU_BIN_PATH/qemu-system-x86_64" -machine q35 $KVM -drive format=raw,file="$TMPDISK" -m 1G -rtc base=localtime -smp 4 -device isa-debug-exit $QEMU_HEADLESS || true
+rm -f /tmp/qmon.sock
+"$QEMU_BIN_PATH/qemu-system-x86_64" -machine q35 $KVM -drive format=raw,file="$TMPDISK" -m 1G -rtc base=localtime -smp 4 -device isa-debug-exit -monitor unix:/tmp/qmon.sock,server,nowait $QEMU_HEADLESS || true
 
 LIMINE_BINARY_BRANCH="v10.x-binary"
 

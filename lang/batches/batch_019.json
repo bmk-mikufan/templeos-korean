@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0950",
+    "source": "%X: Path Table 2\\n",
+    "where": "src/System/Boot/DiskISO9660.ZC (zc-str)",
+    "hint": "ISO9660ISO"
+  },
+  {
+    "id": "u0951",
+    "source": "%X: Path Table 3\\n",
+    "where": "src/System/Boot/DiskISO9660.ZC (zc-str)",
+    "hint": "ISO9660ISO"
+  },
+  {
+    "id": "u0952",
+    "source": "protocol: limine\\n",
+    "where": "src/System/Boot/LimineMHDIns.ZC (zc-str)",
+    "hint": "LimineCFGMake"
+  },
+  {
+    "id": "u0953",
+    "source": "\tc->state = &%s;\\n",
+    "where": "src/System/Ctrls/CtrlsSlider.ZC (zc-str)",
+    "hint": "LeftClickSlider"
+  },
+  {
+    "id": "u0954",
+    "source": "Graphics/GR Files;",
+    "where": "src/System/DolDoc/DocFile.ZC (zc-str)",
+    "hint": "DocType"
+  },
+  {
+    "id": "u0955",
+    "source": "Cmd /Run (Execute)",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0956",
+    "source": "Cmd /Toggle Border",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0957",
+    "source": "Edit/GoTo Line Num",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0958",
+    "source": "Cmd /Personal Menu",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0959",
+    "source": "Dol /Underline Off",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0960",
+    "source": "Dol /Word Wrap Off",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0961",
+    "source": "Find and Replace\\0",
+    "where": "src/System/Gr/SpriteBitMap.ZC (zc-str)",
+    "hint": "GrInit4"
+  },
+  {
+    "id": "u0962",
+    "source": "Before %s Broke:%d",
+    "where": "src/System/Utils/LinkCheck.ZC (zc-str)",
+    "hint": "LinkCheck"
+  },
+  {
+    "id": "u0963",
+    "source": "Expecting '{' at ",
+    "where": "src/System/Menu.ZC (zc-str)",
+    "hint": "MenuDelSub"
+  },
+  {
+    "id": "u0964",
+    "source": "Editor Link Types",
+    "where": "src/System/DolDoc/DocLink.ZC (zc-str)",
+    "hint": "DocLinkCheck"
+  },
+  {
+    "id": "u0965",
+    "source": "Cmd Line Prompt\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0966",
+    "source": "Self Mouse Left\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0967",
+    "source": "Focus Task Menu\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0968",
+    "source": "Alignment Check\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0969",
+    "source": "Selectable boot\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0970",
+    "source": "INT 0x14 Serial\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0971",
+    "source": "AC Power Restored",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0972",
+    "source": "Docking Station\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0973",
+    "source": "Blade Enclosure\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0974",
+    "source": "Page Global Bit\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0975",
+    "source": "Thermal Monitor\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0976",
+    "source": "Mini Centronics\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0977",
+    "source": "DB-9 Pin Female\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0978",
+    "source": "50-Pin MiniSCSI\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0979",
+    "source": "PCMCIA Type III\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0980",
+    "source": "Access Bus Port\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0981",
+    "source": "8251 Compatible\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0982",
+    "source": "PCI Express 16x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0983",
+    "source": "Modem Ring Resume",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0984",
+    "source": "ISA Add-On Card\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0985",
+    "source": "PCI Add-On Card\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0986",
+    "source": "MCA Add-On Card\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0987",
+    "source": "System Task CPU00",
+    "where": "src/Kernel/KMain.ZC (zc-str)",
+    "hint": "KMain"
+  },
+  {
+    "id": "u0988",
+    "source": "Data Types/Simple",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0989",
+    "source": "Executive CPU%02X",
+    "where": "src/Kernel/MultiProc.ZC (zc-str)",
+    "hint": "Core0StartMP"
+  },
+  {
+    "id": "u0990",
+    "source": "Primary Partition",
+    "where": "src/System/BlkDev/DiskPart.ZC (zc-str)",
+    "hint": "DiskPart"
+  },
+  {
+    "id": "u0991",
+    "source": "Size in Blocks  :",
+    "where": "src/System/BlkDev/DiskPart.ZC (zc-str)",
+    "hint": "DiskPart"
+  },
+  {
+    "id": "u0992",
+    "source": "Edit/GoTo Doc End",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0993",
+    "source": "Edit/Page Up, Sel",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0994",
+    "source": "Edit/Cursor Right",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0995",
+    "source": "Edit/Copy to Clip",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0996",
+    "source": "Cmd /File Manager",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0997",
+    "source": "Cmd /Search Files",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0998",
+    "source": "Char  /Back Space",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0999",
+    "source": "Char  /Page Break",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0850",
+    "source": "Main Server Chassis\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0851",
+    "source": "xTPR Update Control\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0852",
+    "source": "Circular DIN-8 Male\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0853",
+    "source": "I/O Riser Card Slot\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0854",
+    "source": "PCI Express Gen 4 16x",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0855",
+    "source": "Shared Slot Opening\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0856",
+    "source": "blkdev.ins_port = %d;",
+    "where": "src/Kernel/KMain.ZC (zc-str)",
+    "hint": "KMain"
+  },
+  {
+    "id": "u0857",
+    "source": "ZXE Header Generation",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0858",
+    "source": "I/O;Processor/IO Port",
+    "where": "src/Kernel/KernelB.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0859",
+    "source": "Block Count   :%04X\\n",
+    "where": "src/System/AutoComplete/ACDictGen.ZC (zc-str)",
+    "hint": "ACDGen"
+  },
+  {
+    "id": "u0860",
+    "source": "\tdc->color = LTRED;\\n",
+    "where": "src/System/Ctrls/CtrlsSlider.ZC (zc-str)",
+    "hint": "DrawCtrlSlider"
+  },
+  {
+    "id": "u0861",
+    "source": "Edit/Cursor Down, Sel",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0862",
+    "source": "Edit/Cursor Left, Sel",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0863",
+    "source": "Edit/GoTo End of Line",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0864",
+    "source": "Edit/Autocomplete Sym",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0865",
+    "source": "Dol /Blinking Text On",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0866",
+    "source": "Dol /Toggle Subscript",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0867",
+    "source": "Dol /Inverted Text On",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0868",
+    "source": "Select/Unselect All\\0",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "GrInit3"
+  },
+  {
+    "id": "u0869",
+    "source": "Break to Shift Esc\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0870",
+    "source": "General Protection\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0871",
+    "source": "Interconnect Board\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0872",
+    "source": "Peripheral Chassis\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0873",
+    "source": "Rack Mount Chassis\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0874",
+    "source": "Time Stamp Counter\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0875",
+    "source": "50-Pin Dual Inline\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0876",
+    "source": "68-Pin Dual Inline\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0877",
+    "source": "Parallel Port PS/2\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0878",
+    "source": "8251 FIFO Compatible",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0879",
+    "source": "PCMCIA Add-On Card\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0880",
+    "source": "Debugging/Raw Output",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0881",
+    "source": "Cmd /Break Execution",
+    "where": "src/Kernel/KeyDev.ZC (zc-str)",
+    "hint": "KeyDevInit"
+  },
+  {
+    "id": "u0882",
+    "source": "Cmd /Toggle Aux Font",
+    "where": "src/Kernel/KeyDev.ZC (zc-str)",
+    "hint": "KeyDevInit"
+  },
+  {
+    "id": "u0883",
+    "source": "Cmd /Next Focus Task",
+    "where": "src/Kernel/KeyDev.ZC (zc-str)",
+    "hint": "KeyDevInit"
+  },
+  {
+    "id": "u0884",
+    "source": "Cmd /Terminal Window",
+    "where": "src/Kernel/KeyDev.ZC (zc-str)",
+    "hint": "KeyDevInit"
+  },
+  {
+    "id": "u0885",
+    "source": "Edit/GoTo Top of Doc",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0886",
+    "source": "Cmd /Src Code of Sym",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0887",
+    "source": "Cmd /Insert FileName",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0888",
+    "source": "Edit/Toggle AutoSave",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0889",
+    "source": "Cmd /Word Definition",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0890",
+    "source": "Transform Selected\\0",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "GrInit3"
+  },
+  {
+    "id": "u0891",
+    "source": "Help System/Training",
+    "where": "src/System/Training.ZC (zc-str)",
+    "hint": "KeyMap"
+  },
+  {
+    "id": "u0892",
+    "source": "Input Filter Task\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0893",
+    "source": "Focus Task Border\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0894",
+    "source": "BIOS ROM socketed\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0895",
+    "source": "Expansion Chassis\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0896",
+    "source": "Central Processor\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0897",
+    "source": "CMOV Instructions\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0898",
+    "source": "Thermal Monitor 2\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0899",
+    "source": "Fully Associative\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  }
+]

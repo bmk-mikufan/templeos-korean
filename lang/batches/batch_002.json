@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0100",
+    "source": "Release Version\\t:$$BLACK$$%d.%d$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0101",
+    "source": "Image Size\\t\\t:$$BLACK$$%d bytes$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0102",
+    "source": "$$PURPLE$$HomeDir$$FG$$ Set home dir.\\n",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0103",
+    "source": "Press <SHIFT-ESC> to throw-away sprite.",
+    "where": "src/System/God/GodDoodle.ZC (zc-str)",
+    "hint": "GodDoodleDraw"
+  },
+  {
+    "id": "u0104",
+    "source": "Exception in WinMgr: Update Task ODEs\\n",
+    "where": "src/System/Gr/GrScreen.ZC (zc-str)",
+    "hint": "GrUpdateTaskODEs"
+  },
+  {
+    "id": "u0105",
+    "source": "This is affected by what's underneath\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0106",
+    "source": "$$GREEN$$'v'$$FG$$: Place Vertex Mode\\n",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0107",
+    "source": "AHCI: Probing ATAPI drive at port %d\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIBootDVDProbeAll"
+  },
+  {
+    "id": "u0108",
+    "source": "bd = BlkDevNextFreeSlot(\\'%C\\', %d);\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0109",
+    "source": "file, enter a file bin num or a file\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsBin"
+  },
+  {
+    "id": "u0110",
+    "source": "Exception in WinMgr: Update Task Win\\n",
+    "where": "src/System/Gr/GrScreen.ZC (zc-str)",
+    "hint": "GrUpdateTaskWin"
+  },
+  {
+    "id": "u0111",
+    "source": "the location of element groups.  Use\\n",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "SpriteEd"
+  },
+  {
+    "id": "u0112",
+    "source": "A tip on artistry you might consider\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0113",
+    "source": "$$GREEN$$'m'$$FG$$: Move Vertex Mode\\n",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0114",
+    "source": "Error Correction\\t:$$BLACK$$%z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0115",
+    "source": "Mem Device Count\\t:$$BLACK$$%d$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0116",
+    "source": "  #\\t\\t  W  x   H     Aspect Ratio\\n\\n",
+    "where": "src/System/Utils/VideoRep.ZC (zc-str)",
+    "hint": "VideoRep"
+  },
+  {
+    "id": "u0117",
+    "source": "Addr of RAM disk (<ENTER> to MAlloc):",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0118",
+    "source": "You don't have the PCI device file.\\n",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "PCIRep"
+  },
+  {
+    "id": "u0119",
+    "source": "Create icon with auto-text payload.\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpSpriteType"
+  },
+  {
+    "id": "u0120",
+    "source": " $$BT,\\\"Use These Extents\\\",LE=TRUE$$",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "PopUpExtents"
+  },
+  {
+    "id": "u0121",
+    "source": "Start Address\\t:$$BLACK$$0x%X$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0122",
+    "source": "Security Status\\t:$$BLACK$$%Z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0123",
+    "source": "Device Location\\t:$$BLACK$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0124",
+    "source": "Bank Location\\t\\t:$$BLACK$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0125",
+    "source": "Serial Number\\t\\t:$$BLACK$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0126",
+    "source": "$$PURPLE$$NoMP$$FG$$ No multicore.\\n",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0127",
+    "source": "$$PURPLE$$Standard Addresses$$FG$$\\n",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "MemBIOSRep"
+  },
+  {
+    "id": "u0128",
+    "source": "$$PURPLE$$Linear Framebuffer$$FG$$\\n",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "MemBIOSRep"
+  },
+  {
+    "id": "u0129",
+    "source": "Note: Normally, you enter no file,\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsBin"
+  },
+  {
+    "id": "u0130",
+    "source": "Product Name\\t\\t:$$BLACK$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0131",
+    "source": "Bootup State\\t\\t:$$BLACK$$%Z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0132",
+    "source": "Power Supply\\t\\t:$$BLACK$$%Z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0133",
+    "source": "Processor Type\\t:$$BLACK$$%Z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0134",
+    "source": "Status\\t\\t\\t:$$BLACK$$%z, %z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0135",
+    "source": "Socket Unpopulated\\0Socket Populated",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0136",
+    "source": "CPU Family\\t\\t\\t:$$BLACK$$%z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0137",
+    "source": "$$TR,\\\"Processor Flags\\\"$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0138",
+    "source": "$$TR,\\\"CPUID 0x1 Flags\\\"$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0139",
+    "source": "ECC type\\t\\t\\t\\t:$$BLACK$$%z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0140",
+    "source": "Data Bus Width\\t:$$BLACK$$%Z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0141",
+    "source": "Sel Char and Press <ESC>\\n$$LTBLUE$$",
+    "where": "src/System/Win.ZC (zc-str)",
+    "hint": "ExtendedASCII"
+  },
+  {
+    "id": "u0142",
+    "source": "Format Drive '%c'?\\nAre You Sure?\\n",
+    "where": "src/System/BlkDev/FileMgr.ZC (zc-str)",
+    "hint": "FMFormatDrive"
+  },
+  {
+    "id": "u0143",
+    "source": "$$RED$$!!! Boot Stage 2 !!!$$FG$$\\n",
+    "where": "src/System/Boot/DiskISO9660.ZC (zc-str)",
+    "hint": "DVDFileCreate2"
+  },
+  {
+    "id": "u0144",
+    "source": "$$LTCYAN$$Reg/Offset Symbol$$FG$$\\n",
+    "where": "src/System/Debug.ZC (zc-str)",
+    "hint": "FunRep"
+  },
+  {
+    "id": "u0145",
+    "source": "Create icon with numeric payload.\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpSpriteType"
+  },
+  {
+    "id": "u0146",
+    "source": "Right-click to turn-off symmetry.\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0147",
+    "source": "$$GREEN$$'M'$$FG$$: Move Vertex Z\\n",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0148",
+    "source": "$$LTCYAN$$  Size    Address$$FG$$\\n",
+    "where": "src/System/Utils/HeapLog.ZC (zc-str)",
+    "hint": "HeapLogAddrRep"
+  },
+  {
+    "id": "u0149",
+    "source": "SMBIOS version %d.%d (%d entries)\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  }
+]

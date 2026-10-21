@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0150",
+    "source": "Serial Number\\t:$$BLACK$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0151",
+    "source": "Wakeup Type\\t\\t:$$BLACK$$%Z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0152",
+    "source": "Thermal State\\t:$$BLACK$$%Z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0153",
+    "source": "Cores Enabled\\t:$$BLACK$$%d$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0154",
+    "source": "Part Number\\t\\t:$$BLACK$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0155",
+    "source": "Asset Tag\\t\\t\\t:$$BLACK$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0156",
+    "source": "Form Factor\\t\\t:$$BLACK$$%Z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0157",
+    "source": "External Name\\t:$$BLACK$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0158",
+    "source": "Internal Name\\t:$$BLACK$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0159",
+    "source": "Current Usage\\t:$$BLACK$$%z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0160",
+    "source": "Slot Length\\t\\t:$$BLACK$$%z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0161",
+    "source": "Modifying partition boot record.\\n",
+    "where": "src/System/Boot/BootHDIns.ZC (zc-str)",
+    "hint": "BootHDIns"
+  },
+  {
+    "id": "u0162",
+    "source": "$$LTCYAN$$B :D :F CC-SC-PI\\n$$FG$$",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "PCIRep"
+  },
+  {
+    "id": "u0163",
+    "source": "$$CB,\\\"Form Field Terminator\\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsCursorMovement"
+  },
+  {
+    "id": "u0164",
+    "source": "Create icon with link payload.\\n\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpSpriteType"
+  },
+  {
+    "id": "u0165",
+    "source": "TextBase Layer;Char/TextBase Layer",
+    "where": "src/System/Gr/GrTextBase.ZC (zc-str)",
+    "hint": "TextPrint"
+  },
+  {
+    "id": "u0166",
+    "source": "and changing the first vector.\\n\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0167",
+    "source": "$$GREEN$$'n'$$FG$$: Polygon Mode\\n",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0168",
+    "source": "SKU Number\\t\\t:$$BLACK$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0169",
+    "source": "Core Count\\t\\t:$$BLACK$$%d$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0170",
+    "source": "CPU Internal\\0External\\0 \\0Unknown",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0171",
+    "source": "just a bin num.  If You enter a\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsBin"
+  },
+  {
+    "id": "u0172",
+    "source": "DocHelpIdx(DocPut, \\\"%s\\\"); View;",
+    "where": "src/System/Hash.ZC (zc-str)",
+    "hint": "PopUpHelpIndex"
+  },
+  {
+    "id": "u0173",
+    "source": "Asset Tag\\t\\t:$$BLACK$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0174",
+    "source": "   Offset:\\t\\t\\tOffset + Size:\\n",
+    "where": "src/Kernel/BlkDev/DiskDrive.ZC (zc-str)",
+    "hint": "DriveRep"
+  },
+  {
+    "id": "u0175",
+    "source": "Q-S are ISO file write drives.\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0176",
+    "source": "element to insert before.  Or,\\n",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "SpriteEd"
+  },
+  {
+    "id": "u0177",
+    "source": "Insert Transparent Screen BitMap",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SMTaskTitleSet"
+  },
+  {
+    "id": "u0178",
+    "source": "$$GREEN$$'f'$$FG$$: Fence Mode\\n",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0179",
+    "source": "$$GREEN$$'p'$$FG$$: Prism Mode\\n",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0180",
+    "source": "CPU     Swaps/s         Cycles\\n",
+    "where": "src/System/Utils/CPURep.ZC (zc-str)",
+    "hint": "CPURep"
+  },
+  {
+    "id": "u0181",
+    "source": "Could not find ATAPI boot drive",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIBootDVDProbeAll"
+  },
+  {
+    "id": "u0182",
+    "source": "Invalid Clus: RootDir Clus:%X\\n",
+    "where": "src/System/BlkDev/DiskCheck.ZC (zc-str)",
+    "hint": "RedSeaCheckDisk"
+  },
+  {
+    "id": "u0183",
+    "source": "M-P are ISO file read drives.\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0184",
+    "source": "BlkDevAdd(bd, 0x%0X, %d, %d);\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0185",
+    "source": "Insert pointer into src code.\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpSpriteType"
+  },
+  {
+    "id": "u0186",
+    "source": "You can switch between points\\n",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "SpriteEd"
+  },
+  {
+    "id": "u0187",
+    "source": "Color to Become Transparent\\n\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0188",
+    "source": "$$GREEN$$'c'$$FG$$: Set color\\n",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0189",
+    "source": "$$TR,\\\"Type Flags\\\"$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0190",
+    "source": "$$TR,\\\"Sys Config Strings\\\"$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0191",
+    "source": "Cd(\\\"%C:%s\\\");;#include \\\"%s\\\"",
+    "where": "src/Kernel/Job.ZC (zc-str)",
+    "hint": "InFile"
+  },
+  {
+    "id": "u0192",
+    "source": "Bus:%02X, Dev:%02X, Fun:%02X\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0193",
+    "source": "T-Z are ATAPI CD/DVD drives.\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0194",
+    "source": "<ENTER> to use booted CD/DVD\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0195",
+    "source": "TXT=%s\\nDD =%s\\nJIT=%s\\nGR =%s",
+    "where": "src/System/DolDoc/DocTerm.ZC (zc-str)",
+    "hint": "PopUpTermRight"
+  },
+  {
+    "id": "u0196",
+    "source": "Make dup image for in a doc.\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpSpriteType"
+  },
+  {
+    "id": "u0197",
+    "source": "$$GREEN$$'s'$$FG$$: Set snap\\n",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0198",
+    "source": "Info;Hash;Cmd Line (Typically)",
+    "where": "src/System/Hash.ZC (zc-str)",
+    "hint": "HashTableDump"
+  },
+  {
+    "id": "u0199",
+    "source": "Info;Time/CPU Cycles;Processor",
+    "where": "src/System/Utils/CPURep.ZC (zc-str)",
+    "hint": "MPCPURep"
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u1050",
+    "source": "ZenithOS RedSea",
+    "where": "src/Kernel/BlkDev/DiskCDDVD.ZC (zc-str)",
+    "hint": "ISOInit"
+  },
+  {
+    "id": "u1051",
+    "source": "TempleOS RedSea",
+    "where": "src/Kernel/BlkDev/DiskCDDVD.ZC (zc-str)",
+    "hint": "ISOInit"
+  },
+  {
+    "id": "u1052",
+    "source": "Closing session",
+    "where": "src/Kernel/BlkDev/DiskCDDVD.ZC (zc-str)",
+    "hint": "DVDImageWrite"
+  },
+  {
+    "id": "u1053",
+    "source": "Pending Break\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1054",
+    "source": "Window on Top\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1055",
+    "source": "Machine Check\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1056",
+    "source": "Plug and Play\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1057",
+    "source": "Virtual Machine",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1058",
+    "source": "DSP Processor\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1059",
+    "source": "Video Processor",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1060",
+    "source": "L1 Context ID\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1061",
+    "source": "MMIO Prefetch\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1062",
+    "source": "128 Bit Capable",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1063",
+    "source": "Direct Mapped\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1064",
+    "source": "DB-9 Pin Male\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1065",
+    "source": "SAS\\SATA Plug\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1066",
+    "source": "Joystick Port\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1067",
+    "source": "Keyboard Port\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1068",
+    "source": "PCMCIA Type I\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1069",
+    "source": "System Memory\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1070",
+    "source": "Static Column\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1071",
+    "source": "Psuedo Static\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1072",
+    "source": "BINLOAD \\\"%s\\\";",
+    "where": "src/Kernel/KMain.ZC (zc-str)",
+    "hint": "KMain"
+  },
+  {
+    "id": "u1073",
+    "source": "Timer Cal Error",
+    "where": "src/Kernel/KMisc.ZC (zc-str)",
+    "hint": "TimeCal"
+  },
+  {
+    "id": "u1074",
+    "source": "Data Types/Fifo",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u1075",
+    "source": "Time/CPU Cycles",
+    "where": "src/Kernel/KernelB.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u1076",
+    "source": "System Start-up",
+    "where": "src/StartOS.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u1077",
+    "source": "Edit/Paste Clip",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1078",
+    "source": "Edit/Play Macro",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1079",
+    "source": "Cmd /God Doodle",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1080",
+    "source": "Dol /Unindent 2",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1081",
+    "source": "Cmd /Code Tools",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1082",
+    "source": "cursor movement",
+    "where": "src/System/DolDoc/MakeDoc.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u1083",
+    "source": "Song of Songs\\0",
+    "where": "src/System/God/GodBible.ZC (zc-str)",
+    "hint": "BibleInit"
+  },
+  {
+    "id": "u1084",
+    "source": "1 Corinthians\\0",
+    "where": "src/System/God/GodBible.ZC (zc-str)",
+    "hint": "BibleInit"
+  },
+  {
+    "id": "u1085",
+    "source": "2 Corinthians\\0",
+    "where": "src/System/God/GodBible.ZC (zc-str)",
+    "hint": "BibleInit"
+  },
+  {
+    "id": "u1086",
+    "source": "Transform Off\\0",
+    "where": "src/System/Gr/GrInitA.ZC (zc-str)",
+    "hint": "GrInit1"
+  },
+  {
+    "id": "u1087",
+    "source": "%d %ziB$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u1088",
+    "source": "TextBase Layer",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u1089",
+    "source": "CMOS Registers",
+    "where": "src/Kernel/KDate.ZC (zc-str)",
+    "hint": "LastDayOfYear"
+  },
+  {
+    "id": "u1090",
+    "source": "RIP:      %08X",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "Fault2"
+  },
+  {
+    "id": "u1091",
+    "source": "Filter Input\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1092",
+    "source": "Break Locked\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1093",
+    "source": "Divide Error\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1094",
+    "source": "Double Fault\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1095",
+    "source": "Invalid TASK\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1096",
+    "source": "PC Card Boot\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1097",
+    "source": "Network Boot\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1098",
+    "source": "Power Switch\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1099",
+    "source": "Server Blade\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  }
+]

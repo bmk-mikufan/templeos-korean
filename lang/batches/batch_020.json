@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u1000",
+    "source": "Dol /Underline On",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1001",
+    "source": "Dol /Word Wrap On",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1002",
+    "source": "1 Thessalonians\\0",
+    "where": "src/System/God/GodBible.ZC (zc-str)",
+    "hint": "BibleInit"
+  },
+  {
+    "id": "u1003",
+    "source": "2 Thessalonians\\0",
+    "where": "src/System/God/GodBible.ZC (zc-str)",
+    "hint": "BibleInit"
+  },
+  {
+    "id": "u1004",
+    "source": "Graphics/GR Files",
+    "where": "src/System/Gr/GrDC.ZC (zc-str)",
+    "hint": "DCColorChange"
+  },
+  {
+    "id": "u1005",
+    "source": "Planar Symmetry\\0",
+    "where": "src/System/Gr/GrInitA.ZC (zc-str)",
+    "hint": "GrInit1"
+  },
+  {
+    "id": "u1006",
+    "source": "BSpline2 Closed\\0",
+    "where": "src/System/Gr/GrInitA.ZC (zc-str)",
+    "hint": "GrInit1"
+  },
+  {
+    "id": "u1007",
+    "source": "BSpline3 Closed\\0",
+    "where": "src/System/Gr/GrInitA.ZC (zc-str)",
+    "hint": "GrInit1"
+  },
+  {
+    "id": "u1008",
+    "source": "Trim to Extents\\0",
+    "where": "src/System/Gr/SpriteBitMap.ZC (zc-str)",
+    "hint": "GrInit4"
+  },
+  {
+    "id": "u1009",
+    "source": "After %s Broke:%d",
+    "where": "src/System/Utils/LinkCheck.ZC (zc-str)",
+    "hint": "LinkCheck"
+  },
+  {
+    "id": "u1010",
+    "source": "Keyboard Devices",
+    "where": "src/Kernel/KeyDev.ZC (zc-str)",
+    "hint": "PutKey"
+  },
+  {
+    "id": "u1011",
+    "source": "ZealOS MultiCore",
+    "where": "src/Kernel/MultiProc.ZC (zc-str)",
+    "hint": "TSSBusy"
+  },
+  {
+    "id": "u1012",
+    "source": "Copying %s to %s",
+    "where": "src/Kernel/BlkDev/DiskCopy.ZC (zc-str)",
+    "hint": "CopySingle"
+  },
+  {
+    "id": "u1013",
+    "source": "Err Code: %08X\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "Fault2"
+  },
+  {
+    "id": "u1014",
+    "source": "Non-Timer Rand\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1015",
+    "source": "Invalid Opcode\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1016",
+    "source": "SIMD Exception\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1017",
+    "source": "Flashable BIOS\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1018",
+    "source": "BIOS shadowing\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1019",
+    "source": "VESA Local Bus\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1020",
+    "source": "Sealed-case PC\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1021",
+    "source": "Math Processor\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1022",
+    "source": "64 bit DS AREA\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1023",
+    "source": "FMA Extensions\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1024",
+    "source": "370-pin Socket\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1025",
+    "source": "Pipeline Burst\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1026",
+    "source": "DB-25 Pin Male\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1027",
+    "source": "DB-15 Pin Male\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1028",
+    "source": "Onboard Floppy\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1029",
+    "source": "PCMCIA Type II\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1030",
+    "source": "MXM 3.0 Type A\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1031",
+    "source": "MXM 3.0 Type B\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1032",
+    "source": "PCI Express 1x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1033",
+    "source": "PCI Express 2x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1034",
+    "source": "PCI Express 4x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1035",
+    "source": "PCI Express 8x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1036",
+    "source": "Cmd /Toggle Mute",
+    "where": "src/Kernel/KeyDev.ZC (zc-str)",
+    "hint": "KeyDevInit"
+  },
+  {
+    "id": "u1037",
+    "source": "Slider #%d Name:",
+    "where": "src/System/Ctrls/CtrlsSlider.ZC (zc-str)",
+    "hint": "TemplateCtrlSlider"
+  },
+  {
+    "id": "u1038",
+    "source": "Code Size:%04X\\n",
+    "where": "src/System/Debug.ZC (zc-str)",
+    "hint": "Uf"
+  },
+  {
+    "id": "u1039",
+    "source": "Edit/Cursor Down",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1040",
+    "source": "Edit/Cursor Left",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1041",
+    "source": "Edit/Cut To Clip",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1042",
+    "source": "Cmd /God Passage",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1043",
+    "source": "Edit/Delete Line",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1044",
+    "source": "Not .IN File\\n\\n",
+    "where": "src/System/DolDoc/DocTerm.ZC (zc-str)",
+    "hint": "TermRightClickLink"
+  },
+  {
+    "id": "u1045",
+    "source": "Shiftable Mesh\\0",
+    "where": "src/System/Gr/GrInitA.ZC (zc-str)",
+    "hint": "GrInit1"
+  },
+  {
+    "id": "u1046",
+    "source": "Unselect Rects\\0",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "GrInit3"
+  },
+  {
+    "id": "u1047",
+    "source": "Shift Selected\\0",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "GrInit3"
+  },
+  {
+    "id": "u1048",
+    "source": "Missing ')' at ",
+    "where": "src/System/Menu.ZC (zc-str)",
+    "hint": "MenuDelSub"
+  },
+  {
+    "id": "u1049",
+    "source": "Missing '}' at ",
+    "where": "src/System/Menu.ZC (zc-str)",
+    "hint": "MenuDelSub"
+  }
+]

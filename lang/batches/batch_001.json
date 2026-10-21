@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0050",
+    "source": "AHCI: Found sys_compile_time at BLK %d on Port %d\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIBootDVDProbeAll"
+  },
+  {
+    "id": "u0051",
+    "source": "RSP       RSP+Offset: Value            Value/Link\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "StackRep"
+  },
+  {
+    "id": "u0052",
+    "source": "$$LM,4$$$$RED$$CD/DVD Drive $$LTBLUE$$ATAPI$$FG$$\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0053",
+    "source": "$$GREEN$$A$$FG$$-$$GREEN$$B$$FG$$ are RAM drives.\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0054",
+    "source": "For the mesh you are creating, use same origin as\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0055",
+    "source": "$$LTCYAN$$ %%Time Hits:    &Function+Offset$$FG$$\\n",
+    "where": "src/System/Utils/Profiler.ZC (zc-str)",
+    "hint": "ProfRep"
+  },
+  {
+    "id": "u0056",
+    "source": "$$LTCYAN$$ #    W  x   H     Aspect Ratio$$FG$$\\n\\n",
+    "where": "src/System/Utils/VideoRep.ZC (zc-str)",
+    "hint": "VideoRep"
+  },
+  {
+    "id": "u0057",
+    "source": "$$MU-UL,\\\"Transform Off (for use with 3D icons)\\\",",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "PopUpSpriteMain"
+  },
+  {
+    "id": "u0058",
+    "source": "$$LM,4$$$$RED$$Hard Drive   $$LTBLUE$$ATA$$FG$$\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0059",
+    "source": "Drag-out a rect for the extents of the\\nbitmap.\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0060",
+    "source": "Release Date\\t\\t:$$BLACK$$%s (mm/dd/yyyy)$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0061",
+    "source": " \\0Other\\0Unknown\\0Available\\0In Use\\0Unavailable",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0062",
+    "source": "$$BLACK$$%4d x %4d$$FG$$   %0.3f =%4d:%d $$LM,0$$",
+    "where": "src/System/Utils/VideoRep.ZC (zc-str)",
+    "hint": "VideoRep"
+  },
+  {
+    "id": "u0063",
+    "source": "DolDoc/Cmd Line (Typically);Cmd Line (Typically)",
+    "where": "src/System/DolDoc/DocEd.ZC (zc-str)",
+    "hint": "DocEd"
+  },
+  {
+    "id": "u0064",
+    "source": "$$MU-UL,\\\"+] Create or Edit Shiftable 3D Mesh\\\",",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "PopUpSpriteMain"
+  },
+  {
+    "id": "u0065",
+    "source": "$$MU-UL,\\\"+] Convert to BitMap or Edit BitMap\\\",",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "PopUpSpriteMain"
+  },
+  {
+    "id": "u0066",
+    "source": "$$GREEN$$TRANSFORM OFF$$FG$$ has been used.\\n\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0067",
+    "source": "File/Cmd Line (Typically);Cmd Line (Typically)",
+    "where": "src/System/BlkDev/FileMgr.ZC (zc-str)",
+    "hint": "DirFileDoc"
+  },
+  {
+    "id": "u0068",
+    "source": "Graphics/Input;Graphics/Math/3D Transformation",
+    "where": "src/System/DolDoc/DocGr.ZC (zc-str)",
+    "hint": "PopUpColorLighting"
+  },
+  {
+    "id": "u0069",
+    "source": "Press '$$GREEN$$r$$FG$$' after one rectangle\\n",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "SpriteEd"
+  },
+  {
+    "id": "u0070",
+    "source": "when it is drawn.  You will probably want to\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0071",
+    "source": "$$BLACK$$Low Memory\\t:00100000$$FG$$\\n$$ID,2$$",
+    "where": "src/System/Utils/MemRep.ZC (zc-str)",
+    "hint": "MemRep"
+  },
+  {
+    "id": "u0072",
+    "source": "%4d x %4d   %0.3f =%4d:%d (Current resolution)",
+    "where": "src/System/Utils/VideoRep.ZC (zc-str)",
+    "hint": "VideoRep"
+  },
+  {
+    "id": "u0073",
+    "source": "'Insert shift sub-origin' after picking the\\n",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "SpriteEd"
+  },
+  {
+    "id": "u0074",
+    "source": "($$PURPLE$$<ENTER>$$FG$$ will use default.):",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0075",
+    "source": "$$LTCYAN$$RBP:       *RBP:     *RBP:$$FG$$\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "CallerRep"
+  },
+  {
+    "id": "u0076",
+    "source": "$$PURPLE$$$$TX+CX,\\\"Sprite BitMap Menu\\\"$$\\n",
+    "where": "src/System/Gr/SpriteBitMap.ZC (zc-str)",
+    "hint": "PopUpSpriteBitMap"
+  },
+  {
+    "id": "u0077",
+    "source": "Option ($$PURPLE$$<ENTER>$$FG$$ when done):",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0078",
+    "source": "$$PURPLE$$$$TX+CX,\\\"Page Setting Menu\\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpPageSettingType"
+  },
+  {
+    "id": "u0079",
+    "source": "$$PURPLE$$$$TX+CX,\\\"Text Widgets Menu\\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpWidgetType"
+  },
+  {
+    "id": "u0080",
+    "source": "$$BLACK$$Code/Data Heap\\t:%08X/%08X$$FG$$\\n",
+    "where": "src/System/Utils/MemRep.ZC (zc-str)",
+    "hint": "MemRep"
+  },
+  {
+    "id": "u0081",
+    "source": "$$ID,3$$Socket Name\\t\\t:$$BLACK$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0082",
+    "source": "$$CB,\\\"Remalloc for Unlimited Length\\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsCursorMovement"
+  },
+  {
+    "id": "u0083",
+    "source": "$$PURPLE$$$$TX+CX,\\\"Sprite Edit Menu\\\"$$\\n",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "PopUpSpriteEd"
+  },
+  {
+    "id": "u0084",
+    "source": "$$PURPLE$$$$TX+CX,\\\"Sprite Main Menu\\\"$$\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "PopUpSpriteMain"
+  },
+  {
+    "id": "u0085",
+    "source": "$$LTCYAN$$  Size  * Count  = Total$$FG$$\\n",
+    "where": "src/System/Utils/HeapLog.ZC (zc-str)",
+    "hint": "HeapLogSizeRep"
+  },
+  {
+    "id": "u0086",
+    "source": "Supported SRAM Types\\t:$$BLACK$$%s$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0087",
+    "source": "$$RED$$Vendor$$FG$$: $$LTBLUE$$%s$$FG$$\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0088",
+    "source": "$$RED$$Device$$FG$$: $$LTBLUE$$%s$$FG$$\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0089",
+    "source": "Bus: 0x%02X, Dev: 0x%02X, Fun: 0x%02X\\n\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0090",
+    "source": "bd->file_disk_name = SysStrNew(\\\"%s\\\");\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0091",
+    "source": "$$PURPLE$$$$TX+CX,\\\"Color Type Menu\\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpColorType"
+  },
+  {
+    "id": "u0092",
+    "source": "Installed SRAM Type\\t:$$BLACK$$%Z$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0093",
+    "source": "$$PURPLE$$$$TX+CX,\\\"Link Type Menu\\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpLinkType"
+  },
+  {
+    "id": "u0094",
+    "source": "Insert size of a sprite into src code.\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpSpriteType"
+  },
+  {
+    "id": "u0095",
+    "source": "You will probably want to shift around\\n",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "SpriteEd"
+  },
+  {
+    "id": "u0096",
+    "source": "is using lines to fill regions because\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0097",
+    "source": "$$GREEN$$'t'$$FG$$: Form Triangle Mode\\n",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0098",
+    "source": "$$BLACK$$Code Heap\\t:%010X/%010X$$FG$$\\n",
+    "where": "src/System/Utils/MemRep.ZC (zc-str)",
+    "hint": "MemRep"
+  },
+  {
+    "id": "u0099",
+    "source": "$$BLACK$$Data Heap\\t:%010X/%010X$$FG$$\\n",
+    "where": "src/System/Utils/MemRep.ZC (zc-str)",
+    "hint": "MemRep"
+  }
+]

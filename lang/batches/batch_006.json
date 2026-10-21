@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0300",
+    "source": "HBA Base Address: 0x%X",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0301",
+    "source": "0. Old Boot Record\\n\\r",
+    "where": "src/System/Boot/BootMHDIns.ZC (zc-str)",
+    "hint": "BootMHDIns"
+  },
+  {
+    "id": "u0302",
+    "source": "No Boot Loader Image\\n",
+    "where": "src/System/Boot/BootMHDIns.ZC (zc-str)",
+    "hint": "BootMHDIns"
+  },
+  {
+    "id": "u0303",
+    "source": "MAPPED\\t  :%010X with ",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "MemPageRep"
+  },
+  {
+    "id": "u0304",
+    "source": "$$CB,\\\"Center X \\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsHtml"
+  },
+  {
+    "id": "u0305",
+    "source": "$$CB,\\\"Left   X \\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsBttn"
+  },
+  {
+    "id": "u0306",
+    "source": "$$CB,\\\"Right  X \\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsBttn"
+  },
+  {
+    "id": "u0307",
+    "source": "$$CB,\\\"Top    Y \\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsBttn"
+  },
+  {
+    "id": "u0308",
+    "source": "$$CB,\\\"Center Y \\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsBttn"
+  },
+  {
+    "id": "u0309",
+    "source": "$$CB,\\\"Bottom Y \\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsBttn"
+  },
+  {
+    "id": "u0310",
+    "source": "FontKR: %d glyphs %s\\n",
+    "where": "src/System/FontKR.ZC (zc-str)",
+    "hint": "FontKRRep"
+  },
+  {
+    "id": "u0311",
+    "source": "No matching entries\\n",
+    "where": "src/Kernel/BlkDev/DiskDirB.ZC (zc-str)",
+    "hint": "Dir"
+  },
+  {
+    "id": "u0312",
+    "source": "to a value at boot.\\n",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0313",
+    "source": "File/Program Routines",
+    "where": "src/System/BlkDev/ZDiskB.ZC (zc-str)",
+    "hint": "DirTreeSerializeFill"
+  },
+  {
+    "id": "u0314",
+    "source": "See Print() shortcut.",
+    "where": "src/Kernel/StrPrint.ZC (zc-str)",
+    "hint": "Print"
+  },
+  {
+    "id": "u0315",
+    "source": "Error at SATA Port %d",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0316",
+    "source": "A-B are RAM drives.\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0317",
+    "source": "Enter port number: \\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0318",
+    "source": "Install Documentation",
+    "where": "src/System/Boot/BootMHDIns.ZC (zc-str)",
+    "hint": "BootMHDOldRead"
+  },
+  {
+    "id": "u0319",
+    "source": "$$TX+BD+TC+IV,\\\" \\\"$$",
+    "where": "src/System/DolDoc/DocEd.ZC (zc-str)",
+    "hint": "DocEd"
+  },
+  {
+    "id": "u0320",
+    "source": "$$CB,\\\"Center X\\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpWidgetType"
+  },
+  {
+    "id": "u0321",
+    "source": "$$CB,\\\"Right X \\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsHtml"
+  },
+  {
+    "id": "u0322",
+    "source": "use 'shift points'.\\n",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "SpriteEd"
+  },
+  {
+    "id": "u0323",
+    "source": "Profiler Not Active\\n",
+    "where": "src/System/Utils/Profiler.ZC (zc-str)",
+    "hint": "ProfRep"
+  },
+  {
+    "id": "u0324",
+    "source": "%d Millivolts$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0325",
+    "source": "Cmd Line (Typically)",
+    "where": "src/System/Utils/Diff.ZC (zc-str)",
+    "hint": "PopUpDiffMenu"
+  },
+  {
+    "id": "u0326",
+    "source": "UnAlloc:%s Clus:%X\\n",
+    "where": "src/System/BlkDev/DiskCheck.ZC (zc-str)",
+    "hint": "RedSeaCheckDiskList"
+  },
+  {
+    "id": "u0327",
+    "source": "(Show ATAPI: %Z)\\n\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0328",
+    "source": "Blocks of 512 bytes:",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0329",
+    "source": "bd->RAM_disk = %s;\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0330",
+    "source": "'%s' is not a dir.\\n",
+    "where": "src/System/Boot/DiskISORedSea.ZC (zc-str)",
+    "hint": "RedSeaISO"
+  },
+  {
+    "id": "u0331",
+    "source": "Standard Addresses\\n",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "MemBIOSRep"
+  },
+  {
+    "id": "u0332",
+    "source": "Linear Framebuffer\\n",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "MemBIOSRep"
+  },
+  {
+    "id": "u0333",
+    "source": "$$CB,\\\"Right X\\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpWidgetType"
+  },
+  {
+    "id": "u0334",
+    "source": "$$CB,\\\"Left X \\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsHtml"
+  },
+  {
+    "id": "u0335",
+    "source": "Insert Screen BitMap",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SMTaskTitleSet"
+  },
+  {
+    "id": "u0336",
+    "source": "Background Color\\n\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0337",
+    "source": "HeapLog Not Active\\n",
+    "where": "src/System/Utils/HeapLog.ZC (zc-str)",
+    "hint": "HeapLogAddrRep"
+  },
+  {
+    "id": "u0338",
+    "source": "Corrupt Map Entry\\n",
+    "where": "src/System/Hash.ZC (zc-str)",
+    "hint": "MapFileLoad"
+  },
+  {
+    "id": "u0339",
+    "source": "Make Directory:%s\\n",
+    "where": "src/Kernel/BlkDev/DiskDirB.ZC (zc-str)",
+    "hint": "DirMake"
+  },
+  {
+    "id": "u0340",
+    "source": "Not ISO9660 Drive\\n",
+    "where": "src/Kernel/BlkDev/FileSysISO.ZC (zc-str)",
+    "hint": "ISOFileFind"
+  },
+  {
+    "id": "u0341",
+    "source": "First HD Drive Let:",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0342",
+    "source": "First HD Drive:%C\\n",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0343",
+    "source": "First CD Drive Let:",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0344",
+    "source": "First CD Drive:%C\\n",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0345",
+    "source": "Debug Distro Start:",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0346",
+    "source": "Bad Pointer:%016X\\n",
+    "where": "src/System/Debug.ZC (zc-str)",
+    "hint": "ClassRep2"
+  },
+  {
+    "id": "u0347",
+    "source": "Reg/Offset Symbol\\n",
+    "where": "src/System/Debug.ZC (zc-str)",
+    "hint": "FunRep"
+  },
+  {
+    "id": "u0348",
+    "source": "%010tX Stack Size\\n",
+    "where": "src/System/Debug.ZC (zc-str)",
+    "hint": "FunRep"
+  },
+  {
+    "id": "u0349",
+    "source": "$$CB,\\\"Left X\\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpWidgetType"
+  }
+]

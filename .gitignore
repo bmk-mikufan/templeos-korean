@@ -18,3 +18,9 @@
 /zealbooter/src/limine.h
 /zealbooter/bin
 /zealbooter/obj
+
+# build artifacts
+build/*.iso
+build/*.ppm
+build/*.png
+build/screen*

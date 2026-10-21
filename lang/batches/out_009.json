@@ -1,0 +1,202 @@
+[
+  {
+    "id": "u0450",
+    "translation": "$$GREEN$$확인$$FG$$을 누르면 새 타임스탬프가 사용됩니다.\\n"
+  },
+  {
+    "id": "u0451",
+    "translation": "명령줄 (일반);DolDoc/Conversion;DolDoc/명령줄 (일반)"
+  },
+  {
+    "id": "u0452",
+    "translation": ">ClassRep(Fs, \\\"CTask\\\", 1);\\t\\t\\t// 현재 태스크 레코드를 덤프.\\n"
+  },
+  {
+    "id": "u0453",
+    "translation": "그래픽스/데이터 타입/D3I32;수학/데이터 타입/D3I32;데이터 타입/D3I32"
+  },
+  {
+    "id": "u0454",
+    "translation": "작업/텍스트 및 메시지;태스크/작업/텍스트 및 메시지;InFile;StdIn/InFile"
+  },
+  {
+    "id": "u0455",
+    "translation": ">Uf(\\\"Print\\\");\\t\\t\\t\\t\\t\\t// \\\"Print\\\" 함수를 디스어셈블.\\n"
+  },
+  {
+    "id": "u0456",
+    "translation": ">DumpMem(Fs, sizeof(CTask));\\t\\t// 현재 태스크 레코드를 덤프.\\n"
+  },
+  {
+    "id": "u0457",
+    "translation": "Matrix4DTranslationSet이 올바르게 작동하지 않습니다! 결과 행렬:\\n"
+  },
+  {
+    "id": "u0458",
+    "translation": "그래픽스/스프라이트;그래픽스/GR 파일;DolDoc/출력;StdOut/DolDoc"
+  },
+  {
+    "id": "u0459",
+    "translation": " ð %3tZ %02d/%02d/%02d %02d:%02d:%02d FPS:%2tf RAM:%010X CPU:"
+  },
+  {
+    "id": "u0460",
+    "translation": "정보;파일/명령줄 (일반);명령줄 (일반);설치"
+  },
+  {
+    "id": "u0461",
+    "translation": "Matrix4DMulVector4D가 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  },
+  {
+    "id": "u0462",
+    "translation": "재개한 후 <CTRL-ALT-v>가 화면 VGA 캐시를 플러시합니다.\\n\\n"
+  },
+  {
+    "id": "u0463",
+    "translation": "Matrix4DTranspose가 올바르게 작동하지 않습니다! 결과 행렬:\\n"
+  },
+  {
+    "id": "u0464",
+    "translation": "Vector3DNormalize가 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  },
+  {
+    "id": "u0465",
+    "translation": "디버깅/Profiler;Profiler;명령줄 (일반)/Profiler"
+  },
+  {
+    "id": "u0466",
+    "translation": ">Man(\\\"Print\\\");\\t\\t\\t\\t\\t\\t// \\\"Print\\\"의 소스 편집.\\n"
+  },
+  {
+    "id": "u0467",
+    "translation": "Matrix4DScaleSet이 올바르게 작동하지 않습니다! 결과 행렬:\\n"
+  },
+  {
+    "id": "u0468",
+    "translation": "재개한 후 <CTRL-ALT-v>가 화면 VGA 캐시를 플러시\\n"
+  },
+  {
+    "id": "u0469",
+    "translation": "밑면 키프아웃이 없는 PCI Express Mini 52핀\\0"
+  },
+  {
+    "id": "u0470",
+    "translation": "AHCI 포트/BlkDev 유형 불일치: BlkDev ATA, 포트 ATAPI."
+  },
+  {
+    "id": "u0471",
+    "translation": "AHCI 포트/BlkDev 유형 불일치: BlkDev ATAPI, 포트 ATA."
+  },
+  {
+    "id": "u0472",
+    "translation": ">ClassRep(Fs,, 1);\\t\\t\\t\\t\\t// (lastclass를 알고 있음.)\\n"
+  },
+  {
+    "id": "u0473",
+    "translation": ">1 + 2 * 3 + &Print;\\t\\t\\t\\t// 계산 결과 표시.\\n"
+  },
+  {
+    "id": "u0474",
+    "translation": "설치;파일/명령줄 (일반);명령줄 (일반)"
+  },
+  {
+    "id": "u0475",
+    "translation": "with $$LK,\\\"BootMHDZero\\\",\\\"MN:BootMHDZero\\\"$$()\\n\\n\\n"
+  },
+  {
+    "id": "u0476",
+    "translation": "파일/명령줄 (일반);DolDoc/명령줄 (일반);"
+  },
+  {
+    "id": "u0477",
+    "translation": "Vector4DNegate가 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  },
+  {
+    "id": "u0478",
+    "translation": ">B(&Main+0x20);\\t\\t\\t\\t\\t\\t// 중단점 전환.\\n\\n"
+  },
+  {
+    "id": "u0479",
+    "translation": "작업/텍스트 및 메시지;태스크/작업/텍스트 및 메시지;메시지"
+  },
+  {
+    "id": "u0480",
+    "translation": "ScreenCast;그래픽스/장치 컨텍스트;그래픽스/GR 파일"
+  },
+  {
+    "id": "u0481",
+    "translation": "Vector3DCross가 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  },
+  {
+    "id": "u0482",
+    "translation": "AHCI: 블록 수 %d가 한 명령에서 허용되는 최대치(%d)를 초과했습니다."
+  },
+  {
+    "id": "u0483",
+    "translation": "IDE 호환 모드이면 SATA 모드로 전환합니다.\\n"
+  },
+  {
+    "id": "u0484",
+    "translation": "밑면 키프아웃이 있는 PCI Express Mini 52핀\\0"
+  },
+  {
+    "id": "u0485",
+    "translation": "래치는 키보드에서 온 마지막 타임스탬프입니다.\\n"
+  },
+  {
+    "id": "u0486",
+    "translation": "Vector4DCopy가 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  },
+  {
+    "id": "u0487",
+    "translation": "Vector4DAddS가 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  },
+  {
+    "id": "u0488",
+    "translation": "Vector4DSubS가 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  },
+  {
+    "id": "u0489",
+    "translation": "Vector4DMulS가 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  },
+  {
+    "id": "u0490",
+    "translation": "Vector4DDivS가 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  },
+  {
+    "id": "u0491",
+    "translation": ">DumpMem(0x100000);\\t\\t\\t\\t\\t// 페이지 테이블 덤프.\\n"
+  },
+  {
+    "id": "u0492",
+    "translation": ">i = _RCX + _RDX;\\t\\t\\t\\t\\t// 변수에 할당.\\n"
+  },
+  {
+    "id": "u0493",
+    "translation": "정보;파일/명령줄 (일반);명령줄 (일반)"
+  },
+  {
+    "id": "u0494",
+    "translation": "Matrix4DMul이 올바르게 작동하지 않습니다! 결과 행렬:\\n"
+  },
+  {
+    "id": "u0495",
+    "translation": "Vector4DAdd가 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  },
+  {
+    "id": "u0496",
+    "translation": "Vector4DSub가 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  },
+  {
+    "id": "u0497",
+    "translation": "Vector4DMul이 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  },
+  {
+    "id": "u0498",
+    "translation": "Vector4DDiv가 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  },
+  {
+    "id": "u0499",
+    "translation": "Vector4DMin이 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  }
+]

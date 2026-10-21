@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0550",
+    "source": "$$GREEN$$'%d'$$FG$$ $$BLACK$$%-23ts$$FG$$",
+    "where": "src/System/AutoComplete/ACTask.ZC (zc-str)",
+    "hint": "ACDDictWordsAdd"
+  },
+  {
+    "id": "u0551",
+    "source": "$$RED$$!!! Boot Stage 2 !!! %X-%X$$FG$$\\n",
+    "where": "src/System/Boot/DiskISO9660.ZC (zc-str)",
+    "hint": "ISO9660ISO"
+  },
+  {
+    "id": "u0552",
+    "source": "Global Struct Name (ENTER for No Global):",
+    "where": "src/System/Ctrls/CtrlsSlider.ZC (zc-str)",
+    "hint": "TemplateCtrlSlider"
+  },
+  {
+    "id": "u0553",
+    "source": "$$GREEN$$PASS: Matrix4DTranspose $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestMat4.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0554",
+    "source": "$$GREEN$$PASS: Vector3DNormalize $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0555",
+    "source": "AHCI: Transferring ownership from BIOS\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIInit"
+  },
+  {
+    "id": "u0556",
+    "source": "AHCI: Port %2d not idle, stopping port\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIInit"
+  },
+  {
+    "id": "u0557",
+    "source": ">_RIP = &Break;\\t\\t\\t\\t\\t\\t// Set RIP.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0558",
+    "source": "Processor/Page Tables;Memory/Page Tables",
+    "where": "src/Kernel/KernelB.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0559",
+    "source": "module_path: boot(%d):/Boot/Kernel.ZXE\\n",
+    "where": "src/System/Boot/LimineMHDIns.ZC (zc-str)",
+    "hint": "LimineCFGMake"
+  },
+  {
+    "id": "u0560",
+    "source": "\tMemSet(&%s, 0, sizeof(CSliderState));\\n",
+    "where": "src/System/Ctrls/CtrlsSlider.ZC (zc-str)",
+    "hint": "LeftClickSlider"
+  },
+  {
+    "id": "u0561",
+    "source": "Graphics/Device Contexts;Graphics/Screen",
+    "where": "src/System/Gr/GrDC.ZC (zc-str)",
+    "hint": "DocGR"
+  },
+  {
+    "id": "u0562",
+    "source": "$$PURPLE$$$$TX+CX,\\\"Sprite SideBar\\\"$$\\n",
+    "where": "src/System/Gr/SpriteSideBar.ZC (zc-str)",
+    "hint": "SpriteSideBarPickNew"
+  },
+  {
+    "id": "u0563",
+    "source": "$$GREEN$$PASS: Matrix4DScaleSet $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestMat4.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0564",
+    "source": "DiffSub PANIC DEBUG FIXME: %X %X %X %X\\n",
+    "where": "src/System/Utils/Diff.ZC (zc-str)",
+    "hint": "DiffSub"
+  },
+  {
+    "id": "u0565",
+    "source": "AHCIAtapiBlksRead(bd, dvd_buf, %d, %d);",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIAtapiRBlks"
+  },
+  {
+    "id": "u0566",
+    "source": "INT 0x13 5.25\\\"/360 KB Floppy Support\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0567",
+    "source": "INT 0x13 5.25\\\"/1.2 MB Floppy Support\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0568",
+    "source": "INT 0x13 3.5\\\"/2.88 MB Floppy Support\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0569",
+    "source": "Graphics/Color;Graphics/Device Contexts",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0570",
+    "source": "This is based strictly on file dates.\\n",
+    "where": "src/System/Utils/Merge.ZC (zc-str)",
+    "hint": "Merge"
+  },
+  {
+    "id": "u0571",
+    "source": "$$PURPLE$$Pick file and press <ESC>\\n\\n",
+    "where": "src/System/BlkDev/FileMgr.ZC (zc-str)",
+    "hint": "FMRebuildDoc"
+  },
+  {
+    "id": "u0572",
+    "source": ">S;\\t\\t\\t\\t\\t\\t\\t\\t\\t// Single step.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0573",
+    "source": "INT 0x13 3.5\\\"/720 KB Floppy Support\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0574",
+    "source": "Drive not writable.\\nCannot save file.",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0575",
+    "source": "$$GREEN$$PASS: Vector4DNegate $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0576",
+    "source": "%010X/%010X %010X/%010X%12td%12td%12td",
+    "where": "src/System/WallPaper.ZC (zc-str)",
+    "hint": "WallPaper"
+  },
+  {
+    "id": "u0577",
+    "source": "#exe{ Option(OPTf_WARN_PAREN, OFF); }",
+    "where": "src/Kernel/KMain.ZC (zc-str)",
+    "hint": "SysGlobalsInit"
+  },
+  {
+    "id": "u0578",
+    "source": "to repartition with other operating\\n",
+    "where": "src/System/BlkDev/DiskPart.ZC (zc-str)",
+    "hint": "DiskPart"
+  },
+  {
+    "id": "u0579",
+    "source": "path: boot(%d):/Boot/ZealBooter.ELF\\n",
+    "where": "src/System/Boot/LimineMHDIns.ZC (zc-str)",
+    "hint": "LimineCFGMake"
+  },
+  {
+    "id": "u0580",
+    "source": "Info;Hash/System;Cmd Line (Typically)",
+    "where": "src/System/Hash.ZC (zc-str)",
+    "hint": "HashEntriesCompare"
+  },
+  {
+    "id": "u0581",
+    "source": "$$GREEN$$PASS: Vector3DCross $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0582",
+    "source": "Info;Memory/Info;Cmd Line (Typically)",
+    "where": "src/System/Utils/MemRep.ZC (zc-str)",
+    "hint": "TSSSize"
+  },
+  {
+    "id": "u0583",
+    "source": "AHCI: Drive is not an ATAPI drive!\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIAtapiCapacityGet"
+  },
+  {
+    "id": "u0584",
+    "source": "(Max Block: %d, Disk Size: %d MiB)\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIPortIdentify"
+  },
+  {
+    "id": "u0585",
+    "source": "Aligning buffer under 32-bit range\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIPortIdentify"
+  },
+  {
+    "id": "u0586",
+    "source": "#exe {Option(OPTf_WARN_PAREN, OFF);}",
+    "where": "src/Kernel/BlkDev/DiskAddDev.ZC (zc-str)",
+    "hint": "BlkDevsInitAll"
+  },
+  {
+    "id": "u0587",
+    "source": "M.2 Socket 1-DP (Mechanical Key A)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0588",
+    "source": "M.2 Socket 1-SD (Mechanical Key E)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0589",
+    "source": "#exe{ Option(OPTf_WARN_PAREN, ON); }",
+    "where": "src/Kernel/KMain.ZC (zc-str)",
+    "hint": "SysGlobalsInit"
+  },
+  {
+    "id": "u0590",
+    "source": "File/Low Level;File/Program Routines",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0591",
+    "source": "File/Program Routines;File/FileNames",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0592",
+    "source": "#include \\\"%s\\\";\\n$$PT$$$$FG$$$$BG$$",
+    "where": "src/System/DolDoc/DocTerm.ZC (zc-str)",
+    "hint": "TermRightClickLink"
+  },
+  {
+    "id": "u0593",
+    "source": "$$GREEN$$PASS: Vector4DCopy $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0594",
+    "source": "$$GREEN$$PASS: Vector4DAddS $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0595",
+    "source": "$$GREEN$$PASS: Vector4DSubS $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0596",
+    "source": "$$GREEN$$PASS: Vector4DMulS $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0597",
+    "source": "$$GREEN$$PASS: Vector4DDivS $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0598",
+    "source": "$$RED$$Bin Data is Different$$FG$$\\n",
+    "where": "src/System/Utils/Diff.ZC (zc-str)",
+    "hint": "Diff"
+  },
+  {
+    "id": "u0599",
+    "source": "ProgressBars:%016X %016X %016X %016X",
+    "where": "src/System/WallPaper.ZC (zc-str)",
+    "hint": "WallPaper"
+  }
+]

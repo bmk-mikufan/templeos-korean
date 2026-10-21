@@ -1,0 +1,202 @@
+[
+  {
+    "id": "u0500",
+    "translation": "Vector4DMax가 올바르게 작동하지 않습니다! 결과 벡터:\\n"
+  },
+  {
+    "id": "u0501",
+    "translation": "AHCIAtapiBlksWrite(bd, 0x%0X, 0x%0X, %d, FALSE);\\n"
+  },
+  {
+    "id": "u0502",
+    "translation": ">_RAX = 0x1234;\\t\\t\\t\\t\\t\\t// RAX를 0x1234로 설정.\\n"
+  },
+  {
+    "id": "u0503",
+    "translation": "드라이브에서 Limine 부트로더 파일 검색 중 ...\\n"
+  },
+  {
+    "id": "u0504",
+    "translation": "드라이브에 쓸 수 없습니다.\\n드라이브에 저장된 파일을 컴파일할까요?"
+  },
+  {
+    "id": "u0505",
+    "translation": "Sys(\\\"#include \\\\\\\"%s\\\\\\\"\\\" );\\n$$PT$$$$FG$$$$BG$$"
+  },
+  {
+    "id": "u0506",
+    "translation": ">CallerRep;\\t\\t\\t\\t\\t\\t\\t// 스택 추적 보고.\\n"
+  },
+  {
+    "id": "u0507",
+    "translation": ">U(&Print+0x8);\\t\\t\\t\\t\\t\\t// Print 디스어셈블.\\n"
+  },
+  {
+    "id": "u0508",
+    "translation": ">Fix;\\t\\t\\t\\t\\t\\t\\t\\t// 마지막 오류 소스 코드 편집.\\n"
+  },
+  {
+    "id": "u0509",
+    "translation": "파일과 같은 SATA 포트에서는 CD/DVD를 구울 수 없습니다.\\n\\n"
+  },
+  {
+    "id": "u0510",
+    "translation": ">Dump(0x100000);\\t\\t\\t\\t\\t// 페이지 테이블 덤프.\\n"
+  },
+  {
+    "id": "u0511",
+    "translation": ">B2;\\t\\t\\t\\t\\t\\t\\t\\t// 모든 중단점 지우기.\\n"
+  },
+  {
+    "id": "u0512",
+    "translation": ">G2;\\t\\t\\t\\t\\t\\t\\t\\t// B2;LFBFlush;WinFocus;G;\\n"
+  },
+  {
+    "id": "u0513",
+    "translation": "Spawn(&MouseRawWatcher,, \\\"MouseRawWatcher\\\");\\n"
+  },
+  {
+    "id": "u0514",
+    "translation": "%C:/ 드라이브에 Limine 부트로더 파일이 없습니다.\\n"
+  },
+  {
+    "id": "u0515",
+    "translation": "명령줄 (일반적);DolDoc/Output;StdOut/DolDoc"
+  },
+  {
+    "id": "u0516",
+    "translation": "연속되지 않음.  파일을 filename.ISO.C로 이동하십시오.\\n"
+  },
+  {
+    "id": "u0517",
+    "translation": "재개 후 <CTRL-ALT-n>으로 다음 포커스 태스크.\\n"
+  },
+  {
+    "id": "u0518",
+    "translation": "ZealOS에는 64비트 프로세서가 필요합니다.\\n\\r"
+  },
+  {
+    "id": "u0519",
+    "translation": "%C:/ 드라이브가 Limine.CONF 메뉴 항목으로 추가되었습니다.\\n"
+  },
+  {
+    "id": "u0520",
+    "translation": "CTemplateCS **_m = 0x%X; *_m = CtrlSliderGet;\\n"
+  },
+  {
+    "id": "u0521",
+    "translation": "완료될 때까지 $$GREEN$$<SPACE>$$FG$$를 누르십시오."
+  },
+  {
+    "id": "u0522",
+    "translation": "Vector3DDot가 올바르게 작동하지 않습니다! 결과: %n\\n"
+  },
+  {
+    "id": "u0523",
+    "translation": "Vector4DDot가 올바르게 작동하지 않습니다! 결과: %n\\n"
+  },
+  {
+    "id": "u0524",
+    "translation": "AHCI 포트/BlkDev 오류: 잘못된 포트 서명"
+  },
+  {
+    "id": "u0525",
+    "translation": "재개 후 <CTRL-ALT-n>으로 다음 포커스 태스크\\n"
+  },
+  {
+    "id": "u0526",
+    "translation": ">Exit;\\t\\t\\t\\t\\t\\t\\t\\t// 태스크 종료(죽이기).\\n\\n"
+  },
+  {
+    "id": "u0527",
+    "translation": "편집 후 <ESC>를 눌러 쓰거나 <SHIFT-ESC>\\n"
+  },
+  {
+    "id": "u0528",
+    "translation": "$$GREEN$$통과: Matrix4DTranslationSet $$FG$$\\n"
+  },
+  {
+    "id": "u0529",
+    "translation": ">EdLite(\\\"FileName\\\");\\t\\t\\t\\t// 파일 편집.\\n"
+  },
+  {
+    "id": "u0530",
+    "translation": ">DumpAddress(_RSP);\\t\\t\\t\\t\\t// 스택 덤프.\\n"
+  },
+  {
+    "id": "u0531",
+    "translation": ">I64 i;\\t\\t\\t\\t\\t\\t\\t\\t// 변수 선언.\\n"
+  },
+  {
+    "id": "u0532",
+    "translation": "Char;디버깅/원시 출력;TextBase Layer/Char"
+  },
+  {
+    "id": "u0533",
+    "translation": "Limine.CONF를 다른 모든 드라이브에 복사 중 ...\\n"
+  },
+  {
+    "id": "u0534",
+    "translation": "그래픽/GR 파일;DolDoc/Output;StdOut/DolDoc"
+  },
+  {
+    "id": "u0535",
+    "translation": ">DumpRegs;\\t\\t\\t\\t\\t\\t\\t// 레지스터 덤프.\\n"
+  },
+  {
+    "id": "u0536",
+    "translation": "작업/텍스트 및 메시지;태스크/작업/텍스트 및 메시지"
+  },
+  {
+    "id": "u0537",
+    "translation": "$$PURPLE$$디렉터리를 선택하고 <ESC>를 누르십시오\\n\\n"
+  },
+  {
+    "id": "u0538",
+    "translation": "______데이터_힙______ ______코드_힙______ "
+  },
+  {
+    "id": "u0539",
+    "translation": ">G2;\\t\\t//모든 중단점 지우고 계속\\n\\n"
+  },
+  {
+    "id": "u0540",
+    "translation": ">G;\\t\\t\\t\\t\\t\\t\\t\\t\\t// 실행 재개.\\n"
+  },
+  {
+    "id": "u0541",
+    "translation": "Except © %c © %p © %p © %p © %p © %p © %p\\n"
+  },
+  {
+    "id": "u0542",
+    "translation": "\tc->state = CAlloc(sizeof(CSliderState));\\n"
+  },
+  {
+    "id": "u0543",
+    "translation": "디버깅/덤프;DolDoc/명령줄 (일반적);"
+  },
+  {
+    "id": "u0544",
+    "translation": "$$GREEN$$통과: Matrix4DMulVector4D $$FG$$\\n"
+  },
+  {
+    "id": "u0545",
+    "translation": "AHCI: 포트 %d에 빈 명령 슬롯이 없습니다!\\n"
+  },
+  {
+    "id": "u0546",
+    "translation": ">E(_RIP);\\t\\t\\t\\t\\t\\t\\t// 소스 코드 편집.\\n"
+  },
+  {
+    "id": "u0547",
+    "translation": "PCI 전원 관리 이벤트 (PME#) 신호\\0"
+  },
+  {
+    "id": "u0548",
+    "translation": "코드를 마음껏 수정하십시오.\\n"
+  },
+  {
+    "id": "u0549",
+    "translation": "그래픽/장치 컨텍스트;그래픽/GR 파일"
+  }
+]

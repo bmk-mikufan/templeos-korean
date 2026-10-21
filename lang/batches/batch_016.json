@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0800",
+    "source": "Multi-system Chassis\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0801",
+    "source": "Debugging Extensions\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0802",
+    "source": "Page Size Extensions\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0803",
+    "source": "Page Attribute Table\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0804",
+    "source": "Pending Break Enable\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0805",
+    "source": "20-way Set-Associative",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0806",
+    "source": "FireWire (IEEE 1394)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0807",
+    "source": "PCI - 66 MHz Capable\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0808",
+    "source": "PCI Express Gen 2 1x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0809",
+    "source": "PCI Express Gen 2 2x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0810",
+    "source": "PCI Express Gen 2 4x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0811",
+    "source": "PCI Express Gen 2 8x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0812",
+    "source": "PCI Express Gen 3 1x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0813",
+    "source": "PCI Express Gen 3 2x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0814",
+    "source": "PCI Express Gen 3 4x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0815",
+    "source": "PCI Express Gen 3 8x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0816",
+    "source": "PCI Express Gen 4 1x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0817",
+    "source": "PCI Express Gen 4 2x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0818",
+    "source": "PCI Express Gen 4 4x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0819",
+    "source": "PCI Express Gen 4 8x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0820",
+    "source": "$$CB,\\\"Snap Grid\\\"$$\\n",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0821",
+    "source": "$$CB,\\\"Show Grid\\\"$$\\n",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0822",
+    "source": "Call/System Extern Num",
+    "where": "src/Kernel/KernelB.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0823",
+    "source": "Extern Num Definitions",
+    "where": "src/Kernel/KernelB.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0824",
+    "source": "Data Types/Linked List",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0825",
+    "source": "Cmd /Kill Focused Task",
+    "where": "src/Kernel/KeyDev.ZC (zc-str)",
+    "hint": "KeyDevInit"
+  },
+  {
+    "id": "u0826",
+    "source": "(System has PCIBIOS)\\n",
+    "where": "src/Kernel/PCI.ZC (zc-str)",
+    "hint": "PCIClassFind"
+  },
+  {
+    "id": "u0827",
+    "source": "resolution: 1024x768\\n",
+    "where": "src/System/Boot/LimineMHDIns.ZC (zc-str)",
+    "hint": "LimineCFGMake"
+  },
+  {
+    "id": "u0828",
+    "source": "\tdc->color = YELLOW;\\n",
+    "where": "src/System/Ctrls/CtrlsSlider.ZC (zc-str)",
+    "hint": "DrawCtrlSlider"
+  },
+  {
+    "id": "u0829",
+    "source": "Edit/GoTo Doc End, Sel",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0830",
+    "source": "Edit/Cursor Right, Sel",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0831",
+    "source": "Edit/Toggle Overstrike",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0832",
+    "source": "Dol /Blinking Text Off",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0833",
+    "source": "Dol /Inverted Text Off",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0834",
+    "source": "Edit/Autocomplete Word",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0835",
+    "source": "$$CB,\\\"Six Eight\\\"$$\\n",
+    "where": "src/System/God/GodSong.ZC (zc-str)",
+    "hint": "InsertNote"
+  },
+  {
+    "id": "u0836",
+    "source": "Flood Fill Not Color\\0",
+    "where": "src/System/Gr/GrInitA.ZC (zc-str)",
+    "hint": "GrInit1"
+  },
+  {
+    "id": "u0837",
+    "source": "LoseThos Resurrected\\0",
+    "where": "src/System/ZSplash.ZC (zc-str)",
+    "hint": "DrawIt"
+  },
+  {
+    "id": "u0838",
+    "source": "Simplicity Perfected\\0",
+    "where": "src/System/ZSplash.ZC (zc-str)",
+    "hint": "DrawIt"
+  },
+  {
+    "id": "u0839",
+    "source": "AHCI: Port %d hung.\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIPortWait"
+  },
+  {
+    "id": "u0840",
+    "source": "Fault:    0x%02X %Z\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "Fault2"
+  },
+  {
+    "id": "u0841",
+    "source": "Fault Addr: %08X:%p\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "Fault2"
+  },
+  {
+    "id": "u0842",
+    "source": "Disable Breakpoints\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0843",
+    "source": "Children Not on Top\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0844",
+    "source": "No Math Coprocessor\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0845",
+    "source": "Segment Not Present\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0846",
+    "source": "Stack Segment Fault\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0847",
+    "source": "Connectivity Switch\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0848",
+    "source": "Processor/IO Module\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0849",
+    "source": "Low Profile Desktop\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  }
+]

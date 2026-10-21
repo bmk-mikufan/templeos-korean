@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u1100",
+    "source": "Sub Notebook\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1101",
+    "source": "RAID Chassis\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1102",
+    "source": "Advanced TCA\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1103",
+    "source": "TSC Deadline\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1104",
+    "source": "Network Port\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1105",
+    "source": "Video Memory\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1106",
+    "source": "Flash Memory\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1107",
+    "source": "Row of Chips\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1108",
+    "source": "DDR2 FB-DIMM\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1109",
+    "source": "Non Volatile\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1110",
+    "source": "Except © %c © ",
+    "where": "src/Kernel/KExcept.ZC (zc-str)",
+    "hint": "PutExcept"
+  },
+  {
+    "id": "u1111",
+    "source": "Document Flags",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u1112",
+    "source": "File/Low Level",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u1113",
+    "source": "Window Manager",
+    "where": "src/StartOS.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u1114",
+    "source": "Drive %C:%08X ",
+    "where": "src/System/BlkDev/DiskPart.ZC (zc-str)",
+    "hint": "DiskPart"
+  },
+  {
+    "id": "u1115",
+    "source": "Loading ZealOS",
+    "where": "src/System/Boot/BootDVD.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u1116",
+    "source": "Spacing (%4d):",
+    "where": "src/System/Ctrls/CtrlsSlider.ZC (zc-str)",
+    "hint": "TemplateCtrlSlider"
+  },
+  {
+    "id": "u1117",
+    "source": "Border  (%4d):",
+    "where": "src/System/Ctrls/CtrlsSlider.ZC (zc-str)",
+    "hint": "TemplateCtrlSlider"
+  },
+  {
+    "id": "u1118",
+    "source": "Edit/Cursor Up",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1119",
+    "source": "Edit/Page Down",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1120",
+    "source": "Edit/Find Last",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1121",
+    "source": "Edit/Find Next",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1122",
+    "source": "1 Chronicles\\0",
+    "where": "src/System/God/GodBible.ZC (zc-str)",
+    "hint": "BibleInit"
+  },
+  {
+    "id": "u1123",
+    "source": "2 Chronicles\\0",
+    "where": "src/System/God/GodBible.ZC (zc-str)",
+    "hint": "BibleInit"
+  },
+  {
+    "id": "u1124",
+    "source": "Dither Color\\0",
+    "where": "src/System/Gr/GrInitA.ZC (zc-str)",
+    "hint": "GrInit1"
+  },
+  {
+    "id": "u1125",
+    "source": "Transform On\\0",
+    "where": "src/System/Gr/GrInitA.ZC (zc-str)",
+    "hint": "GrInit1"
+  },
+  {
+    "id": "u1126",
+    "source": "Rotated Rect\\0",
+    "where": "src/System/Gr/GrInitA.ZC (zc-str)",
+    "hint": "GrInit1"
+  },
+  {
+    "id": "u1127",
+    "source": "Text Diamond\\0",
+    "where": "src/System/Gr/GrInitA.ZC (zc-str)",
+    "hint": "GrInit1"
+  },
+  {
+    "id": "u1128",
+    "source": "Stack Overflow",
+    "where": "src/System/Gr/GrPrimatives.ZC (zc-str)",
+    "hint": "GrFloodFillRay"
+  },
+  {
+    "id": "u1129",
+    "source": "Select Rects\\0",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "GrInit3"
+  },
+  {
+    "id": "u1130",
+    "source": "Shift Points\\0",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "GrInit3"
+  },
+  {
+    "id": "u1131",
+    "source": "Edit as Text\\0",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "GrInit3"
+  },
+  {
+    "id": "u1132",
+    "source": "%d %zB$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u1133",
+    "source": "ATAPI drive\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIInit"
+  },
+  {
+    "id": "u1134",
+    "source": "Closing track",
+    "where": "src/Kernel/BlkDev/DiskCDDVD.ZC (zc-str)",
+    "hint": "DVDImageWrite"
+  },
+  {
+    "id": "u1135",
+    "source": "ºRIP: %016X\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "RawDumpRegs"
+  },
+  {
+    "id": "u1136",
+    "source": "Self Border\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1137",
+    "source": "Serial Boot\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1138",
+    "source": "Smart Battery",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1139",
+    "source": "Hot Swappable",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1140",
+    "source": "Compact PCI\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1141",
+    "source": "IoT Gateway\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1142",
+    "source": "Embedded PC\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1143",
+    "source": "Debug Store\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1144",
+    "source": "Onboard IDE\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1145",
+    "source": "MXM Type II\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1146",
+    "source": "MXM Type IV\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1147",
+    "source": "PCI Express\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1148",
+    "source": "Window DRAM\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1149",
+    "source": "ARE YOU SURE ",
+    "where": "src/Kernel/StrB.ZC (zc-str)",
+    "hint": "AreYouSure"
+  }
+]

@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u1150",
+    "source": "Range \t(%4d):",
+    "where": "src/System/Ctrls/CtrlsSlider.ZC (zc-str)",
+    "hint": "TemplateCtrlSlider"
+  },
+  {
+    "id": "u1151",
+    "source": "Perm memory: ",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "MemBIOSRep"
+  },
+  {
+    "id": "u1152",
+    "source": "Bin Not Found",
+    "where": "src/System/DolDoc/DocBin.ZC (zc-str)",
+    "hint": "DocBinsValidate"
+  },
+  {
+    "id": "u1153",
+    "source": "Char  /Delete",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1154",
+    "source": "Cmd /God Song",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1155",
+    "source": "Cmd /God Word",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1156",
+    "source": "Dol /Indent 2",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1157",
+    "source": "Char  /Return",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u1158",
+    "source": "Cmd /Zoom Out",
+    "where": "src/System/Gr/GrEnd.ZC (zc-str)",
+    "hint": "CtrlAltZ"
+  },
+  {
+    "id": "u1159",
+    "source": "Add Outline\\0",
+    "where": "src/System/Gr/SpriteBitMap.ZC (zc-str)",
+    "hint": "GrInit4"
+  },
+  {
+    "id": "u1160",
+    "source": "Shift Rects\\0",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "GrInit3"
+  },
+  {
+    "id": "u1161",
+    "source": "Insert Clip\\0",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "GrInit3"
+  },
+  {
+    "id": "u1162",
+    "source": "Invalid CPU\\n",
+    "where": "src/System/Utils/Profiler.ZC (zc-str)",
+    "hint": "Prof"
+  },
+  {
+    "id": "u1163",
+    "source": "%d KB$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u1164",
+    "source": "%d nS$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u1165",
+    "source": "%d MB$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u1166",
+    "source": "%d GB$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u1167",
+    "source": "%d mV$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u1168",
+    "source": "Cmd /Grid Off",
+    "where": "src/System/Win.ZC (zc-str)",
+    "hint": "CtrlAltG"
+  },
+  {
+    "id": "u1169",
+    "source": "Not RedSea\\n",
+    "where": "src/Kernel/BlkDev/DiskBlkDev.ZC (zc-str)",
+    "hint": "BlkDevInit"
+  },
+  {
+    "id": "u1170",
+    "source": "Write CD/DVD",
+    "where": "src/Kernel/BlkDev/DiskCDDVD.ZC (zc-str)",
+    "hint": "DVDImageWrite"
+  },
+  {
+    "id": "u1171",
+    "source": "RIP: %016X\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DumpRegs"
+  },
+  {
+    "id": "u1172",
+    "source": "Exit Debug\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "G"
+  },
+  {
+    "id": "u1173",
+    "source": "Self Focus\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1174",
+    "source": "Self Ctrls\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1175",
+    "source": "Page Fault\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1176",
+    "source": "Math Fault\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1177",
+    "source": "USB Legacy\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1178",
+    "source": "Modem Ring\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1179",
+    "source": "LAN Remote\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1180",
+    "source": "I/O Module\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1181",
+    "source": "Mini Tower\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1182",
+    "source": "Self Snoop\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1183",
+    "source": "ZIF Socket\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1184",
+    "source": "LIF Socket\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1185",
+    "source": "Socket 423\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1186",
+    "source": "Socket 478\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1187",
+    "source": "Mouse Port\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1188",
+    "source": "Video Port\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1189",
+    "source": "Audio Port\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1190",
+    "source": "Modem Port\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1191",
+    "source": "MXM Type I\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1192",
+    "source": "PC Card 16\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1193",
+    "source": "Zoom Video\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1194",
+    "source": "Cache Memory",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1195",
+    "source": "Fast Paged\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1196",
+    "source": "Cache DRAM\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u1197",
+    "source": "Editor Flags",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u1198",
+    "source": "Are you sure",
+    "where": "src/Kernel/StrB.ZC (zc-str)",
+    "hint": "AreYouSure"
+  },
+  {
+    "id": "u1199",
+    "source": "VMware, Inc.",
+    "where": "src/System/WallPaper.ZC (zc-str)",
+    "hint": "WallPaperInit"
+  }
+]

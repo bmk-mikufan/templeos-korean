@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0000",
+    "source": "List all symbols in alphabetic order",
+    "where": "src/PersonalMenu.DD (dd-label)",
+    "hint": ""
+  },
+  {
+    "id": "u0001",
+    "source": "List all symbols in numeric order",
+    "where": "src/PersonalMenu.DD (dd-label)",
+    "hint": ""
+  },
+  {
+    "id": "u0002",
+    "source": "Disk Change T",
+    "where": "src/PersonalMenu.DD (dd-label)",
+    "hint": ""
+  },
+  {
+    "id": "u0003",
+    "source": "Help & Index",
+    "where": "src/PersonalMenu.DD (dd-label)",
+    "hint": ""
+  },
+  {
+    "id": "u0004",
+    "source": "of the drive with your Home directory. ($$PURPLE$$<ENTER>$$FG$$ for current drive) Boot Drive:",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0005",
+    "source": "$$CM+LX,2,2$$$$LTRED$$FILE1$$FG$$ = DST.$$CM+LX,24,0$$$$LTGREEN$$FILE2$$FG$$ = SRC.",
+    "where": "src/System/Utils/Diff.ZC (zc-str)",
+    "hint": "PopUpDiffMenu"
+  },
+  {
+    "id": "u0006",
+    "source": "CPU Disabled by BIOS (POST Error)\\0CPU is Idle, Waiting to be Enabled\\0 \\0 \\0Other",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0007",
+    "source": " \\0Other\\0Unknown\\0Short\\0Long\\02.5\\\" Drive Form Factor\\03.5\\\" Drive Form Factor",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0008",
+    "source": "$$PURPLE$$VarInit$$FG$$ Initializes global variable memory to a value.\\n",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0009",
+    "source": "$$GREEN$$Shift + Right Mouse$$FG$$: Hold and move to rotate camera XY\\n",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0010",
+    "source": "$$PURPLE$$MountAHCIAuto$$FG$$ Auto Mount AHCI drives to 'C' and 'T'.\\n",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0011",
+    "source": "$$RED$$$$HL,1$$Bus: 0x%02X, Dev: 0x%02X, Fun: 0x%02X$$HL,0$$$$FG$$\\n\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0012",
+    "source": "$$GREEN$$Alt + Right Mouse$$FG$$: Hold and move to rotate camera Z\\n",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0013",
+    "source": "AHCI: Did not find matching sys_compile_time at BLK %d on Port %d\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIBootDVDProbeAll"
+  },
+  {
+    "id": "u0014",
+    "source": " \\0Other\\0Unknown\\0None\\0Parity\\0Single-bit ECC\\0Multi-bit ECC\\0CRC",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0015",
+    "source": "$$RED$$%4d x %4d   %0.3f =%4d:%d (Current resolution)$$FG$$$$LM,0$$",
+    "where": "src/System/Utils/VideoRep.ZC (zc-str)",
+    "hint": "VideoRep"
+  },
+  {
+    "id": "u0016",
+    "source": "$$PURPLE$$HeapInit$$FG$$ Initializes MAlloc() memory to a value.\\n",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0017",
+    "source": "and rectangles with '$$GREEN$$p$$FG$$' and '$$GREEN$$r$$FG$$'.\\n",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "SpriteEd"
+  },
+  {
+    "id": "u0018",
+    "source": "the rest of the sprite?  If $$GREEN$$YES$$FG$$, you can always\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0019",
+    "source": "$$PURPLE$$DebugDistro$$FG$$ Include RAM Drive in Kernel.ZXE.\\n",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0020",
+    "source": "$$GREEN$$Q$$FG$$-$$GREEN$$S$$FG$$ are ISO file write drives.\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0021",
+    "source": "Write-Through\\0Write-Back\\0Varies with Memory Address\\0Unknown",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0022",
+    "source": " \\0Other\\0Unknown\\0None\\0Parity\\0Single-bit ECC\\0Multi-bit ECC",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0023",
+    "source": "AHCI: BootDVDProbeAll: Saw port at %2d with signature 0x%0X\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIBootDVDProbeAll"
+  },
+  {
+    "id": "u0024",
+    "source": "$$GREEN$$M$$FG$$-$$GREEN$$P$$FG$$ are ISO file read drives.\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0025",
+    "source": "$$GREEN$$Right Mouse$$FG$$: Hold and move to shift cursor z\\n",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0026",
+    "source": "$$GREEN$$T$$FG$$-$$GREEN$$Z$$FG$$ are ATAPI CD/DVD drives.\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0027",
+    "source": "$$PURPLE$$MemInit$$FG$$ Initializes memory above 0x100000 ",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0028",
+    "source": "$$MU,\\\"Insert ASCII/Scan Code Hex Codes for key pressed\\\",",
+    "where": "src/System/DolDoc/DocCodeTools.ZC (zc-str)",
+    "hint": "PopUpEdFormat"
+  },
+  {
+    "id": "u0029",
+    "source": "The X-Caliber mesh has a different origin for rotation.\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0030",
+    "source": "$$GREEN$$'j'$$FG$$: Jump cursor Z to nearest vertex's Z\\n",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0031",
+    "source": "AHCI: Found sys_disk_uuid at BLK 0 byte 568 on Port %d\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIBootDVDProbeAll"
+  },
+  {
+    "id": "u0032",
+    "source": "$$GREEN$$C$$FG$$-$$GREEN$$L$$FG$$ are ATA hard drives.\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0033",
+    "source": "$$MU,\\\"Reindent ZealC Fun (Beware braces in strings.)\\\",",
+    "where": "src/System/DolDoc/DocCodeTools.ZC (zc-str)",
+    "hint": "PopUpEdFormat"
+  },
+  {
+    "id": "u0034",
+    "source": "Install;File/Cmd Line (Typically);Cmd Line (Typically);",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0035",
+    "source": "Graphics/Sprite;Sprites;Graphics/Math/3D Transformation",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "SpriteEd"
+  },
+  {
+    "id": "u0036",
+    "source": "mesh is in front and rotates.  To keep the background\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0037",
+    "source": "To avoid clipping, it also has also been moved in the\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0038",
+    "source": "Unknown\\0CPU Enabled\\0CPU Disabled through BIOS Setup\\0",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0039",
+    "source": "$$PURPLE$$$$TX+CX,\\\"Graphic Sprite Resource Menu\\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpSpriteType"
+  },
+  {
+    "id": "u0040",
+    "source": "$$MU-UL,\\\"Insert Transparent Screen-Captured BitMap\\\",",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "PopUpSpriteMain"
+  },
+  {
+    "id": "u0041",
+    "source": "$$CM,3,0$$$$BT,\\\"Drag-Out New Extents\\\",LE=FALSE$$\\n\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "PopUpExtents"
+  },
+  {
+    "id": "u0042",
+    "source": "shift the mesh origin point in the sprite edit menu.\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0043",
+    "source": "$$PURPLE$$Framebuffer pointer: $$BLACK$$0x%8X$$FG$$ \\n",
+    "where": "src/System/Utils/VideoRep.ZC (zc-str)",
+    "hint": "VideoRep"
+  },
+  {
+    "id": "u0044",
+    "source": "Addr of RAM disk ($$PURPLE$$<ENTER>$$FG$$ to MAlloc):",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0045",
+    "source": "$$GREEN$$<ALT-BACKSPACE>$$FG$$ to undo if not happy\\n",
+    "where": "src/System/DolDoc/DocCodeTools.ZC (zc-str)",
+    "hint": "PopUpEdFormat"
+  },
+  {
+    "id": "u0046",
+    "source": "$$ID,-2$$$$BLACK$$High Memory\\t:00100000-%08X$$FG$$\\n",
+    "where": "src/System/Utils/MemRep.ZC (zc-str)",
+    "hint": "MemRep"
+  },
+  {
+    "id": "u0047",
+    "source": "AHCIPortInit(bd, &blkdev.ahci_hba->ports[%d], %d);\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0048",
+    "source": "It has black rectangle background with stars.  The\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0049",
+    "source": "negative Z direction by editing the sprite as text\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  }
+]

@@ -814,8 +814,8 @@ df_done:
 
 #help_index "Graphics/Char;Char/Graphics"
 
-public I64 GrPutChar(CDC *dc=gr.dc, I64 x, I64 y, U8 ch)
-{//2D. Clipping but not transformation.
+public I64 GrPutCharBits(CDC *dc=gr.dc, I64 x, I64 y, U8 *glyph)
+{//2D. Clipping but not transformation. glyph: 8 rows, bit 0 = leftmost.
 	U8			reg *src, reg *dst, *font_ptr;
 	I64				 i, m, leading_pixels, trailing_pixels, leading_pixel_mask, trailing_pixel_mask, 
 					 j, k1, kk1, w1, h1, w2, h2, reg bit_shift, reg color_mask, dist;
@@ -898,7 +898,7 @@ public I64 GrPutChar(CDC *dc=gr.dc, I64 x, I64 y, U8 ch)
 			leading_pixel_mask |= trailing_pixel_mask;
 			trailing_pixels = 0;
 		}
-		font_ptr = &text.font(U8 *)[FONT_HEIGHT * ch + h1];
+		font_ptr = glyph + h1;
 		if (color.c0.rop == ROPB_COLLISION)
 		{
 			m = w1 & (FONT_WIDTH - 1);
@@ -1081,6 +1081,11 @@ public I64 GrPutChar(CDC *dc=gr.dc, I64 x, I64 y, U8 ch)
 		return 0;
 }
 
+public I64 GrPutChar(CDC *dc=gr.dc, I64 x, I64 y, U8 ch)
+{//Draw one glyph from the system (ASCII/CP437) font.
+	return GrPutCharBits(dc, x, y, &text.font(U8 *)[FONT_HEIGHT * ch]);
+}
+
 I64 GrPutS(CDC *dc=gr.dc, I64 x, I64 y, U8 *_s)
 {//Use $LK,"GrPrint",A="MN:GrPrint"$()
 	I64 x0, sx = 0, sy = 0, res;
@@ -1123,6 +1128,23 @@ I64 GrPutS(CDC *dc=gr.dc, I64 x, I64 y, U8 *_s)
 			else
 				sx = _s[4] - '0';
 			_s += 6;
+		}
+		else if (font_kr_num && *_s >= 0x81 && _s[1])
+		{//CP949 two-byte Hangul
+			I64 idx = FontKRIndex(((U32)*_s << 8) | _s[1]);
+
+			if (idx >= 0)
+			{
+				res += GrPutCharBits(dc, x + sx, y + sy,
+							font_kr_glyphs(U8 *) + idx * FONT_HEIGHT);
+				_s += 2;
+			}
+			else
+			{
+				res += GrPutChar(dc, x + sx, y + sy, *_s);
+				_s++;
+			}
+			x += FONT_WIDTH;
 		}
 		else
 		{

@@ -1,0 +1,77 @@
+// Korean 8x8 font support for TempleOS-Korean.
+//
+// Data file: /System/FontKR.DAT
+// Generator: tools/font/extract_dalmoori.py
+//
+// Layout (little endian):
+//   "KRF1" | U32 num | U32 ver | U32 pad
+//   U16 codes[num]     CP949 code units, ascending
+//   U64 glyphs[num]    8 rows, bit 0 = leftmost, byte 0 = top row
+//
+// Glyph indexing matches sys_font_std: 8 bytes per glyph, so the existing
+// blitter can draw a Korean glyph by passing its byte pointer.
+
+#help_index "Font/Korean"
+
+#define FONTKR_MAX	20000
+
+public U8	*font_kr_buf = NULL;
+public U16	*font_kr_codes = NULL;
+public U64	*font_kr_glyphs = NULL;
+public I64	 font_kr_num = 0;
+
+public I64 FontKRIndex(U32 code)
+{//Binary search a CP949 code unit. Returns glyph index or -1.
+	I64 lo = 0, hi = font_kr_num - 1, mid;
+
+	while (lo <= hi)
+	{
+		mid = lo + hi >> 1;
+		if (font_kr_codes[mid] == code)
+			return mid;
+		if (font_kr_codes[mid] < code)
+			lo = mid + 1;
+		else
+			hi = mid - 1;
+	}
+	return -1;
+}
+
+public Bool FontKRLoad(U8 *filename = "::/System/FontKR.DAT")
+{//Load the Korean font into Adam (kernel) memory.
+	U8	*buf;
+	I64	 size;
+	U32	 num;
+
+	font_kr_buf = NULL;
+	font_kr_codes = NULL;
+	font_kr_glyphs = NULL;
+	font_kr_num = 0;
+
+	buf = FileRead(filename, &size);
+	if (!buf)
+		return FALSE;
+	if (size < 16 || buf[0] != 'K' || buf[1] != 'R' || buf[2] != 'F' || buf[3] != '1')
+		goto fk_bad;
+	num = buf(U32 *)[1];
+	if (num <= 0 || num > FONTKR_MAX || size < 16 + num * 10 || (16 + num * 2) & 7)
+		goto fk_bad;
+
+	font_kr_buf = ACAlloc(size);
+	MemCopy(font_kr_buf, buf, size);
+	Free(buf);
+
+	font_kr_codes = (font_kr_buf + 16)(U16 *);
+	font_kr_glyphs = (font_kr_buf + 16 + num * 2)(U64 *);
+	font_kr_num = num;
+	return TRUE;
+
+fk_bad:
+	Free(buf);
+	return FALSE;
+}
+
+public U0 FontKRRep()
+{//Print font status.
+	"FontKR: %d glyphs %s\n", font_kr_num, font_kr_num ? "loaded" : "not loaded";
+}

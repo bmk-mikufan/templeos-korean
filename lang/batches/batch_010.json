@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0500",
+    "source": "Vector4DMax NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0501",
+    "source": "AHCIAtapiBlksWrite(bd, 0x%0X, 0x%0X, %d, FALSE);\\n",
+    "where": "src/Kernel/BlkDev/DiskCDDVD.ZC (zc-str)",
+    "hint": "DVDImageWrite"
+  },
+  {
+    "id": "u0502",
+    "source": ">_RAX = 0x1234;\\t\\t\\t\\t\\t\\t// Set RAX to 0x1234.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0503",
+    "source": "Searching drives for Limine bootloader files ...\\n",
+    "where": "src/System/Boot/LimineMHDIns.ZC (zc-str)",
+    "hint": "LimineCFGMake"
+  },
+  {
+    "id": "u0504",
+    "source": "Drive not writable.\\nCompile file stored on drive?",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0505",
+    "source": "Sys(\\\"#include \\\\\\\"%s\\\\\\\"\\\" );\\n$$PT$$$$FG$$$$BG$$",
+    "where": "src/System/DolDoc/DocTerm.ZC (zc-str)",
+    "hint": "TermRightClickLink"
+  },
+  {
+    "id": "u0506",
+    "source": ">CallerRep;\\t\\t\\t\\t\\t\\t\\t// Stack trace report.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0507",
+    "source": ">U(&Print+0x8);\\t\\t\\t\\t\\t\\t// Unassemble Print.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0508",
+    "source": ">Fix;\\t\\t\\t\\t\\t\\t\\t\\t// Edit Last Err Src Code.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0509",
+    "source": "Can't burn CD/DVD on same SATA port as file.\\n\\n",
+    "where": "src/Kernel/BlkDev/DiskCDDVD.ZC (zc-str)",
+    "hint": "DVDImageWrite"
+  },
+  {
+    "id": "u0510",
+    "source": ">Dump(0x100000);\\t\\t\\t\\t\\t// Dump page tables.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0511",
+    "source": ">B2;\\t\\t\\t\\t\\t\\t\\t\\t// Clear all break points.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0512",
+    "source": ">G2;\\t\\t\\t\\t\\t\\t\\t\\t// B2;LFBFlush;WinFocus;G;\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0513",
+    "source": "Spawn(&MouseRawWatcher,, \\\"MouseRawWatcher\\\");\\n",
+    "where": "src/Kernel/KMain.ZC (zc-str)",
+    "hint": "KMain"
+  },
+  {
+    "id": "u0514",
+    "source": "%C:/ drive is missing Limine bootloader files.\\n",
+    "where": "src/System/Boot/LimineMHDIns.ZC (zc-str)",
+    "hint": "LimineCFGMake"
+  },
+  {
+    "id": "u0515",
+    "source": "Cmd Line (Typically);DolDoc/Output;StdOut/DolDoc",
+    "where": "src/System/DolDoc/DocPutS.ZC (zc-str)",
+    "hint": "DocDumpLines"
+  },
+  {
+    "id": "u0516",
+    "source": "Not Contiguous.  Move file to filename.ISO.C.\\n",
+    "where": "src/Kernel/BlkDev/DiskBlkDev.ZC (zc-str)",
+    "hint": "BlkDevInit"
+  },
+  {
+    "id": "u0517",
+    "source": "After resuming, <CTRL-ALT-n> next focus task.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0518",
+    "source": "ZealOS requires a 64-bit capable processor.\\n\\r",
+    "where": "src/System/Boot/BootDVD.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0519",
+    "source": "%C:/ drive added as a Limine.CONF menu entry.\\n",
+    "where": "src/System/Boot/LimineMHDIns.ZC (zc-str)",
+    "hint": "LimineCFGMake"
+  },
+  {
+    "id": "u0520",
+    "source": "CTemplateCS **_m = 0x%X; *_m = CtrlSliderGet;\\n",
+    "where": "src/System/Ctrls/CtrlsSlider.ZC (zc-str)",
+    "hint": "TemplateCtrlSlider"
+  },
+  {
+    "id": "u0521",
+    "source": "Press $$GREEN$$<SPACE>$$FG$$ until it finishes.",
+    "where": "src/System/God/GodDoodle.ZC (zc-str)",
+    "hint": "GodDoodleBits"
+  },
+  {
+    "id": "u0522",
+    "source": "Vector3DDot NOT WORKING CORRECLTY! RESULT: %n\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0523",
+    "source": "Vector4DDot NOT WORKING CORRECTLY! RESULT: %n\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0524",
+    "source": "AHCI Port/BlkDev error: Invalid Port Signature",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIPortInit"
+  },
+  {
+    "id": "u0525",
+    "source": "After resuming, <CTRL-ALT-n> next focus task\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "G"
+  },
+  {
+    "id": "u0526",
+    "source": ">Exit;\\t\\t\\t\\t\\t\\t\\t\\t// Exit (kill) task.\\n\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0527",
+    "source": "Edit and press <ESC> to write or <SHIFT-ESC>\\n",
+    "where": "src/System/BlkDev/ZDiskA.ZC (zc-str)",
+    "hint": "Copy"
+  },
+  {
+    "id": "u0528",
+    "source": "$$GREEN$$PASS: Matrix4DTranslationSet $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestMat4.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0529",
+    "source": ">EdLite(\\\"FileName\\\");\\t\\t\\t\\t// Edit file.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0530",
+    "source": ">DumpAddress(_RSP);\\t\\t\\t\\t\\t// Dump stack.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0531",
+    "source": ">I64 i;\\t\\t\\t\\t\\t\\t\\t\\t// Declare variable.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0532",
+    "source": "Char;Debugging/Raw Output;TextBase Layer/Char",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0533",
+    "source": "Copying Limine.CONF to all other drives ...\\n",
+    "where": "src/System/Boot/LimineMHDIns.ZC (zc-str)",
+    "hint": "LimineCFGMake"
+  },
+  {
+    "id": "u0534",
+    "source": "Graphics/GR Files;DolDoc/Output;StdOut/DolDoc",
+    "where": "src/System/DolDoc/DocFile.ZC (zc-str)",
+    "hint": "DocUndoRestore"
+  },
+  {
+    "id": "u0535",
+    "source": ">DumpRegs;\\t\\t\\t\\t\\t\\t\\t// Dump Registers.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0536",
+    "source": "Job/Text & Messages;Task/Job/Text & Messages",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0537",
+    "source": "$$PURPLE$$Pick directory and press <ESC>\\n\\n",
+    "where": "src/System/BlkDev/FileMgr.ZC (zc-str)",
+    "hint": "FMRebuildDoc"
+  },
+  {
+    "id": "u0538",
+    "source": "______Data_Heap______ ______Code_Heap______ ",
+    "where": "src/System/WallPaper.ZC (zc-str)",
+    "hint": "WallPaper"
+  },
+  {
+    "id": "u0539",
+    "source": ">G2;\\t\\t//Clear all break points and Go\\n\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "G"
+  },
+  {
+    "id": "u0540",
+    "source": ">G;\\t\\t\\t\\t\\t\\t\\t\\t\\t// Resume execution.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0541",
+    "source": "Except © %c © %p © %p © %p © %p © %p © %p\\n",
+    "where": "src/Kernel/KExcept.ZC (zc-str)",
+    "hint": "throw"
+  },
+  {
+    "id": "u0542",
+    "source": "\tc->state = CAlloc(sizeof(CSliderState));\\n",
+    "where": "src/System/Ctrls/CtrlsSlider.ZC (zc-str)",
+    "hint": "LeftClickSlider"
+  },
+  {
+    "id": "u0543",
+    "source": "Debugging/Dump;DolDoc/Cmd Line (Typically);",
+    "where": "src/System/DolDoc/DocPutS.ZC (zc-str)",
+    "hint": "DocDumpLines"
+  },
+  {
+    "id": "u0544",
+    "source": "$$GREEN$$PASS: Matrix4DMulVector4D $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestMat4.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0545",
+    "source": "AHCI: No empty command slots on port %d!\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIPortCmdSlotGet"
+  },
+  {
+    "id": "u0546",
+    "source": ">E(_RIP);\\t\\t\\t\\t\\t\\t\\t// Edit Src Code.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0547",
+    "source": "PCI Power Management Event (PME#) Signal\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0548",
+    "source": "Modify the code to your heart's content.\\n",
+    "where": "src/System/Ctrls/CtrlsSlider.ZC (zc-str)",
+    "hint": "SliderDel"
+  },
+  {
+    "id": "u0549",
+    "source": "Graphics/Device Contexts;Graphics/GR Files",
+    "where": "src/System/Gr/GrDC.ZC (zc-str)",
+    "hint": "DCColorChange"
+  }
+]

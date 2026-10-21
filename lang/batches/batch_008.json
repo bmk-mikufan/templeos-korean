@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0400",
+    "source": "Input Filter",
+    "where": "src/Kernel/Job.ZC (zc-str)",
+    "hint": "TaskResetAwaitingMessage"
+  },
+  {
+    "id": "u0401",
+    "source": "Val (0-255):",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0402",
+    "source": "Unnamed Task",
+    "where": "src/Kernel/KTask.ZC (zc-str)",
+    "hint": "TaskInit"
+  },
+  {
+    "id": "u0403",
+    "source": "Vendor: %s\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0404",
+    "source": "Device: %s\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0405",
+    "source": "Serial: %s\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0406",
+    "source": "bin tag.\\n\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsBin"
+  },
+  {
+    "id": "u0407",
+    "source": "Find Color\\n",
+    "where": "src/System/Gr/SpriteBitMap.ZC (zc-str)",
+    "hint": "SpriteBitMapEd"
+  },
+  {
+    "id": "u0408",
+    "source": "Etch Width\\n",
+    "where": "src/System/Gr/SpriteBitMap.ZC (zc-str)",
+    "hint": "SpriteBitMapEd"
+  },
+  {
+    "id": "u0409",
+    "source": "Transforms {",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0410",
+    "source": "Demo Index",
+    "where": "src/PersonalMenu.DD (dd-label)",
+    "hint": ""
+  },
+  {
+    "id": "u0411",
+    "source": "Take Tour",
+    "where": "src/PersonalMenu.DD (dd-label)",
+    "hint": ""
+  },
+  {
+    "id": "u0412",
+    "source": "Key Map",
+    "where": "src/PersonalMenu.DD (dd-label)",
+    "hint": ""
+  },
+  {
+    "id": "u0413",
+    "source": "Drive C",
+    "where": "src/PersonalMenu.DD (dd-label)",
+    "hint": ""
+  },
+  {
+    "id": "u0414",
+    "source": "Drive D",
+    "where": "src/PersonalMenu.DD (dd-label)",
+    "hint": ""
+  },
+  {
+    "id": "u0415",
+    "source": "Help System",
+    "where": "src/System/Hash.ZC (zc-str)",
+    "hint": "HashDepthRep"
+  },
+  {
+    "id": "u0416",
+    "source": "Config Strs",
+    "where": "src/System/Boot/BootMHDIns.ZC (zc-str)",
+    "hint": "BootMHDOldRead"
+  },
+  {
+    "id": "u0417",
+    "source": "NO NAME    ",
+    "where": "src/Kernel/BlkDev/FileSysFAT.ZC (zc-str)",
+    "hint": "FAT32Format"
+  },
+  {
+    "id": "u0418",
+    "source": "File/CD DVD",
+    "where": "src/System/Boot/DiskISO9660.ZC (zc-str)",
+    "hint": "DVDFileCreate2"
+  },
+  {
+    "id": "u0419",
+    "source": "Editor Link",
+    "where": "src/System/DolDoc/DocLink.ZC (zc-str)",
+    "hint": "EdLinkConvert"
+  },
+  {
+    "id": "u0420",
+    "source": "Macro Popup",
+    "where": "src/System/DolDoc/DocMacro.ZC (zc-str)",
+    "hint": "PopUpMacroMenu"
+  },
+  {
+    "id": "u0421",
+    "source": "Click Here",
+    "where": "src/System/DolDoc/DocMacro.ZC (zc-str)",
+    "hint": "MacroTask"
+  },
+  {
+    "id": "u0422",
+    "source": "Files Find",
+    "where": "src/Kernel/BlkDev/DiskStrA.ZC (zc-str)",
+    "hint": "FilesFindMatch"
+  },
+  {
+    "id": "u0423",
+    "source": "File Name:",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0424",
+    "source": "%03d MiB\\n",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "MemBIOSRep"
+  },
+  {
+    "id": "u0425",
+    "source": "%04d GiB\\n",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "MemBIOSRep"
+  },
+  {
+    "id": "u0426",
+    "source": "union @%d@",
+    "where": "src/System/DolDoc/DocCodeTools.ZC (zc-str)",
+    "hint": "EdReplaceTroubleAll"
+  },
+  {
+    "id": "u0427",
+    "source": "Has Errors",
+    "where": "src/System/DolDoc/DocCodeTools.ZC (zc-str)",
+    "hint": "EdCodeTools2"
+  },
+  {
+    "id": "u0428",
+    "source": "not loaded",
+    "where": "src/System/FontKR.ZC (zc-str)",
+    "hint": "FontKRRep"
+  },
+  {
+    "id": "u0429",
+    "source": "Settings {",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0430",
+    "source": "New Snap\\n",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0431",
+    "source": "Del %s\\n",
+    "where": "src/Kernel/BlkDev/FileSysFAT.ZC (zc-str)",
+    "hint": "FAT32FilesDel"
+  },
+  {
+    "id": "u0432",
+    "source": "No Match",
+    "where": "src/System/Hash.ZC (zc-str)",
+    "hint": "HashTableDump"
+  },
+  {
+    "id": "u0433",
+    "source": "SU Flags",
+    "where": "src/System/Utils/StrUtils.ZC (zc-str)",
+    "hint": "SUFile"
+  },
+  {
+    "id": "u0434",
+    "source": "File {",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0435",
+    "source": "Edit {",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0436",
+    "source": "Mode {",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0437",
+    "source": "View {",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0438",
+    "source": "Print",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "DefinePrint"
+  },
+  {
+    "id": "u0439",
+    "source": "Sound",
+    "where": "src/System/Sound.ZC (zc-str)",
+    "hint": "SoundTaskEndCB"
+  },
+  {
+    "id": "u0440",
+    "source": "Load",
+    "where": "src/Kernel/BlkDev/DiskStrA.ZC (zc-str)",
+    "hint": "FileNameCheck"
+  },
+  {
+    "id": "u0441",
+    "source": "View",
+    "where": "src/System/DolDoc/DocPopUp.ZC (zc-str)",
+    "hint": "PopUpCd"
+  },
+  {
+    "id": "u0442",
+    "source": "Help",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0443",
+    "source": "Limine HDD MBR binary bytes not found. Must first #include it, then recompile this file.\\n",
+    "where": "src/System/Boot/LimineMHDIns.ZC (zc-str)",
+    "hint": "LimineMHDIns"
+  },
+  {
+    "id": "u0444",
+    "source": "  ___Description____ #__Task__ UnusedStack _UsedMem_/_AllocMem_ ______Flags_____",
+    "where": "src/System/WallPaper.ZC (zc-str)",
+    "hint": "WallPaper"
+  },
+  {
+    "id": "u0445",
+    "source": "Debugging/Debugger;DolDoc/Cmd Line (Typically);Cmd Line (Typically);Help System",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0446",
+    "source": "%s\\n\\nPress $$GREEN$$OKAY$$FG$$ to generate a random number from the timer.\\n",
+    "where": "src/System/God/HolySpirit.ZC (zc-str)",
+    "hint": "GodPick"
+  },
+  {
+    "id": "u0447",
+    "source": "If running in a VM, ensure disks are organized under a SATA controller.\\n\\n",
+    "where": "src/Kernel/BlkDev/DiskAddDev.ZC (zc-str)",
+    "hint": "BlkDevsInitAll"
+  },
+  {
+    "id": "u0448",
+    "source": ">*(0x70000)(I64 *) = 0x123456789;\\t// Assign value to 0x70000-0x70007.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0449",
+    "source": "The cmd line is basically the same as normal.\tHere are some common\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  }
+]

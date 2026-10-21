@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0700",
+    "source": "Cmd /Video Framebuffer Flush",
+    "where": "src/Kernel/KeyDev.ZC (zc-str)",
+    "hint": "KeyDevInit"
+  },
+  {
+    "id": "u0701",
+    "source": "MP Crash CPU%02X Task:%08X\\n",
+    "where": "src/Kernel/MultiProc.ZC (zc-str)",
+    "hint": "Core0Init"
+  },
+  {
+    "id": "u0702",
+    "source": "Cmd /Sprite Graphic Resource",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0703",
+    "source": "Coprocessor Segment Fault\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0704",
+    "source": "CPL Qualified Debug Store\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0705",
+    "source": "Power/Performance Control\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0706",
+    "source": "Unregistered (Unbuffered)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0707",
+    "source": "Alloced File Too Short:%s\\n",
+    "where": "src/System/BlkDev/DiskCheck.ZC (zc-str)",
+    "hint": "FAT32CheckDiskList"
+  },
+  {
+    "id": "u0708",
+    "source": "$$RED$$Partition %C$$FG$$\\n",
+    "where": "src/System/BlkDev/DiskPart.ZC (zc-str)",
+    "hint": "DiskPart"
+  },
+  {
+    "id": "u0709",
+    "source": "StdOut;Cmd Line (Typically)",
+    "where": "src/System/DolDoc/DocFile.ZC (zc-str)",
+    "hint": "DocType"
+  },
+  {
+    "id": "u0710",
+    "source": "InFile;Help System/Training",
+    "where": "src/System/InFile.ZC (zc-str)",
+    "hint": "InGetStr"
+  },
+  {
+    "id": "u0711",
+    "source": "Programming Enlightenment\\0",
+    "where": "src/System/ZSplash.ZC (zc-str)",
+    "hint": "DrawIt"
+  },
+  {
+    "id": "u0712",
+    "source": "%02d/%02d %02d:%02d %0*tX ",
+    "where": "src/Kernel/BlkDev/DiskDirB.ZC (zc-str)",
+    "hint": "Dir"
+  },
+  {
+    "id": "u0713",
+    "source": "  Type Help; for help.\\n\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "Fault3"
+  },
+  {
+    "id": "u0714",
+    "source": "Self Mouse Right Pressed\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0715",
+    "source": "INT 0x05 Screen Printing\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0716",
+    "source": "System Management Module\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0717",
+    "source": "External Interface Enabled",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0718",
+    "source": "Machine Check Exceptions\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0719",
+    "source": "Math/Data Types;Data Types",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0720",
+    "source": "Compiler/Intermediate Code",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0721",
+    "source": "Devices;Memory/Page Tables",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0722",
+    "source": "Task/Delay;Time/CPU Cycles",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0723",
+    "source": "Alloced File Too Long:%s\\n",
+    "where": "src/System/BlkDev/DiskCheck.ZC (zc-str)",
+    "hint": "FAT32CheckDiskList"
+  },
+  {
+    "id": "u0724",
+    "source": "reformat, and copy back.  ",
+    "where": "src/System/BlkDev/DiskCheck.ZC (zc-str)",
+    "hint": "DiskCheck"
+  },
+  {
+    "id": "u0725",
+    "source": "Or, copy from a back-up.\\n",
+    "where": "src/System/BlkDev/DiskCheck.ZC (zc-str)",
+    "hint": "DiskCheck"
+  },
+  {
+    "id": "u0726",
+    "source": "$$PURPLE$$File Manager\\n\\n",
+    "where": "src/System/BlkDev/FileMgr.ZC (zc-str)",
+    "hint": "FMRebuildDoc"
+  },
+  {
+    "id": "u0727",
+    "source": "Cmd /Insert Directory Name",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0728",
+    "source": "Edit/GoTo matching bracket",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0729",
+    "source": "RAMDisk %C\\t:%010X/%010X\\n",
+    "where": "src/System/Utils/MemRep.ZC (zc-str)",
+    "hint": "BlkDevsSize"
+  },
+  {
+    "id": "u0730",
+    "source": "Utils;Cmd Line (Typically)",
+    "where": "src/System/Utils/Merge.ZC (zc-str)",
+    "hint": "Merge"
+  },
+  {
+    "id": "u0731",
+    "source": "( ':' BlkDev at 0x%0X )\\n",
+    "where": "src/Kernel/BlkDev/DiskATAId.ZC (zc-str)",
+    "hint": "MountAHCIAuto"
+  },
+  {
+    "id": "u0732",
+    "source": "Self Mouse Left Pressed\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0733",
+    "source": "Requires Auxilary Board\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0734",
+    "source": "Processor/Memory Module\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0735",
+    "source": "Processor Serial Number\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0736",
+    "source": "Enhanced Virtualization\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0737",
+    "source": "Mini-Centronics Type-14\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0738",
+    "source": "Mini-Centronics Type-26\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0739",
+    "source": "PCI Express Mini 76-Pin\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0740",
+    "source": "Proprietary Add-On Card\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0741",
+    "source": "TempleOS-Korean V%0.2f.%d",
+    "where": "src/Kernel/KMain.ZC (zc-str)",
+    "hint": "KMain"
+  },
+  {
+    "id": "u0742",
+    "source": "Data Types/Circular Queue",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0743",
+    "source": "$$CB,\\\"Whole Labels\\\"$$\\n",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0744",
+    "source": "ScreenCast;Sound/AU Files",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0745",
+    "source": "Edit/GoTo Top of Doc, Sel",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0746",
+    "source": "rectangle from rotating, ",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0747",
+    "source": "$$RED$$ Doc Error\\n$$FG$$",
+    "where": "src/System/Utils/LinkCheck.ZC (zc-str)",
+    "hint": "LinkCheckDoc"
+  },
+  {
+    "id": "u0748",
+    "source": "Divine Intellect Inside\\0",
+    "where": "src/System/ZSplash.ZC (zc-str)",
+    "hint": "DrawIt"
+  },
+  {
+    "id": "u0749",
+    "source": "AHCI: Controller found\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIInit"
+  }
+]

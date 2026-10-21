@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0450",
+    "source": "When you press $$GREEN$$OKAY$$FG$$, a new timestamp will be used.\\n",
+    "where": "src/System/God/HolySpirit.ZC (zc-str)",
+    "hint": "GodPick"
+  },
+  {
+    "id": "u0451",
+    "source": "Cmd Line (Typically);DolDoc/Conversion;DolDoc/Cmd Line (Typically)",
+    "where": "src/System/Utils/ToDolDoc.ZC (zc-str)",
+    "hint": "ToDolDoc"
+  },
+  {
+    "id": "u0452",
+    "source": ">ClassRep(Fs, \\\"CTask\\\", 1);\\t\\t\\t// Dump current task record.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0453",
+    "source": "Graphics/Data Types/D3I32;Math/Data Types/D3I32;Data Types/D3I32",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0454",
+    "source": "Job/Text & Messages;Task/Job/Text & Messages;InFile;StdIn/InFile",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0455",
+    "source": ">Uf(\\\"Print\\\");\\t\\t\\t\\t\\t\\t// Unassembler function \\\"Print\\\".\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0456",
+    "source": ">DumpMem(Fs, sizeof(CTask));\\t\\t// Dump current task record.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0457",
+    "source": "Matrix4DTranslationSet NOT WORKING CORRECTLY! RESULT MATRIX:\\n",
+    "where": "src/System/Math/Tests/TestMat4.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0458",
+    "source": "Graphics/Sprite;Graphics/GR Files;DolDoc/Output;StdOut/DolDoc",
+    "where": "src/System/Gr/GrDC.ZC (zc-str)",
+    "hint": "GRWrite"
+  },
+  {
+    "id": "u0459",
+    "source": " ð %3tZ %02d/%02d/%02d %02d:%02d:%02d FPS:%2tf RAM:%010X CPU:",
+    "where": "src/System/WallPaper.ZC (zc-str)",
+    "hint": "WallPaper"
+  },
+  {
+    "id": "u0460",
+    "source": "Info;File/Cmd Line (Typically);Cmd Line (Typically);Install",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0461",
+    "source": "Matrix4DMulVector4D NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestMat4.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0462",
+    "source": "After resuming, <CTRL-ALT-v> flushes screen VGA cache.\\n\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0463",
+    "source": "Matrix4DTranspose NOT WORKING CORRECTLY! RESULT MATRIX:\\n",
+    "where": "src/System/Math/Tests/TestMat4.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0464",
+    "source": "Vector3DNormalize NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0465",
+    "source": "Debugging/Profiler;Profiler;Cmd Line (Typically)/Profiler",
+    "where": "src/System/Utils/Profiler.ZC (zc-str)",
+    "hint": "ProfTimerInt"
+  },
+  {
+    "id": "u0466",
+    "source": ">Man(\\\"Print\\\");\\t\\t\\t\\t\\t\\t// Edit Src for \\\"Print\\\".\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0467",
+    "source": "Matrix4DScaleSet NOT WORKING CORRECTLY! RESULT MATRIX:\\n",
+    "where": "src/System/Math/Tests/TestMat4.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0468",
+    "source": "After resuming, <CTRL-ALT-v> flushes screen VGA cache\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "G"
+  },
+  {
+    "id": "u0469",
+    "source": "PCI Express Mini 52-Pin without bottom-side keep-outs\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0470",
+    "source": "AHCI Port/BlkDev type mismatch: BlkDev ATA, Port ATAPI",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIPortInit"
+  },
+  {
+    "id": "u0471",
+    "source": "AHCI Port/BlkDev type mismatch: BlkDev ATAPI, Port ATA",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIPortInit"
+  },
+  {
+    "id": "u0472",
+    "source": ">ClassRep(Fs,, 1);\\t\\t\\t\\t\\t// (It knows lastclass.)\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0473",
+    "source": ">1 + 2 * 3 + &Print;\\t\\t\\t\\t// Show calculation res.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0474",
+    "source": "Install;File/Cmd Line (Typically);Cmd Line (Typically)",
+    "where": "src/System/BlkDev/DiskPart.ZC (zc-str)",
+    "hint": "DiskPart"
+  },
+  {
+    "id": "u0475",
+    "source": "with $$LK,\\\"BootMHDZero\\\",\\\"MN:BootMHDZero\\\"$$()\\n\\n\\n",
+    "where": "src/System/BlkDev/DiskPart.ZC (zc-str)",
+    "hint": "DiskPart"
+  },
+  {
+    "id": "u0476",
+    "source": "File/Cmd Line (Typically);DolDoc/Cmd Line (Typically);",
+    "where": "src/System/DolDoc/DocFile.ZC (zc-str)",
+    "hint": "DocType"
+  },
+  {
+    "id": "u0477",
+    "source": "Vector4DNegate NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0478",
+    "source": ">B(&Main+0x20);\\t\\t\\t\\t\\t\\t// Toggle break point.\\n\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0479",
+    "source": "Job/Text & Messages;Task/Job/Text & Messages;Messages",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0480",
+    "source": "ScreenCast;Graphics/Device Contexts;Graphics/GR Files",
+    "where": "src/System/Gr/ScreenCast.ZC (zc-str)",
+    "hint": "GR2MV"
+  },
+  {
+    "id": "u0481",
+    "source": "Vector3DCross NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0482",
+    "source": "AHCI: Block count %d max allowed in one command (%d)",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIAtaBlksRW"
+  },
+  {
+    "id": "u0483",
+    "source": "If in IDE compatibility mode, switch to SATA mode.\\n",
+    "where": "src/Kernel/BlkDev/DiskAddDev.ZC (zc-str)",
+    "hint": "BlkDevsInitAll"
+  },
+  {
+    "id": "u0484",
+    "source": "PCI Express Mini 52-Pin with bottom-side keep-outs\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0485",
+    "source": "The latch is the last timestamp from the keyboard.\\n",
+    "where": "src/System/God/HolySpirit.ZC (zc-str)",
+    "hint": "GodPick"
+  },
+  {
+    "id": "u0486",
+    "source": "Vector4DCopy NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0487",
+    "source": "Vector4DAddS NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0488",
+    "source": "Vector4DSubS NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0489",
+    "source": "Vector4DMulS NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0490",
+    "source": "Vector4DDivS NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0491",
+    "source": ">DumpMem(0x100000);\\t\\t\\t\\t\\t// Dump page tables.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0492",
+    "source": ">i = _RCX + _RDX;\\t\\t\\t\\t\\t// Assign to variable.\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0493",
+    "source": "Info;File/Cmd Line (Typically);Cmd Line (Typically)",
+    "where": "src/System/BlkDev/DiskCheck.ZC (zc-str)",
+    "hint": "CheckDiskConfirm"
+  },
+  {
+    "id": "u0494",
+    "source": "Matrix4DMul NOT WORKING CORRECTLY! RESULT MATRIX:\\n",
+    "where": "src/System/Math/Tests/TestMat4.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0495",
+    "source": "Vector4DAdd NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0496",
+    "source": "Vector4DSub NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0497",
+    "source": "Vector4DMul NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0498",
+    "source": "Vector4DDiv NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0499",
+    "source": "Vector4DMin NOT WORKING CORRECTLY! RESULT VECTOR:\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  }
+]

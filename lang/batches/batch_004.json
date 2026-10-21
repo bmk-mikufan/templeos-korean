@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0200",
+    "source": "%03X Active Cores at %6h?nHz\\n",
+    "where": "src/System/Utils/CPURep.ZC (zc-str)",
+    "hint": "CPURep"
+  },
+  {
+    "id": "u0201",
+    "source": "$$GREEN$$%6.2f %08X:%s\\n$$FG$$",
+    "where": "src/System/Utils/Profiler.ZC (zc-str)",
+    "hint": "ProfRep"
+  },
+  {
+    "id": "u0202",
+    "source": "$$TR,\\\"Temperature Probe\\\"$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0203",
+    "source": "%h*cMemory Allocated: 0x%08X\\n",
+    "where": "src/System/Utils/TaskRep.ZC (zc-str)",
+    "hint": "TaskRepTask"
+  },
+  {
+    "id": "u0204",
+    "source": "%h*cMemory Used:      0x%08X\\n",
+    "where": "src/System/Utils/TaskRep.ZC (zc-str)",
+    "hint": "TaskRepTask"
+  },
+  {
+    "id": "u0205",
+    "source": "%h*cTask Flags:       0x%04X\\n",
+    "where": "src/System/Utils/TaskRep.ZC (zc-str)",
+    "hint": "TaskRepTask"
+  },
+  {
+    "id": "u0206",
+    "source": "%h*cDisplay Flags:    0x%04X\\n",
+    "where": "src/System/Utils/TaskRep.ZC (zc-str)",
+    "hint": "TaskRepTask"
+  },
+  {
+    "id": "u0207",
+    "source": "%h*cWindow Inhibit:   0x%08X\\n",
+    "where": "src/System/Utils/TaskRep.ZC (zc-str)",
+    "hint": "TaskRepTask"
+  },
+  {
+    "id": "u0208",
+    "source": "Not a ZealC Executable file.\\n",
+    "where": "src/System/Utils/ZXERep.ZC (zc-str)",
+    "hint": "ZXERep"
+  },
+  {
+    "id": "u0209",
+    "source": "__DATE__ __TIME__ %*ts %*ts\\n",
+    "where": "src/Kernel/BlkDev/DiskDirB.ZC (zc-str)",
+    "hint": "Dir"
+  },
+  {
+    "id": "u0210",
+    "source": "blkdev.ahci_hba is NULL !\\n\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0211",
+    "source": "Press <ESC> to insert sprite.",
+    "where": "src/System/God/GodDoodle.ZC (zc-str)",
+    "hint": "GodDoodleDraw"
+  },
+  {
+    "id": "u0212",
+    "source": "Enter text and press <ESC>.\\n",
+    "where": "src/System/Gr/SpriteBitMap.ZC (zc-str)",
+    "hint": "SpriteBitMapEd"
+  },
+  {
+    "id": "u0213",
+    "source": "Study the $$LK,\\\"X-Caliber\\\",",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0214",
+    "source": "Size:%d Count:%d Longest:%d\\n",
+    "where": "src/System/Hash.ZC (zc-str)",
+    "hint": "HashDepthRep"
+  },
+  {
+    "id": "u0215",
+    "source": "Task can't HeapRep on self.\\n",
+    "where": "src/System/Memory.ZC (zc-str)",
+    "hint": "HeapRep"
+  },
+  {
+    "id": "u0216",
+    "source": "Avg Time/Swap  : %12.6fns\\n\\n",
+    "where": "src/System/Utils/CPURep.ZC (zc-str)",
+    "hint": "CPURep"
+  },
+  {
+    "id": "u0217",
+    "source": "Framebuffer pointer: 0x%8X \\n",
+    "where": "src/System/Utils/VideoRep.ZC (zc-str)",
+    "hint": "VideoRep"
+  },
+  {
+    "id": "u0218",
+    "source": "Dbl Alloc: RootDir Clus:%X\\n",
+    "where": "src/System/BlkDev/DiskCheck.ZC (zc-str)",
+    "hint": "RedSeaCheckDisk"
+  },
+  {
+    "id": "u0219",
+    "source": "Partition Num (Default=All):",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0220",
+    "source": "PML2\\t  :%010X 2MEG  :%08X\\n",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "MemPageRep"
+  },
+  {
+    "id": "u0221",
+    "source": "PML3\\t  :%010X 1GIG  :%08X\\n",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "MemPageRep"
+  },
+  {
+    "id": "u0222",
+    "source": "PML4\\t  :%010X 512GIG:%08X\\n",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "MemPageRep"
+  },
+  {
+    "id": "u0223",
+    "source": "$$CB,\\\"Zero Terminator\\\"$$\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsCursorMovement"
+  },
+  {
+    "id": "u0224",
+    "source": "$$PURPLE$$%08X$$FG$$ %08X %P",
+    "where": "src/System/Utils/HeapLog.ZC (zc-str)",
+    "hint": "HeapLogAddrRep"
+  },
+  {
+    "id": "u0225",
+    "source": "Power Cord Count\\t:$$BLACK$$",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0226",
+    "source": "Contained Elements:$$BLACK$$",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0227",
+    "source": "Max Cache Size\\t\\t:$$BLACK$$",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0228",
+    "source": "Installed Size\\t\\t:$$BLACK$$",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0229",
+    "source": "Configured Volt.\\t:$$BLACK$$",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0230",
+    "source": "Configured Speed\\t:$$BLACK$$",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0231",
+    "source": "Manufacture Date\\t:$$BLACK$$",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0232",
+    "source": "File System Not Supported\\n",
+    "where": "src/Kernel/BlkDev/DiskDirA.ZC (zc-str)",
+    "hint": "DirNew"
+  },
+  {
+    "id": "u0233",
+    "source": "Invalid FileName: \\\"%s\\\".\\n",
+    "where": "src/Kernel/BlkDev/DiskDirB.ZC (zc-str)",
+    "hint": "DirMake"
+  },
+  {
+    "id": "u0234",
+    "source": "Using RedSea File System.\\n",
+    "where": "src/Kernel/BlkDev/DiskFormat.ZC (zc-str)",
+    "hint": "Format"
+  },
+  {
+    "id": "u0235",
+    "source": "RBP:       *RBP:     *RBP\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "CallerRep"
+  },
+  {
+    "id": "u0236",
+    "source": "Start by making a sprite.\\n",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "PopUpSpriteType"
+  },
+  {
+    "id": "u0237",
+    "source": "convert it to a bitmap.\\n\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0238",
+    "source": "DolDoc/Cmd Line (Typically)",
+    "where": "src/System/Utils/DocUtils.ZC (zc-str)",
+    "hint": "CursorRemFile"
+  },
+  {
+    "id": "u0239",
+    "source": "Flags Not Supported$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0240",
+    "source": "Cache Speed\\t\\t\\t:$$BLACK$$",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0241",
+    "source": "$$TR,\\\"Memory Devices\\\"$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0242",
+    "source": "No Device Installed$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0243",
+    "source": "$$TR,\\\"Port Connector\\\"$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0244",
+    "source": "File System Not Writable\\n",
+    "where": "src/Kernel/BlkDev/DiskDirA.ZC (zc-str)",
+    "hint": "DirNew"
+  },
+  {
+    "id": "u0245",
+    "source": "Print(\\\"\\\") Format Strings",
+    "where": "src/Kernel/StrPrint.ZC (zc-str)",
+    "hint": "Print"
+  },
+  {
+    "id": "u0246",
+    "source": "UnAlloc: RootDir Clus:%X\\n",
+    "where": "src/System/BlkDev/DiskCheck.ZC (zc-str)",
+    "hint": "RedSeaCheckDisk"
+  },
+  {
+    "id": "u0247",
+    "source": "Shouldn't Alloc Clus:%0X\\n",
+    "where": "src/System/BlkDev/DiskCheck.ZC (zc-str)",
+    "hint": "RedSeaCheckDisk"
+  },
+  {
+    "id": "u0248",
+    "source": "C-L are ATA hard drives.\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0249",
+    "source": "FEE00000-FEE00FFF See $LK,",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "MemBIOSRep"
+  }
+]

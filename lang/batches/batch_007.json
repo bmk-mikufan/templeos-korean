@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0350",
+    "source": "Exception in WinMgr",
+    "where": "src/System/Gr/GrScreen.ZC (zc-str)",
+    "hint": "GrUpdateTasks"
+  },
+  {
+    "id": "u0351",
+    "source": "Avg %13,d %17,d\\n\\n",
+    "where": "src/System/Utils/CPURep.ZC (zc-str)",
+    "hint": "CPURep"
+  },
+  {
+    "id": "u0352",
+    "source": "Total Time:%0.6fs\\n",
+    "where": "src/System/Utils/Profiler.ZC (zc-str)",
+    "hint": "ProfRep"
+  },
+  {
+    "id": "u0353",
+    "source": "RedSea File System",
+    "where": "src/Kernel/BlkDev/FileSysRedSea.ZC (zc-str)",
+    "hint": "RedSeaFreeFreeList"
+  },
+  {
+    "id": "u0354",
+    "source": "DATE_ TIME_ %*ts\\n",
+    "where": "src/Kernel/BlkDev/DiskDirB.ZC (zc-str)",
+    "hint": "Dir"
+  },
+  {
+    "id": "u0355",
+    "source": "Not RedSea Drive\\n",
+    "where": "src/Kernel/BlkDev/FileSysRedSea.ZC (zc-str)",
+    "hint": "RedSeaFileFind"
+  },
+  {
+    "id": "u0356",
+    "source": "Debug Distro File:",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0357",
+    "source": "(Show ATA:   %Z)\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0358",
+    "source": "Class Not Found.\\n",
+    "where": "src/System/Debug.ZC (zc-str)",
+    "hint": "ClassRep2"
+  },
+  {
+    "id": "u0359",
+    "source": "B :D :F CC-SC-PI\\n",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "PCIRep"
+  },
+  {
+    "id": "u0360",
+    "source": "Invalid Binary Num",
+    "where": "src/System/DolDoc/DocWidgetWiz.ZC (zc-str)",
+    "hint": "EdInsBin"
+  },
+  {
+    "id": "u0361",
+    "source": "Sprite BitMap Menu",
+    "where": "src/System/Gr/SpriteBitMap.ZC (zc-str)",
+    "hint": "SpriteBitMapEd"
+  },
+  {
+    "id": "u0362",
+    "source": "Home Dir:\\\"%s\\\"\\n",
+    "where": "src/Kernel/BlkDev/DiskDrive.ZC (zc-str)",
+    "hint": "DriveRep"
+  },
+  {
+    "id": "u0363",
+    "source": "Not FAT32 Drive\\n",
+    "where": "src/Kernel/BlkDev/FileSysFAT.ZC (zc-str)",
+    "hint": "FAT32FileFind"
+  },
+  {
+    "id": "u0364",
+    "source": "Home Dir(\\\"%s\\\"):",
+    "where": "src/Kernel/KConfig.ZC (zc-str)",
+    "hint": "KConfigOptions"
+  },
+  {
+    "id": "u0365",
+    "source": "Old Boot Record\\n",
+    "where": "src/System/Boot/BootMHDIns.ZC (zc-str)",
+    "hint": "BootMHDIns"
+  },
+  {
+    "id": "u0366",
+    "source": "Not Text File\\n\\n",
+    "where": "src/System/DolDoc/DocEd.ZC (zc-str)",
+    "hint": "Ed"
+  },
+  {
+    "id": "u0367",
+    "source": "ZealOS Link Types",
+    "where": "src/System/DolDoc/DocLink.ZC (zc-str)",
+    "hint": "DocFileEd"
+  },
+  {
+    "id": "u0368",
+    "source": " \\0, Lock Present",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0369",
+    "source": "%0.1f GHz$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0370",
+    "source": "#include \\\"%s\\\";",
+    "where": "src/System/DolDoc/DocPopUp.ZC (zc-str)",
+    "hint": "SysFile"
+  },
+  {
+    "id": "u0371",
+    "source": "   Model:   %s\\n",
+    "where": "src/Kernel/BlkDev/DiskDrive.ZC (zc-str)",
+    "hint": "DriveRep"
+  },
+  {
+    "id": "u0372",
+    "source": "   Serial:  %s\\n",
+    "where": "src/Kernel/BlkDev/DiskDrive.ZC (zc-str)",
+    "hint": "DriveRep"
+  },
+  {
+    "id": "u0373",
+    "source": "%d. Drive %C\\n\\r",
+    "where": "src/System/Boot/BootMHDIns.ZC (zc-str)",
+    "hint": "BootMHDIns"
+  },
+  {
+    "id": "u0374",
+    "source": "with the ress.\\n",
+    "where": "src/System/DolDoc/DocCodeTools.ZC (zc-str)",
+    "hint": "PopUpEdFormat"
+  },
+  {
+    "id": "u0375",
+    "source": "Not .ZC File\\n\\n",
+    "where": "src/System/DolDoc/DocPopUp.ZC (zc-str)",
+    "hint": "SysFile"
+  },
+  {
+    "id": "u0376",
+    "source": "Sprite Edit Menu",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "SpriteEd"
+  },
+  {
+    "id": "u0377",
+    "source": "Select Origin.\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0378",
+    "source": "NO MODULE NAME\\n",
+    "where": "src/System/Utils/ZXERep.ZC (zc-str)",
+    "hint": "ZXERep"
+  },
+  {
+    "id": "u0379",
+    "source": "#include \\\"%s\\\"",
+    "where": "src/System/Menu.ZC (zc-str)",
+    "hint": "MenuDelSub"
+  },
+  {
+    "id": "u0380",
+    "source": "Invalid Drive\\n",
+    "where": "src/Kernel/BlkDev/DiskDirB.ZC (zc-str)",
+    "hint": "Dir"
+  },
+  {
+    "id": "u0381",
+    "source": "SATA Port: %02d",
+    "where": "src/Kernel/BlkDev/DiskDrive.ZC (zc-str)",
+    "hint": "DriveRep"
+  },
+  {
+    "id": "u0382",
+    "source": "No Kernel.ZXE\\n",
+    "where": "src/System/Boot/BootHDIns.ZC (zc-str)",
+    "hint": "BootHDIns"
+  },
+  {
+    "id": "u0383",
+    "source": "(Choice %16s)\\n",
+    "where": "src/System/Boot/BootMHDIns.ZC (zc-str)",
+    "hint": "BootMHDIns"
+  },
+  {
+    "id": "u0384",
+    "source": "Drive %C:%16X\\n",
+    "where": "src/System/Boot/BootMHDIns.ZC (zc-str)",
+    "hint": "BootMHDIns"
+  },
+  {
+    "id": "u0385",
+    "source": "Replace Color\\n",
+    "where": "src/System/Gr/SpriteBitMap.ZC (zc-str)",
+    "hint": "SpriteBitMapEd"
+  },
+  {
+    "id": "u0386",
+    "source": "Outline Width\\n",
+    "where": "src/System/Gr/SpriteBitMap.ZC (zc-str)",
+    "hint": "SpriteBitMapEd"
+  },
+  {
+    "id": "u0387",
+    "source": "Thickness (%d):",
+    "where": "src/System/Gr/SpriteMesh.ZC (zc-str)",
+    "hint": "MeshUpdateMenu"
+  },
+  {
+    "id": "u0388",
+    "source": "%d bits$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0389",
+    "source": "Missing ';' at",
+    "where": "src/System/Menu.ZC (zc-str)",
+    "hint": "MenuDelSub"
+  },
+  {
+    "id": "u0390",
+    "source": "Model:  %s\\n\\t",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0391",
+    "source": "CBlkDev *bd;\\n",
+    "where": "src/System/BlkDev/Mount.ZC (zc-str)",
+    "hint": "SATARep"
+  },
+  {
+    "id": "u0392",
+    "source": "PCI Buses:%d\\n",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "PCIRep"
+  },
+  {
+    "id": "u0393",
+    "source": "Num of Sides\\n",
+    "where": "src/System/Gr/SpriteMain.ZC (zc-str)",
+    "hint": "SpriteMainEd"
+  },
+  {
+    "id": "u0394",
+    "source": "%d KiB$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0395",
+    "source": "%d MHz$$FG$$\\n",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  },
+  {
+    "id": "u0396",
+    "source": "ZealOS RedSea",
+    "where": "src/System/Boot/DiskISORedSea.ZC (zc-str)",
+    "hint": "RedSeaISO9660"
+  },
+  {
+    "id": "u0397",
+    "source": "Bad memory:  ",
+    "where": "src/System/DevInfo.ZC (zc-str)",
+    "hint": "MemBIOSRep"
+  },
+  {
+    "id": "u0398",
+    "source": "Press A Key\\n",
+    "where": "src/System/DolDoc/DocCodeTools.ZC (zc-str)",
+    "hint": "EdPopUpChSC"
+  },
+  {
+    "id": "u0399",
+    "source": "Not Specified",
+    "where": "src/System/Utils/SysRep.ZC (zc-str)",
+    "hint": "SysRep"
+  }
+]

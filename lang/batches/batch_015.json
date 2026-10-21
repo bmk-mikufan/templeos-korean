@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0750",
+    "source": ">S;\\t\\t\\t//Single step\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "G"
+  },
+  {
+    "id": "u0751",
+    "source": "Focus Task Mouse Right\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0752",
+    "source": "Focus Task Mouse Wheel\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0753",
+    "source": "Focus Task Grab-Scroll\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0754",
+    "source": "INT 0x09 8042 Keyboard\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0755",
+    "source": "Page Address Extension\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0756",
+    "source": "16-way Set-Associative\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0757",
+    "source": "12-way Set-Associative\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0758",
+    "source": "24-way Set-Associative\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0759",
+    "source": "32-way Set-Associative\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0760",
+    "source": "48-way Set-Associative\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0761",
+    "source": "64-way Set-Associative\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0762",
+    "source": "Mini-Jack (Headphones)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0763",
+    "source": "Globals Set to Zero Here",
+    "where": "src/Kernel/KGlobals.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0764",
+    "source": "Graphics/Device Contexts",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0765",
+    "source": "$$GREEN$$(%d)$$FG$$ %s\\n",
+    "where": "src/System/AutoComplete/ACFill.ZC (zc-str)",
+    "hint": "ACDDefsPut"
+  },
+  {
+    "id": "u0766",
+    "source": "Edit/GoTo matching brace",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0767",
+    "source": "Holy Spirit Instructions",
+    "where": "src/System/God/GodDoodle.ZC (zc-str)",
+    "hint": "GodDoodleBits"
+  },
+  {
+    "id": "u0768",
+    "source": "Cmd /Screen Shot to Clip",
+    "where": "src/System/Gr/GrEnd.ZC (zc-str)",
+    "hint": "CtrlAltS"
+  },
+  {
+    "id": "u0769",
+    "source": "Char;TextBase Layer/Char",
+    "where": "src/System/Gr/GrGlobals.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0770",
+    "source": "Insert Shift SubOrigin\\0",
+    "where": "src/System/Gr/SpriteEd.ZC (zc-str)",
+    "hint": "GrInit3"
+  },
+  {
+    "id": "u0771",
+    "source": "HeapLog Already Active\\n",
+    "where": "src/System/Utils/HeapLog.ZC (zc-str)",
+    "hint": "HeapLog"
+  },
+  {
+    "id": "u0772",
+    "source": "Unrestricted Potential\\0",
+    "where": "src/System/ZSplash.ZC (zc-str)",
+    "hint": "DrawIt"
+  },
+  {
+    "id": "u0773",
+    "source": "debugging commands.\\n\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "DebugHelp"
+  },
+  {
+    "id": "u0774",
+    "source": "Focus Task Mouse Left\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0775",
+    "source": "INT 0x10 CGA/Mono Video",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0776",
+    "source": "Bus Expansion Chassis\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0777",
+    "source": "Safer Mode Extensions\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0778",
+    "source": "Replacable Piggy Back\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0779",
+    "source": "Socket A (Socket 462)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0780",
+    "source": "2-way Set-Associative\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0781",
+    "source": "4-way Set-Associative\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0782",
+    "source": "8-way Set-Associative\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0783",
+    "source": "Circular DIN-8 Female\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0784",
+    "source": "Parallel Port ECP/EPP\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0785",
+    "source": "Proprietary Card Slot\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0786",
+    "source": "PCI Express Gen 2 16x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0787",
+    "source": "PCI Express Gen 3 16x\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0788",
+    "source": "Registered (Buffered)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0789",
+    "source": "Math/CD3;Data Types/CD3",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0790",
+    "source": "Data Types/Queue Vector",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0791",
+    "source": "$$CB,\\\"Match Case\\\"$$\\n",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0792",
+    "source": "Interrupt on Completion",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0793",
+    "source": "Keyboard Devices/System",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0794",
+    "source": "Edit/GoTo Start of Line",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0795",
+    "source": "Dol /Toggle Superscript",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0796",
+    "source": "$$TX+H+BD+TC+IV,\\\" \\\"$$",
+    "where": "src/System/DolDoc/DocTerm.ZC (zc-str)",
+    "hint": "DocTermNew"
+  },
+  {
+    "id": "u0797",
+    "source": "$$RED$$ %04d:%s\\n$$FG$$",
+    "where": "src/System/Utils/LinkCheck.ZC (zc-str)",
+    "hint": "LinkCheckDoc"
+  },
+  {
+    "id": "u0798",
+    "source": "Self Key Description\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0799",
+    "source": "BOUND Range Exceeded\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  }
+]

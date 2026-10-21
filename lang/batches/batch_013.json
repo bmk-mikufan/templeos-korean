@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0650",
+    "source": "FontKR: Korean font not loaded\\n",
+    "where": "src/StartOS.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0651",
+    "source": "The code is no longer managed.\\n",
+    "where": "src/System/Ctrls/CtrlsSlider.ZC (zc-str)",
+    "hint": "SliderDel"
+  },
+  {
+    "id": "u0652",
+    "source": "Ring-0 64-Bit Operating System\\0",
+    "where": "src/System/ZSplash.ZC (zc-str)",
+    "hint": "DrawIt"
+  },
+  {
+    "id": "u0653",
+    "source": "Focus Task Mouse Left Pressed\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0654",
+    "source": "Targeted Content Distribution\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0655",
+    "source": "External Interface Locked Out\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0656",
+    "source": "Serial Port 16550A Compatible\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0657",
+    "source": "Math/Complex;Data Types/Complex",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0658",
+    "source": "ScreenCast;Cmd Line (Typically)",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0659",
+    "source": "with other operating systems.\\n",
+    "where": "src/System/BlkDev/DiskPart.ZC (zc-str)",
+    "hint": "DiskPart"
+  },
+  {
+    "id": "u0660",
+    "source": "You really should use another\\n",
+    "where": "src/System/BlkDev/DiskPart.ZC (zc-str)",
+    "hint": "DiskPart"
+  },
+  {
+    "id": "u0661",
+    "source": "$$PURPLE$$Ctrl Slider$$FG$$\\n\\n",
+    "where": "src/System/Ctrls/CtrlsSlider.ZC (zc-str)",
+    "hint": "TemplateCtrlSlider"
+  },
+  {
+    "id": "u0662",
+    "source": "Cmd /Insert Text Widgets Wizard",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0663",
+    "source": "Dol /Toggle Super or Sub script",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0664",
+    "source": "Graphics/Math/3D Transformation",
+    "where": "src/System/Gr/GrDC.ZC (zc-str)",
+    "hint": "Mat4x4MulXYZ"
+  },
+  {
+    "id": "u0665",
+    "source": "%10,d $$TR+C,\\\"%s\\\"$$\\n$$ID,2$$",
+    "where": "src/System/Utils/LineRep.ZC (zc-str)",
+    "hint": "SizeRep2"
+  },
+  {
+    "id": "u0666",
+    "source": "Writing back internal buffer\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIAtaBlksRW"
+  },
+  {
+    "id": "u0667",
+    "source": "AHCI: Command slot count: %d\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIInit"
+  },
+  {
+    "id": "u0668",
+    "source": "Enhanced Disk Drive Services\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0669",
+    "source": "Perfmon and Debug Capability\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0670",
+    "source": "Serial Port XT/AT Compatible\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0671",
+    "source": "Serial Port 16450 Compatible\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0672",
+    "source": "Serial Port 16550 Compatible\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0673",
+    "source": "Proprietary Memory Card Slot\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0674",
+    "source": "Help System;Debugging/Debugger",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0675",
+    "source": "It might be a little better.  ",
+    "where": "src/System/BlkDev/DiskCheck.ZC (zc-str)",
+    "hint": "DiskCheck"
+  },
+  {
+    "id": "u0676",
+    "source": "Edit/Toggle Plain Text Display",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0677",
+    "source": "$$LK+PU+CX,\\\"Click for Help\\\",",
+    "where": "src/System/Gr/SpriteSideBar.ZC (zc-str)",
+    "hint": "SpriteSideBarPickNew"
+  },
+  {
+    "id": "u0678",
+    "source": "%8,d $$TR+C,\\\"%s\\\"$$\\n$$ID,2$$",
+    "where": "src/System/Utils/LineRep.ZC (zc-str)",
+    "hint": "LineRep2"
+  },
+  {
+    "id": "u0679",
+    "source": "Debugging;Cmd Line (Typically)",
+    "where": "src/System/Utils/LinkCheck.ZC (zc-str)",
+    "hint": "LinkCheckDoc"
+  },
+  {
+    "id": "u0680",
+    "source": "Compiler;Cmd Line (Typically)",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0681",
+    "source": "Hosting Board (Motherboard)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0682",
+    "source": "Memory Type Range Registers\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0683",
+    "source": "Process Context Identifiers\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0684",
+    "source": "MXM Type III (HE Connector)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0685",
+    "source": "Logical Non-Volatile Device\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0686",
+    "source": "HBM (High Bandwidth Memory)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0687",
+    "source": "blkdev.boot_drive_let = '%C';",
+    "where": "src/Kernel/KMain.ZC (zc-str)",
+    "hint": "SysGlobalsInit"
+  },
+  {
+    "id": "u0688",
+    "source": "LBts(&sys_run_level, RLf_MP);",
+    "where": "src/Kernel/KMain.ZC (zc-str)",
+    "hint": "KMain"
+  },
+  {
+    "id": "u0689",
+    "source": "$$CB,\\\"Rename Local Var\\\"$$\\n",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0690",
+    "source": "$$CB,\\\"Show Coordinates\\\"$$\\n",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0691",
+    "source": "$$BK,1$$PRESS A KEY$$BK,0$$\\n",
+    "where": "src/Kernel/StrB.ZC (zc-str)",
+    "hint": "PressAKey"
+  },
+  {
+    "id": "u0692",
+    "source": "Rebooting in 10 seconds...\\n",
+    "where": "src/Kernel/BlkDev/DiskAddDev.ZC (zc-str)",
+    "hint": "BlkDevsInitAll"
+  },
+  {
+    "id": "u0693",
+    "source": "Machine Check Architecture\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0694",
+    "source": "36 Bit Page Size Extension\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0695",
+    "source": "Virtual Machine Extensions\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0696",
+    "source": "Onboard CD-ROM Sound Input\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0697",
+    "source": "PCI Express Gen 2 SFF-8639\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0698",
+    "source": "PCI Express Gen 3 SFF-8639\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0699",
+    "source": "Time/CPU Cycles;Time/Jiffies",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  }
+]

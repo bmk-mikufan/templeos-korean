@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0600",
+    "source": "#exe {Option(OPTf_WARN_PAREN, ON);}",
+    "where": "src/Kernel/BlkDev/DiskAddDev.ZC (zc-str)",
+    "hint": "BlkDevsInitAll"
+  },
+  {
+    "id": "u0601",
+    "source": "MFDP (Multi-Function Display Port\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0602",
+    "source": "MXM Type III (Standard Connector)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0603",
+    "source": "Keyboard Devices/System;Char/System",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0604",
+    "source": "If you use this, it may, in fact,\\n",
+    "where": "src/System/BlkDev/DiskPart.ZC (zc-str)",
+    "hint": "DiskPart"
+  },
+  {
+    "id": "u0605",
+    "source": "Edit/Single Entry Toggle Plain Text",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0606",
+    "source": "$$GREEN$$PASS: Matrix4DMul $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestMat4.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0607",
+    "source": "$$GREEN$$PASS: Vector4DAdd $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0608",
+    "source": "$$GREEN$$PASS: Vector4DSub $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0609",
+    "source": "$$GREEN$$PASS: Vector4DMul $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0610",
+    "source": "$$GREEN$$PASS: Vector4DDiv $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0611",
+    "source": "$$GREEN$$PASS: Vector4DMin $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0612",
+    "source": "$$GREEN$$PASS: Vector4DMax $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0613",
+    "source": "$$GREEN$$PASS: Vector3DDot $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0614",
+    "source": "$$GREEN$$PASS: Vector4DDot $$FG$$\\n",
+    "where": "src/System/Math/Tests/TestVec.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0615",
+    "source": "AHCI: Drive is not an ATA drive!\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIAtaBlksRW"
+  },
+  {
+    "id": "u0616",
+    "source": ">B2;\\t\\t//Clear all break points\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "G"
+  },
+  {
+    "id": "u0617",
+    "source": "HBM2 (High Bandwidth Memory Gen 2)",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0618",
+    "source": "Char/Operations;Memory/System Heap",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0619",
+    "source": "$$BROWN$$Does Not Exist:%s$$FG$$\\n",
+    "where": "src/System/Utils/Merge.ZC (zc-str)",
+    "hint": "Merge2"
+  },
+  {
+    "id": "u0620",
+    "source": "until you set block zero to zero\\n",
+    "where": "src/System/BlkDev/DiskPart.ZC (zc-str)",
+    "hint": "DiskPart"
+  },
+  {
+    "id": "u0621",
+    "source": "interface_resolution: 1024x768\\n\\n",
+    "where": "src/System/Boot/LimineMHDIns.ZC (zc-str)",
+    "hint": "LimineCFGMake"
+  },
+  {
+    "id": "u0622",
+    "source": "Press the $$GREEN$$<%s>$$FG$$ key.",
+    "where": "src/System/InFile.ZC (zc-str)",
+    "hint": "InGetStr"
+  },
+  {
+    "id": "u0623",
+    "source": "Cos(45deg)  CosF32: %n | Cos: %n\\n",
+    "where": "src/System/Math/Tests/TestF32.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0624",
+    "source": "Cos(135deg) CosF32: %n | Cos: %n\\n",
+    "where": "src/System/Math/Tests/TestF32.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0625",
+    "source": "Cos(225deg) CosF32: %n | Cos: %n\\n",
+    "where": "src/System/Math/Tests/TestF32.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0626",
+    "source": "Cos(315deg) CosF32: %n | Cos: %n\\n",
+    "where": "src/System/Math/Tests/TestF32.ZC (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0627",
+    "source": "CPU%02X %2tf%% ContextSwaps/s:%9,d",
+    "where": "src/System/WallPaper.ZC (zc-str)",
+    "hint": "WallPaper"
+  },
+  {
+    "id": "u0628",
+    "source": "AHCI: No AHCI controller found.\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIInit"
+  },
+  {
+    "id": "u0629",
+    "source": "Do one of the following, first:\\n",
+    "where": "src/Kernel/KDebug.ZC (zc-str)",
+    "hint": "G"
+  },
+  {
+    "id": "u0630",
+    "source": "25-Pin Dual Inline (Pin 26 Cut)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0631",
+    "source": "M.2 Socket 2 (Mechanical Key B)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0632",
+    "source": "M.2 Socket 3 (Mechanical Key M)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0633",
+    "source": "Keyboard Devices;Char/Input;StdIn",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0634",
+    "source": "This command does not play well\\n",
+    "where": "src/System/BlkDev/DiskPart.ZC (zc-str)",
+    "hint": "DiskPart"
+  },
+  {
+    "id": "u0635",
+    "source": "operating system's partitioner.\\n",
+    "where": "src/System/BlkDev/DiskPart.ZC (zc-str)",
+    "hint": "DiskPart"
+  },
+  {
+    "id": "u0636",
+    "source": "make your hard drive impossible\\n",
+    "where": "src/System/BlkDev/DiskPart.ZC (zc-str)",
+    "hint": "DiskPart"
+  },
+  {
+    "id": "u0637",
+    "source": "Graphics;Graphics/Device Contexts",
+    "where": "src/System/Gr/GrBitMap.ZC (zc-str)",
+    "hint": "GrPeek0"
+  },
+  {
+    "id": "u0638",
+    "source": "Graphics/GR Files;Graphics/Screen",
+    "where": "src/System/Gr/GrComposites.ZC (zc-str)",
+    "hint": "DrawWaitMouse"
+  },
+  {
+    "id": "u0639",
+    "source": "Press the $$GREEN$$<%s>$$FG$$ key",
+    "where": "src/System/InFile.ZC (zc-str)",
+    "hint": "InKeyGet"
+  },
+  {
+    "id": "u0640",
+    "source": "InFile;Help System/Training;Mouse",
+    "where": "src/System/InFile.ZC (zc-str)",
+    "hint": "InView"
+  },
+  {
+    "id": "u0641",
+    "source": "AHCI: Port %d: Command failed!\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIPortCmdWait"
+  },
+  {
+    "id": "u0642",
+    "source": "AHCI: Port %2d signature 0x%08X ",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIInit"
+  },
+  {
+    "id": "u0643",
+    "source": "Focus Task Mouse Right Pressed\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0644",
+    "source": "Virtual 8086 Mode Enhancements\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0645",
+    "source": "9-Pin Dual Inline (Pin 10 Cut)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0646",
+    "source": "Parallel Port XT/AT Compatible\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0647",
+    "source": "blkdev.first_hd_drive_let  = %d;",
+    "where": "src/Kernel/KMain.ZC (zc-str)",
+    "hint": "SysGlobalsInit"
+  },
+  {
+    "id": "u0648",
+    "source": "blkdev.first_dvd_drive_let = %d;",
+    "where": "src/Kernel/KMain.ZC (zc-str)",
+    "hint": "SysGlobalsInit"
+  },
+  {
+    "id": "u0649",
+    "source": "(System does not have PCIBIOS)\\n",
+    "where": "src/Kernel/PCI.ZC (zc-str)",
+    "hint": "PCIClassFind"
+  }
+]

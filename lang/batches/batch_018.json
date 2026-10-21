@@ -1,0 +1,302 @@
+[
+  {
+    "id": "u0900",
+    "source": "Parallel Port ECP\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0901",
+    "source": "Parallel Port EPP\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0902",
+    "source": "PCI Express Gen 2\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0903",
+    "source": "PCI Express Gen 3\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0904",
+    "source": "PCI Express Gen 4\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0905",
+    "source": "Unhandled Exception",
+    "where": "src/Kernel/KExcept.ZC (zc-str)",
+    "hint": "throw"
+  },
+  {
+    "id": "u0906",
+    "source": "$ of RAM Memory !!!",
+    "where": "src/Kernel/KMain.ZC (zc-str)",
+    "hint": "KMain"
+  },
+  {
+    "id": "u0907",
+    "source": "Cmd /Enter Debugger",
+    "where": "src/Kernel/KeyDev.ZC (zc-str)",
+    "hint": "KeyDevInit"
+  },
+  {
+    "id": "u0908",
+    "source": "Block Size    :%d\\n",
+    "where": "src/System/AutoComplete/ACDictGen.ZC (zc-str)",
+    "hint": "ACDGen"
+  },
+  {
+    "id": "u0909",
+    "source": "Largest Entry :%d\\n",
+    "where": "src/System/AutoComplete/ACDictGen.ZC (zc-str)",
+    "hint": "ACDGen"
+  },
+  {
+    "id": "u0910",
+    "source": "Word Count    :%d\\n",
+    "where": "src/System/AutoComplete/ACDictGen.ZC (zc-str)",
+    "hint": "ACDGen"
+  },
+  {
+    "id": "u0911",
+    "source": "Def File Size :%d\\n",
+    "where": "src/System/AutoComplete/ACDictGen.ZC (zc-str)",
+    "hint": "ACDGen"
+  },
+  {
+    "id": "u0912",
+    "source": "Word File Size:%d\\n",
+    "where": "src/System/AutoComplete/ACDictGen.ZC (zc-str)",
+    "hint": "ACDGen"
+  },
+  {
+    "id": "u0913",
+    "source": "Edit/Cursor Up, Sel",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0914",
+    "source": "Edit/Page Down, Sel",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0915",
+    "source": "Cmd /System Include",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0916",
+    "source": "Edit/Find & Replace",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0917",
+    "source": "Cmd /Personal Notes",
+    "where": "src/System/DolDoc/DocPutKey.ZC (zc-str)",
+    "hint": "DocPutKey"
+  },
+  {
+    "id": "u0918",
+    "source": "Not DolDoc File\\n\\n",
+    "where": "src/System/DolDoc/DocTerm.ZC (zc-str)",
+    "hint": "TermRightClickLink"
+  },
+  {
+    "id": "u0919",
+    "source": "Not .ISO.C File\\n\\n",
+    "where": "src/System/DolDoc/DocTerm.ZC (zc-str)",
+    "hint": "TermRightClickLink"
+  },
+  {
+    "id": "u0920",
+    "source": "Paste Transparent\\0",
+    "where": "src/System/Gr/SpriteBitMap.ZC (zc-str)",
+    "hint": "GrInit4"
+  },
+  {
+    "id": "u0921",
+    "source": "Cmd /Extended ASCII",
+    "where": "src/System/Win.ZC (zc-str)",
+    "hint": "CtrlAltA"
+  },
+  {
+    "id": "u0922",
+    "source": "Modern Innovation\\0",
+    "where": "src/System/ZSplash.ZC (zc-str)",
+    "hint": "DrawIt"
+  },
+  {
+    "id": "u0923",
+    "source": "Run AHCIDebug(%d);",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIPortWait"
+  },
+  {
+    "id": "u0924",
+    "source": "AHCI: GHC.AE set\\n",
+    "where": "src/Kernel/BlkDev/DiskAHCI.ZC (zc-str)",
+    "hint": "AHCIInit"
+  },
+  {
+    "id": "u0925",
+    "source": "Copying %s to %s\\n",
+    "where": "src/Kernel/BlkDev/DiskCopy.ZC (zc-str)",
+    "hint": "CopySingleZ"
+  },
+  {
+    "id": "u0926",
+    "source": "%D %T %0*tX %0*tX ",
+    "where": "src/Kernel/BlkDev/DiskDirB.ZC (zc-str)",
+    "hint": "Dir"
+  },
+  {
+    "id": "u0927",
+    "source": "Awaiting Message\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0928",
+    "source": "Kill After Debug\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0929",
+    "source": "Self Mouse Right\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0930",
+    "source": "Self Mouse Wheel\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0931",
+    "source": "Self Grab-Scroll\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0932",
+    "source": "Focus Task Ctrls\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0933",
+    "source": "INT 0x17 Printer\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0934",
+    "source": "Processor Module\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0935",
+    "source": "NX/XD Protection\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0936",
+    "source": "DB-25 Pin Female\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0937",
+    "source": "DB-15 Pin Female\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0938",
+    "source": "Access Bus (USB)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0939",
+    "source": "PC Card (PCMCIA)\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0940",
+    "source": "EISA Add-On Card\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0941",
+    "source": "Non-Volatile RAM\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0942",
+    "source": "Proprietary Card\\0",
+    "where": "src/Kernel/KDefine.ZC (zc-str)",
+    "hint": "SysDefinesLoad"
+  },
+  {
+    "id": "u0943",
+    "source": "Memory/Page Tables",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0944",
+    "source": "Misc/Progress Bars",
+    "where": "src/Kernel/KernelA.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0945",
+    "source": "Memory/System Heap",
+    "where": "src/Kernel/KernelC.HH (zc-str)",
+    "hint": ""
+  },
+  {
+    "id": "u0946",
+    "source": "%X: Pre Boot Blk\\n",
+    "where": "src/System/Boot/DiskISO9660.ZC (zc-str)",
+    "hint": "ISO9660ISO"
+  },
+  {
+    "id": "u0947",
+    "source": "%X: Boot Stage 1\\n",
+    "where": "src/System/Boot/DiskISO9660.ZC (zc-str)",
+    "hint": "ISO9660ISO"
+  },
+  {
+    "id": "u0948",
+    "source": "%X: Path Table 0\\n",
+    "where": "src/System/Boot/DiskISO9660.ZC (zc-str)",
+    "hint": "ISO9660ISO"
+  },
+  {
+    "id": "u0949",
+    "source": "%X: Path Table 1\\n",
+    "where": "src/System/Boot/DiskISO9660.ZC (zc-str)",
+    "hint": "ISO9660ISO"
+  }
+]
