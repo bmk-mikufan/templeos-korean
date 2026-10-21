@@ -18,6 +18,14 @@ FMT_RE = re.compile(r"%(?:%|[-+ #0-9.*]*[diouxXeEfgGaAcspn])")
 BAD_PUNCT = "…“”‘’·—–、。！？：；（）【】"
 
 
+def _cp949_ok(c):
+    try:
+        c.encode("cp949")
+        return True
+    except UnicodeEncodeError:
+        return False
+
+
 def fmt_multiset(s):
     return sorted(FMT_RE.findall(s))
 
@@ -42,7 +50,10 @@ def validate(src, dst):
     try:
         dst.encode("cp949")
     except UnicodeEncodeError as e:
-        errs.append(f"not cp949: {e}")
+        # allow single-byte (CP437/latin-1) characters such as ©
+        bad = [c for c in dst if ord(c) >= 0x100 and not _cp949_ok(c)]
+        if bad:
+            errs.append(f"not cp949: {e}")
     if len(dst) > max(40, len(src) * 3):
         errs.append("too long")
     return errs
@@ -79,9 +90,13 @@ def main():
             if errs:
                 problems.append(f"{k} [{p.name}] {errs}: {src!r} -> {v!r}")
             merged[src] = v
+    same = sum(1 for k, v in merged.items() if k == v)
     OUT.write_text(json.dumps(merged, ensure_ascii=False, indent=1, sort_keys=True),
                    encoding="utf-8")
-    lines = [f"translated: {len(merged)}", f"problems: {len(problems)}"] + problems
+    lines = [f"translated: {len(merged) - same}",
+             f"unchanged: {same}",
+             f"entries: {len(merged)}",
+             f"problems: {len(problems)}"] + problems
     REPORT.write_text("\n".join(lines), encoding="utf-8")
     print("\n".join(lines[:60]))
 

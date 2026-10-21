@@ -24,3 +24,5 @@ build/*.iso
 build/*.ppm
 build/*.png
 build/screen*
+build/limine/
+build/ovmf/

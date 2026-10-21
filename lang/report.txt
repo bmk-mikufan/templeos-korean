@@ -1,2 +1,4 @@
-translated: 800
+translated: 1033
+unchanged: 167
+entries: 1200
 problems: 0

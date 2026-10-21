@@ -12,20 +12,21 @@
 | 렌더 | `GrPutChar` → `GrPutCharBits` 분리, `GrPutS` CP949 디코드 |
 | 부팅 로드 | `StartOS.ZC` → `FontKRLoad` |
 | i18n 카탈로그 | 5,962 세그먼트 / 5,039 고유 |
-| 번역 | **800 문자열** (695 번역, 105 기술 문자열 유지) |
+| 번역 | **1,200 문자열** (1,033 번역, 167 기술 문자열 유지) |
 | 검증 | 포맷/태그/개행/CP949/문장부호 검사 0 오류 |
 
 ## 진행 중
 
-- QEMU 빌드 (KVM, `build-iso.sh --headless`)
-  - 소스 복사 완료, 커널/OS 재빌드 단계
-  - 모니터 소켓: `/tmp/qmon.sock` → `screendump`
+- QEMU 빌드: **커널 컴파일 및 부팅 성공** (타이틀 `TempleOS-Korean` 확인)
+  - `AutoFullDistro` 자동화가 `::/Tmp/OSBuild/System` 프롬프트에서 정지
+  - `MyDistro.ISO.C` 미생성 → ISO 추출 실패
+  - 다음: `AutoFullDistro0~5` 흐름 수동 실행 또는 스크립트 수정
 
 ## 다음
 
 1. 빌드 성공 확인 → ISO 부팅 → `FontKRRep;`로 11,172자 로드 확인
 2. P2: `CDocEntry.data` U16 전환 (문서/메뉴)
-3. 번역 배치 016~023 (400개 추가) → 총 1,200
+3. 번역 배치 024~ (나머지 UI) → 목표 3,400
 4. P4: 상위 메뉴/대화상자 적용
 5. P6: Unix 셸, P7: 다크 모드, P8: SATA 검증, P9: 82566 드라이버
 
