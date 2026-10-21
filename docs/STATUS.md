@@ -15,21 +15,25 @@
 | 번역 | **1,200 문자열** (1,033 번역, 167 기술 문자열 유지) |
 | 검증 | 포맷/태그/개행/CP949/문장부호 검사 0 오류 |
 
-## 진행 중
+## 최종 빌드 (2026-10-21 19:04)
 
-- QEMU 빌드 3차 진행 중 (`KEEP=1 timeout 1500`)
-  - 1차: 15분 타임아웃으로 중단
-  - 2차: `::/Tmp/OSBuild/System` 프롬프트에서 정지 → vdisk 삭제됨
-  - 3차: 단계 3(`CopyTree OSBuild → C:/`) 파일 복사 확인, 계속 진행
-- 저장소: https://github.com/bmk-mikufan/templeos-korean (기본 브랜치 `korean`)
+- **`build/TempleOS-Korean-BIOS.iso` (44MB, bootable) 생성 및 부팅 확인**
+- 부팅 스플래시: `TempleOS-Korean V2.03.120` / `Ring-0 64-Bit Operating System`
+- 적용된 수정:
+  - CP949 조회 캐스트 버그 수정 (`code0 = _s[0]`)
+  - `FontKR` 로더 `MAlloc(sys_task)` + MakeSystem include 순서
+  - **TempleOS 원본 8×8 ASCII/CP437 폰트 복원** (256글리프, 195개 차이 복구)
+  - **16색 표준 팔레트 복원** (`PaletteSetSlate` → `PaletteSetStd`)
+  - `limine.h` vendoring으로 빌드 네트워크 의존 제거
+- 부팅/데스크톱 진입 확인, 한글 폰트 11,172자 로드 확인(`font_kr_num=11172`)
 
 ## 다음
 
-1. 빌드 성공 확인 → ISO 부팅 → `FontKRRep;`로 11,172자 로드 확인
-2. P2: `CDocEntry.data` U16 전환 (문서/메뉴)
-3. 번역 배치 024~ (나머지 UI) → 목표 3,400
-4. P4: 상위 메뉴/대화상자 적용
-5. P6: Unix 셸, P7: 다크 모드, P8: SATA 검증, P9: 82566 드라이버
+1. 한글 글리프 **픽셀 렌더 최종 확인** (CP949 테스트 문자열, 캐스트 수정 반영)
+2. P2: `CDocEntry.data` U16 전환 (문서/메뉴/에디터) ← 최대 난관
+3. 두벌식 IME
+4. 번역 적용 (`apply.py`) + 나머지 UI 문자열
+5. P6: Unix 셸, P7: 다크 모드, P8: X61 SATA 검증, P9: 82566 유선 드라이버
 
 ## 알려진 이슈
 
