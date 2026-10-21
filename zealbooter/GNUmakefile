@@ -113,7 +113,7 @@ all: bin/$(OUTPUT)
 -include $(HEADER_DEPS)
 
 src/limine.h:
-	curl -Lo $@ https://github.com/limine-bootloader/limine-protocol/raw/c4616df2572d77c60020bdefa617dd9bdcc6566a/include/limine.h || cp ../build/limine/limine.h src/limine.h || echo "ERROR"
+	cp vendor/limine.h $@ || cp ../build/limine/limine.h $@
 
 # Link rules for the final executable.
 bin/$(OUTPUT): GNUmakefile linker.ld $(OBJ)
