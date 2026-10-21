@@ -17,10 +17,11 @@
 
 ## 진행 중
 
-- QEMU 빌드: **커널 컴파일 및 부팅 성공** (타이틀 `TempleOS-Korean` 확인)
-  - `AutoFullDistro` 자동화가 `::/Tmp/OSBuild/System` 프롬프트에서 정지
-  - `MyDistro.ISO.C` 미생성 → ISO 추출 실패
-  - 다음: `AutoFullDistro0~5` 흐름 수동 실행 또는 스크립트 수정
+- QEMU 빌드 3차 진행 중 (`KEEP=1 timeout 1500`)
+  - 1차: 15분 타임아웃으로 중단
+  - 2차: `::/Tmp/OSBuild/System` 프롬프트에서 정지 → vdisk 삭제됨
+  - 3차: 단계 3(`CopyTree OSBuild → C:/`) 파일 복사 확인, 계속 진행
+- 저장소: https://github.com/bmk-mikufan/templeos-korean (기본 브랜치 `korean`)
 
 ## 다음
 

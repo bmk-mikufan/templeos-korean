@@ -16,6 +16,7 @@ then
 fi
 
 [ "$1" = "--headless" ] && QEMU_HEADLESS='-display none'
+KEEP="${KEEP:-0}"
 
 KVM=''
 (lsmod | grep -q kvm) && KVM=' -accel kvm'
@@ -24,6 +25,7 @@ KVM=''
 TESTING=false
 
 TMPDIR="$(mktemp -d)"
+echo "TMPDIR=$TMPDIR"
 TMPISODIR="$TMPDIR/iso"
 TMPDISK="$TMPDIR/ZealOS.raw"
 TMPMOUNT="$TMPDIR/mnt"
@@ -45,6 +47,10 @@ umount_tempdisk() {
 }
 
 script_cleanup() {
+    if [ "$KEEP" = "1" ]; then
+        echo "KEEP=1: leaving $TMPDIR in place"
+        return
+    fi
     sync
 
     sudo umount "$TMPMOUNT" >/dev/null 2>&1 || true
@@ -79,7 +85,6 @@ umount_tempdisk
 echo "Rebuilding kernel headers, kernel, OS, and building Distro ISO ..."
 rm -f /tmp/qmon.sock
 "$QEMU_BIN_PATH/qemu-system-x86_64" -machine q35 $KVM -drive format=raw,file="$TMPDISK" -m 1G -rtc base=localtime -smp 4 -device isa-debug-exit -monitor unix:/tmp/qmon.sock,server,nowait $QEMU_HEADLESS || true
-
 LIMINE_BINARY_BRANCH="v10.x-binary"
 
 if [ -d "limine" ]
