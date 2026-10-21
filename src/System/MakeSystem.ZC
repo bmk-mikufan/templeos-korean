@@ -1,8 +1,8 @@
 Cd(__DIR__);;
 #include "Externs"
-#include "FontKR"
 #include "Training"
 #include "Memory"
+#include "FontKR"
 #include "Math/MakeMath"
 #include "Gr/MakeGr"
 #include "Sound"

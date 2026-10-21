@@ -1131,7 +1131,8 @@ I64 GrPutS(CDC *dc=gr.dc, I64 x, I64 y, U8 *_s)
 		}
 		else if (font_kr_num && *_s >= 0x81 && _s[1])
 		{//CP949 two-byte Hangul
-			I64 idx = FontKRIndex(((U32)*_s << 8) | _s[1]);
+			U32 code0 = _s[0];
+			I64 idx = FontKRIndex(code0 << 8 | _s[1]);
 
 			if (idx >= 0)
 			{

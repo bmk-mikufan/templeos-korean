@@ -57,7 +57,7 @@ public Bool FontKRLoad(U8 *filename = "::/System/FontKR.DAT")
 	if (num <= 0 || num > FONTKR_MAX || size < 16 + num * 10 || (16 + num * 2) & 7)
 		goto fk_bad;
 
-	font_kr_buf = ACAlloc(size);
+	font_kr_buf = MAlloc(size, sys_task);
 	MemCopy(font_kr_buf, buf, size);
 	Free(buf);
 
@@ -73,5 +73,8 @@ fk_bad:
 
 public U0 FontKRRep()
 {//Print font status.
-	"FontKR: %d glyphs %s\n", font_kr_num, font_kr_num ? "loaded" : "not loaded";
+	if (font_kr_num)
+		"FontKR: %d glyphs loaded\n", font_kr_num;
+	else
+		"FontKR: 0 glyphs (not loaded)\n";
 }
