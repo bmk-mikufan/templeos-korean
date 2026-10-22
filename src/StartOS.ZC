@@ -16,6 +16,9 @@ Option(OPTf_WARN_DUP_TYPES, ON);
 HashTablePurge(sys_task->hash_table);
 
 #include "/System/MakeSystem"
+sys_os_version_str = "TempleOS-Korean V2.03.120";
+sys_os_version_nice = sys_os_version_str;
+sys_os_version_full = sys_os_version_str;
 
 FontKRLoad;
 if (!font_kr_num)
