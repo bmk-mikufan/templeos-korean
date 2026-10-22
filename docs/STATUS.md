@@ -15,25 +15,24 @@
 | 번역 | **1,200 문자열** (1,033 번역, 167 기술 문자열 유지) |
 | 검증 | 포맷/태그/개행/CP949/문장부호 검사 0 오류 |
 
-## 최종 빌드 (2026-10-21 19:04)
+## 최종 빌드 (2026-10-22 09:48)
 
-- **`build/TempleOS-Korean-BIOS.iso` (44MB, bootable) 생성 및 부팅 확인**
-- 부팅 스플래시: `TempleOS-Korean V2.03.120` / `Ring-0 64-Bit Operating System`
-- 적용된 수정:
-  - CP949 조회 캐스트 버그 수정 (`code0 = _s[0]`)
-  - `FontKR` 로더 `MAlloc(sys_task)` + MakeSystem include 순서
-  - **TempleOS 원본 8×8 ASCII/CP437 폰트 복원** (256글리프, 195개 차이 복구)
-  - **16색 표준 팔레트 복원** (`PaletteSetSlate` → `PaletteSetStd`)
-  - `limine.h` vendoring으로 빌드 네트워크 의존 제거
-- 부팅/데스크톱 진입 확인, 한글 폰트 11,172자 로드 확인(`font_kr_num=11172`)
+- **`build/TempleOS-Korean-BIOS.iso` (16MB, bootable) 생성 및 부팅 확인**
+- 빌드 시간 단축: 빌드 vdisk에서 AutoComplete 사전(`ACDefs.DATA` 26MB, `ACWords.DATA` 1.2MB)을 제외 → 44MB→16MB, 복사 병목 제거
+- 테마: 표준 팔레트의 **0/15 인덱스를 반전**(15=검정 배경, 0=흰색 전경)해서 TempleOS식 검은 배경/흰 글자 구현
+  - `DOC_ATTR_DEFAULT_TEXT`는 원래 `WHITE<<4+BLACK`으로 복구
+  - `KTask.ZC`의 `task->text_attr = WHITE<<4+BLUE`는 그대로 두고 팔레트 매핑으로 해결 (커널 재빌드 불필요)
+- 폰트: TempleOS 원본 8×8 ASCII/CP437 256글리프 복원
+- 한글: `FontKR` 11,172자 로드 확인 (`font_kr_num=11172`)
 
 ## 다음
 
-1. 한글 글리프 **픽셀 렌더 최종 확인** (CP949 테스트 문자열, 캐스트 수정 반영)
-2. P2: `CDocEntry.data` U16 전환 (문서/메뉴/에디터) ← 최대 난관
-3. 두벌식 IME
-4. 번역 적용 (`apply.py`) + 나머지 UI 문자열
-5. P6: Unix 셸, P7: 다크 모드, P8: X61 SATA 검증, P9: 82566 유선 드라이버
+1. 새 ISO(테마 반전판) 부팅 → 검은 배경 확인
+2. CP949 테스트 문자열로 한글 픽셀 렌더 확인 (`GrPrint ... "\xBE\xC8..."`)
+3. P2: `CDocEntry.data` U16 전환 (문서/메뉴/에디터) ← 최대 난관
+4. 두벌식 IME
+5. 번역 적용 (`apply.py`) + 나머지 UI 문자열
+6. P6: Unix 셸, P7: 다크 모드, P8: X61 SATA 검증, P9: 82566 유선 드라이버
 
 ## 알려진 이슈
 
