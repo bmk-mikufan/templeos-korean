@@ -1,0 +1,55 @@
+TMPDIR=/mnt/c/Users/bmk/Documents/기본 프로젝트/templeos-korean/build/tmp/tmp.vcroNhc6Lm
+Building ZealBooter...
+make: Entering directory '/mnt/c/Users/bmk/Documents/기본 프로젝트/templeos-korean/zealbooter'
+rm -rf bin obj
+rm -f src/limine.h
+cp vendor/limine.h src/limine.h || cp ../build/limine/limine.h src/limine.h
+mkdir -p "obj/src/"
+cc -g -O2 -pipe -Wall -Wextra -std=gnu11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-PIC -ffunction-sections -fdata-sections -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -I src -I src/lib  -MMD -MP -c src/lib.c -o obj/src/lib.c.o
+mkdir -p "obj/src/lib/"
+cc -g -O2 -pipe -Wall -Wextra -std=gnu11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-PIC -ffunction-sections -fdata-sections -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -I src -I src/lib  -MMD -MP -c src/lib/memcmp.c -o obj/src/lib/memcmp.c.o
+mkdir -p "obj/src/lib/"
+cc -g -O2 -pipe -Wall -Wextra -std=gnu11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-PIC -ffunction-sections -fdata-sections -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -I src -I src/lib  -MMD -MP -c src/lib/memcpy.c -o obj/src/lib/memcpy.c.o
+mkdir -p "obj/src/lib/"
+cc -g -O2 -pipe -Wall -Wextra -std=gnu11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-PIC -ffunction-sections -fdata-sections -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -I src -I src/lib  -MMD -MP -c src/lib/memmove.c -o obj/src/lib/memmove.c.o
+mkdir -p "obj/src/lib/"
+cc -g -O2 -pipe -Wall -Wextra -std=gnu11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-PIC -ffunction-sections -fdata-sections -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -I src -I src/lib  -MMD -MP -c src/lib/memset.c -o obj/src/lib/memset.c.o
+mkdir -p "obj/src/lib/"
+cc -g -O2 -pipe -Wall -Wextra -std=gnu11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-PIC -ffunction-sections -fdata-sections -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -I src -I src/lib  -MMD -MP -c src/lib/print.c -o obj/src/lib/print.c.o
+In file included from src/lib/print.c:4:
+src/lib/stb_sprintf.h: In function ‘vsprintfcb’:
+src/lib/stb_sprintf.h:594:51: warning: operand of ‘?:’ changes signedness from ‘int’ to ‘unsigned int’ due to unsignedness of other operand [-Wsign-compare]
+  594 |          l = stbsp__strlen_limited(s, (pr >= 0) ? pr : ~0u);
+      |                                                   ^~
+src/lib/stb_sprintf.h:630:11: warning: value computed is not used [-Wunused-value]
+  630 |          (*(double*)((va->overflow_arg_area += 8, va->overflow_arg_area - 8)));
+      |          ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mkdir -p "obj/src/lib/"
+cc -g -O2 -pipe -Wall -Wextra -std=gnu11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-PIC -ffunction-sections -fdata-sections -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -I src -I src/lib  -MMD -MP -c src/lib/strcmp.c -o obj/src/lib/strcmp.c.o
+mkdir -p "obj/src/lib/"
+cc -g -O2 -pipe -Wall -Wextra -std=gnu11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-PIC -ffunction-sections -fdata-sections -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -I src -I src/lib  -MMD -MP -c src/lib/strcpy.c -o obj/src/lib/strcpy.c.o
+mkdir -p "obj/src/lib/"
+cc -g -O2 -pipe -Wall -Wextra -std=gnu11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-PIC -ffunction-sections -fdata-sections -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -I src -I src/lib  -MMD -MP -c src/lib/strlen.c -o obj/src/lib/strlen.c.o
+mkdir -p "obj/src/lib/"
+cc -g -O2 -pipe -Wall -Wextra -std=gnu11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-PIC -ffunction-sections -fdata-sections -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -I src -I src/lib  -MMD -MP -c src/lib/strncmp.c -o obj/src/lib/strncmp.c.o
+mkdir -p "obj/src/lib/"
+cc -g -O2 -pipe -Wall -Wextra -std=gnu11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-PIC -ffunction-sections -fdata-sections -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -I src -I src/lib  -MMD -MP -c src/lib/strncpy.c -o obj/src/lib/strncpy.c.o
+mkdir -p "obj/src/"
+cc -g -O2 -pipe -Wall -Wextra -std=gnu11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-PIC -ffunction-sections -fdata-sections -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -I src -I src/lib  -MMD -MP -c src/zealbooter.c -o obj/src/zealbooter.c.o
+mkdir -p "obj/src/"
+cc -g -O2 -pipe -Wall -Wextra -std=gnu11 -ffreestanding -fno-stack-protector -fno-stack-check -fno-lto -fno-PIC -ffunction-sections -fdata-sections -m64 -march=x86-64 -mabi=sysv -mno-80387 -mno-mmx -mno-sse -mno-sse2 -mno-red-zone -mcmodel=kernel -I src -I src/lib  -MMD -MP -c src/trampoline.S -o obj/src/trampoline.S.o
+mkdir -p "bin/"
+ld -m elf_x86_64 -nostdlib -static -z max-page-size=0x1000 --gc-sections -T linker.ld obj/src/lib.c.o obj/src/lib/memcmp.c.o obj/src/lib/memcpy.c.o obj/src/lib/memmove.c.o obj/src/lib/memset.c.o obj/src/lib/print.c.o obj/src/lib/strcmp.c.o obj/src/lib/strcpy.c.o obj/src/lib/strlen.c.o obj/src/lib/strncmp.c.o obj/src/lib/strncpy.c.o obj/src/zealbooter.c.o obj/src/trampoline.S.o -o bin/kernel
+ld: warning: obj/src/trampoline.S.o: missing .note.GNU-stack section implies executable stack
+ld: NOTE: This behaviour is deprecated and will be removed in a future version of the linker
+make: Leaving directory '/mnt/c/Users/bmk/Documents/기본 프로젝트/templeos-korean/zealbooter'
+Making temp vdisk, running auto-install ...
+Formatting '/mnt/c/Users/bmk/Documents/기본 프로젝트/templeos-korean/build/tmp/tmp.vcroNhc6Lm/ZealOS.raw', fmt=raw size=1073741824
+Copying all src/ code into vdisk Tmp/OSBuild/ ...
+/dev/nbd0 disconnected
+Rebuilding kernel headers, kernel, OS, and building Distro ISO ...
+fatal: detected dubious ownership in repository at '/mnt/c/Users/bmk/Documents/기본 프로젝트/templeos-korean/build/limine'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory '/mnt/c/Users/bmk/Documents/기본 프로젝트/templeos-korean/build/limine'
+KEEP=1: leaving /mnt/c/Users/bmk/Documents/기본 프로젝트/templeos-korean/build/tmp/tmp.vcroNhc6Lm in place
