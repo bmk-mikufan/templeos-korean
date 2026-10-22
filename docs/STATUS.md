@@ -15,21 +15,24 @@
 | 번역 | **1,200 문자열** (1,033 번역, 167 기술 문자열 유지) |
 | 검증 | 포맷/태그/개행/CP949/문장부호 검사 0 오류 |
 
-## 최종 빌드 (2026-10-22 09:48)
+## 최종 빌드 (2026-10-22 10:00)
 
-- **`build/TempleOS-Korean-BIOS.iso` (16MB, bootable) 생성 및 부팅 확인**
-- 빌드 시간 단축: 빌드 vdisk에서 AutoComplete 사전(`ACDefs.DATA` 26MB, `ACWords.DATA` 1.2MB)을 제외 → 44MB→16MB, 복사 병목 제거
-- 테마: 표준 팔레트의 **0/15 인덱스를 반전**(15=검정 배경, 0=흰색 전경)해서 TempleOS식 검은 배경/흰 글자 구현
-  - `DOC_ATTR_DEFAULT_TEXT`는 원래 `WHITE<<4+BLACK`으로 복구
-  - `KTask.ZC`의 `task->text_attr = WHITE<<4+BLUE`는 그대로 두고 팔레트 매핑으로 해결 (커널 재빌드 불필요)
+- **`build/TempleOS-Korean-BIOS.iso` (16MB, bootable) 생성·부팅 확인**
+- **검은 배경 데스크톱 확인** (표준 팔레트 0/15 인덱스 반전)
 - 폰트: TempleOS 원본 8×8 ASCII/CP437 256글리프 복원
-- 한글: `FontKR` 11,172자 로드 확인 (`font_kr_num=11172`)
+- 한글: `FontKR` 11,172자 로드 (`font_kr_num=11172`)
+
+### 확인된 부작용
+
+- 팔레트 0/15를 반전했기 때문에 `BLACK`(0)을 배경으로 쓰는 코드(예: `WinMax`)가 **흰색으로 칠해짐**
+- 올바른 해법은 팔레트 반전이 아니라 **`KTask.ZC`의 `task->text_attr`를 `BLACK<<4+WHITE`로 바꾸고 커널 재빌드**
+- 한글 픽셀 렌더 테스트(`KRTest`)는 이 부작용으로 화면이 하얗게 지워져 **육안 확인 보류**
 
 ## 다음
 
-1. 새 ISO(테마 반전판) 부팅 → 검은 배경 확인
-2. CP949 테스트 문자열로 한글 픽셀 렌더 확인 (`GrPrint ... "\xBE\xC8..."`)
-3. P2: `CDocEntry.data` U16 전환 (문서/메뉴/에디터) ← 최대 난관
+1. `KTask.ZC` 기본 속성 수정 + `BootHDIns` 커널 재빌드 → 팔레트는 표준으로 되돌림
+2. `KRTest`를 `WinMax` 없이 그리도록 수정해 한글 픽셀 확인
+3. P2: `CDocEntry.data` U16 전환 (문서/메뉴/에디터)
 4. 두벌식 IME
 5. 번역 적용 (`apply.py`) + 나머지 UI 문자열
 6. P6: Unix 셸, P7: 다크 모드, P8: X61 SATA 검증, P9: 82566 유선 드라이버
