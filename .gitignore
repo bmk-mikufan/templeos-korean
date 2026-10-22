@@ -26,3 +26,5 @@ build/*.png
 build/screen*
 build/limine/
 build/ovmf/
+__pycache__/
+*.pyc
