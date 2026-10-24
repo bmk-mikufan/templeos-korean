@@ -30,6 +30,19 @@ def fmt_multiset(s):
     return sorted(FMT_RE.findall(s))
 
 
+def bare_quotes(s):
+    """Count double quotes that are not backslash-escaped."""
+    n = i = 0
+    while i < len(s):
+        if s[i] == "\\":
+            i += 2
+            continue
+        if s[i] == '"':
+            n += 1
+        i += 1
+    return n
+
+
 def validate(src, dst):
     errs = []
     if not dst or not dst.strip():
@@ -45,6 +58,12 @@ def validate(src, dst):
         errs.append("$ count")
     if src.count("\\n") != dst.count("\\n"):
         errs.append("\\n count")
+    if bare_quotes(dst):
+        errs.append("bare double quote (must be \\\")")
+    if "\n" in dst or "\r" in dst:
+        errs.append("raw newline")
+    if (len(dst) - len(dst.rstrip("\\"))) % 2:
+        errs.append("trailing backslash")
     if any(c in dst for c in BAD_PUNCT):
         errs.append("bad punctuation")
     try:

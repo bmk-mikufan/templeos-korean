@@ -16,13 +16,13 @@ Option(OPTf_WARN_DUP_TYPES, ON);
 HashTablePurge(sys_task->hash_table);
 
 #include "/System/MakeSystem"
-sys_os_version_str = "TempleOS-Korean V2.03.120";
-sys_os_version_nice = sys_os_version_str;
-sys_os_version_full = sys_os_version_str;
-
+PaletteSetSlate;
 FontKRLoad;
 if (!font_kr_num)
 	PrintErr("FontKR: Korean font not loaded\n");
+sys_os_version_str = "TempleOS-Korean V2.03.109";
+sys_os_version_nice = sys_os_version_str;
+sys_os_version_full = sys_os_version_str;
 
 //Debug("Type 'G;'");
 DocTermNew;

@@ -26,7 +26,7 @@ public I64 FontKRIndex(U32 code)
 
 	while (lo <= hi)
 	{
-		mid = lo + hi >> 1;
+		mid = (lo + hi) >> 1;
 		if (font_kr_codes[mid] == code)
 			return mid;
 		if (font_kr_codes[mid] < code)
