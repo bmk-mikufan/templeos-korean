@@ -1,0 +1,61 @@
+// Korean text cells for TempleOS-Korean.
+// A Doc string run is rendered byte by byte; a CP949 pair becomes one cell
+// carrying char 1 in gr.text_base[] plus a glyph index in gr.text_kr[].
+
+public U0 TextCharKR(CTask *task, I64 x, I64 y, I64 attr, I64 glyph_idx)
+{//Store one Korean glyph cell. index is 0-based glyph number, stored +1.
+	I64 xx, yy;
+
+	if (!task || !gr.text_kr || glyph_idx < 0 || glyph_idx >= font_kr_num)
+		return;
+	xx = (task->scroll_x >> 3) + x + task->win_left;
+	yy = (task->scroll_y >> 3) + y + task->win_top;
+	if (xx < 0 || xx >= TEXT_COLS || xx < task->win_left || xx > task->win_right)
+		return;
+	if (yy < 0 || yy >= TEXT_ROWS || yy < task->win_top || yy > task->win_bottom)
+		return;
+	gr.text_base[yy * TEXT_COLS + xx] = (attr & 0xFFFFFF00) | 1;
+	gr.text_kr[yy * TEXT_COLS + xx] = glyph_idx + 1;
+	if (xx + 1 < TEXT_COLS && xx + 1 <= task->win_right)
+	{//A Hangul is two CP949 bytes, so it eats two cells.  Blank the second
+	 //cell, otherwise stale text from a previous screen shows through.
+		gr.text_base[yy * TEXT_COLS + xx + 1] = (attr & 0xFFFFFF00) | ' ';
+		gr.text_kr[yy * TEXT_COLS + xx + 1] = 0;
+	}
+}
+
+public U0 TextLenStrKR(CTask *task, I64 x, I64 y, I64 len, I64 attr, U8 *s)
+{//TextLenStr() with CP949 pair decoding. Hangul pairs take two cells.
+	I64 i = 0, xx = x, code, gi;
+	U8	 b;
+
+	if (!task || !s || len <= 0)
+		return;
+	while (i < len)
+	{
+		b = s[i];
+		if (b >= 0x81 && i + 1 < len && font_kr_num)
+		{
+			code = b << 8 | s[i + 1];
+			gi = FontKRIndex(code);
+			if (gi >= 0)
+			{
+				TextCharKR(task, xx, y, attr, gi);
+				i += 2;
+				xx += 2;
+			}
+			else
+			{
+				TextChar(task, FALSE, xx, y, b | (attr & 0xFFFFFF00));
+				i++;
+				xx++;
+			}
+		}
+		else
+		{
+			TextChar(task, FALSE, xx, y, b | (attr & 0xFFFFFF00));
+			i++;
+			xx++;
+		}
+	}
+}

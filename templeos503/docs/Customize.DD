@@ -1,0 +1,17 @@
+
+$WW,1$* 시작 파일에서 전역 변수를 
+설정하면 마우스 이동 속도를 조절할 수 
+있습니다. 참고: 
+$LK,"마우스 배율",A="FF:~/HomeLocalize.HC,ms_hard.scale"$.
+
+* 시작 파일에서 
+$FG,4$local_time_offset$FG$ 전역 
+변수를 설정하면 지역 시간대를 지정할 
+수 있습니다. 단위는 
+$LK,"CDATE_FREQ",A="MN:CDATE_FREQ"$. 
+참고: 
+$LK,"지역 시간",A="FF:~/HomeLocalize.HC,local_time"$.
+
+* 이 메시지를 없애려면 
+$LK,"여기",A="FF:~/Once.HC,Customize.DD"$를 
+클릭하세요.

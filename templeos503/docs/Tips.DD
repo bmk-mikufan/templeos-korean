@@ -1,0 +1,394 @@
+$WW,1$$FG,5$$TX+CX,"팁"$$FG$
+
+* 디스크 쓰기 중이 아닐 때는 
+언제든지 전원을 끄거나 
+재부팅($FG,2$<CTRL-ALT-DEL>$FG$)할 수 
+있습니다. 쓰기는 캐시되지 않습니다.
+
+* $LK,"Seed",A="MN:Seed"$()와 명령줄을 사용해 $LK,"Rand",A="MN:Rand"$()를 
+비타이머 모드로 바꾸면 좋아하는 
+게임을 다시 재생할 수 있습니다.
+
+* 컴파일러에게는 64비트 값이 가장 
+효율적입니다.
+
+* 정의된 키 목록은 $MA-X+PU,"키 맵",LM="KeyMap;View;\n"$을 
+참고하십시오. 자신만의 키는 
+$LK,"MyPutKey",A="MN:MyPutKey"$()에 정의할 수 있습니다. 
+$LK,"Keyboard Devices",A="HI:Keyboard Devices/System"$도 참고하십시오.
+
+* $FG,2$<ALT-m>$FG$은 창을 최대화합니다. 
+$FG,2$<ALT-SHIFT-w>$FG$는 자동 완성을 닫고, 
+$FG,2$<ALT-w>$FG$는 자동 완성을 다시 엽니다. 
+$FG,2$<ALT-v>$FG$는 창을 세로로 타일링하고 
+$FG,2$<ALT-h>$FG$는 가로로 타일링합니다. $FG,2$ALT$FG$ 
+키는 $LK,"~/HomeKeyPlugIns.HC"$에 정의되어 
+있으며 직접 바꿀 수 있습니다.
+
+* $FG,2$/Home$FG$ 디렉토리의 TempleOS 파일을 
+고쳤다면 보통 재부팅해야 적용됩니다. 
+(컴파일할 필요는 없습니다.) 시동 
+파일에 문법 오류가 있으면 그 
+파티션은 부팅할 수 없게 되므로 하드 
+디스크에 TempleOS 파티션을 두 개 
+두는 것이 좋습니다. 두 번째 
+파티션으로 부팅하거나 표준 TempleOS 
+CD/DVD로 부팅한 뒤 $LK,"Mount",A="MN:Mount"$()로 하드 
+디스크를 마운트하십시오.
+
+* 스크립트에서 $LK,"CopyTree",A="MN:CopyTree"$() 명령으로 
+파일을 미러링된 동일 파티션에 
+주기적으로 복사합니다. 변경 사항을 
+확인하려면 메뉴 항목에 다음과 같이 
+병합 명령을 넣습니다:
+$FG,2$Merge(\"C:/*\",\"D:/*\",\"+r+d\");$FG$
+
+* 명령줄에서 $FG,2$<CTRL-m>$FG$을 누르면 
+PersonalMenu에 접근합니다. 
+$FG,2$<CTRL-l>$FG$로 매크로를, $FG,2$<CTRL-r>$FG$로 
+아이콘 같은 스프라이트를 넣으십시오. 
+매크로의 $FG,2$Pop-Up$FG$ 옵션을 사용하면 
+파일을 실행할 태스크를 $LK,"Spawn",A="MN:Spawn"$()할 수 
+있고, 작업이 끝나면 태스크가 
+종료되어 메모리가 시스템으로 
+돌아갑니다. 변경 후에는 반드시 
+$FG,2$<CTRL-s>$FG$를 눌러 매크로/메뉴 영역을 
+저장하십시오.
+
+* 명령줄 식에서 $FG,2$ans$FG$를 사용할 수 
+있습니다. 마지막 명령줄 연산의 
+결과가 들어 있습니다. $FG,2$1+2*3;$FG$처럼 
+식을 입력하면 명령 프롬프트를 
+계산기로 쓸 수 있습니다. $FG,2$F64$FG$ 결과는 
+$FG,2$ansf$FG$로 접근합니다.
+
+* 화면 위쪽의 풀다운 메뉴에서 명령을 
+배우거나 게임의 키 조작을 찾아볼 수 
+있습니다.
+
+* 시동 파일에서 전역 변수를 설정해 
+마우스 이동 속도를 조절할 수 
+있습니다. $LK,"mouse scale",A="FF:~/HomeLocalize.HC,ms_hard.scale"$을 
+참고하십시오.
+
+* 시동 파일에서 $LK,"local_time_offset",A="MN:local_time_offset"$ 
+전역 변수를 설정해 표준 시간대를 
+지정할 수 있습니다. 단위는 
+$LK,"CDATE_FREQ",A="MN:CDATE_FREQ"$입니다. $LK,"local time",A="FF:~/HomeLocalize.HC,local_time"$을 
+참고하십시오.
+
+* 편집기에서 $FG,2$<CTRL-SHIFT-L>$FG$을 누르면 
+$LK,"HolyC",A="FI:::/Doc/HolyC.DD"$ 함수를 다시 들여쓰거나 
+어셈블리 루틴의 지역 레이블 번호를 
+다시 매깁니다.
+
+* 편집기의 텍스트 검색 
+양식($FG,2$<CTRL-f>$FG$)에서 $FG,2$filter_lines$FG$를 
+사용하면 일치하는 줄 근처만 임시로 
+표시할 수 있습니다. $FG,2$filter lines$FG$를 
+$FG,2$5$FG$로 설정하면 일치 항목에서 5줄 
+이내를 표시합니다. 이어서 다른 
+문자열로 다시 찾으면 $FG,2$AND$FG$ 검색이 
+됩니다. 끝나면 $FG,2$<ESC>$FG$를 누르십시오.
+
+* $LK,"BootHDIns",A="MN:BootHDIns"$()로 커널을 다시 컴파일해 
+설치할 수 있습니다. $LK,"In",A="MN:In"$() 함수로 설정 
+질문에 답하는 재컴파일 함수를 만들어 
+두면 편리합니다. $LK,"Cfg Strs",A="FL:::/Demo/AcctExample/TOS/TOSCfg.HC,1"$, 
+$LK,"Update Funs",A="FL:::/Demo/AcctExample/TOS/TOSDistro.HC,1"$ 기법을 참고하십시오.
+
+* 재컴파일할 때 설정 질문에 
+$LK,"Scale2Mem",A="MN:Scale2Mem"$ 
+(min,max,limit=2*1024*1024*1024)을 
+사용할 수 있습니다. $LK,"BootHDIns",A="MN:BootHDIns"$() 설정 
+프롬프트는 숫자뿐 아니라 식도 
+받습니다. 기본 디스크 캐시는 
+$FG,2$Scale2Mem(0x80000,0x8000000)$FG$입니다.
+
+* $LK,"~/HomeSys.HC",A="FF:/Home/HomeSys.HC,ACInit"$에서 $LK,"ACInit",A="FF:/Home/HomeSys.HC,ACInit"$()를 주석 
+처리하면 $FG,2$AutoComplete$FG$를 영구히 끌 수 
+있습니다.
+
+* $FG,2$if$FG$ 문 안의 불리언 식은 $BK,1$단축 평가$BK,0$가 
+없어 비효율적으로 컴파일됩니다.
+
+* 프로그램에서 $LK,"progress1",A="MN:progress1"$-$LK,"progress4",A="MN:progress4"$를 
+자유롭게 사용할 수 있습니다. 배경 
+화면에 표시되는 전역 변수일 
+뿐입니다. 원래 용도는 작업 진행 
+정도를 나타내는 것이었습니다. 조정 
+기능이 없어 여러 앱이 서로 간섭할 수 
+있습니다. 대개는 값을 쉽게 볼 수 
+있는 디버깅용으로 쓰입니다. 
+$LK,"::/Demo/Progress.HC"$를 참고하십시오.
+
+* $LK,"DocMax",A="MN:DocMax"$()로 명령줄 버퍼 크기를 
+조정할 수 있습니다. 줄 수가 아니라 
+$LK,"CDoc",A="MN:CDoc"$ 항목 수를 셉니다.
+
+* 많은 자료 구조에 $FG,2$user_data$FG$ 멤버가 
+있습니다. 편의를 위해 데이터를 하나 
+저장할 수 있는 자리입니다. $LK,"CTask",A="MN:CTask"$, 
+$LK,"CDocEntry",A="MN:CDocEntry"$, $LK,"CDirEntry",A="MN:CDirEntry"$에 있습니다. 
+TempleOS가 이들을 사용해 충돌하는 
+일은 없습니다.
+
+* 어느 이유든 메모리 사용량을 줄이고 
+싶다면 커널을 재컴파일할 때 디스크 
+캐시를 작게 하고, $FG,2$AutoComplete$FG$를 
+끄고, $LK,"Spawn",A="MN:Spawn"$() 시 스택 크기를 작게 
+지정하고, $LK,"MEM_DFT_STK",A="MN:MEM_DFT_STK"$을 바꾸고, 
+$LK,"DocMax",A="MN:DocMax"$()로 명령줄 버퍼 크기를 
+줄이십시오.
+
+* 파일 이름이 $FG,2$.Z$FG$로 끝나면 읽거나 쓸 
+때 자동으로 압축되고 해제됩니다. 이 
+압축 방식은 다른 운영 체제에서 
+지원되지 않습니다. $LK,"Move",A="MN:Move"$()로 $FG,2$.Z$FG$로 
+끝나지 않는 이름으로 옮기면 압축하지 
+않고 저장할 수 있습니다. $FG,2$Linux$FG$에서 
+압축을 풀려면 $LK,"::/Doc/TOSZ.DD"$를 
+참고하십시오.
+
+* $LK,"Merge",A="MN:Merge"$()로 무엇이 바뀌었는지 볼 수 
+있습니다. $FG,2$+d$FG$ 플래그는 바뀐 파일의 
+차이를 보여 주고 코드 병합을 
+허용합니다. ($FG,2$+r$FG$ 플래그는 
+재귀합니다.)
+
+* 문서의 끊어진 링크를 검사하는 
+$LK,"LinkChk",A="MN:LinkChk"$() 유틸리티가 있습니다.
+
+* $LK,"Option",A="MN:Option"$($LK,"OPTf_WARN_PAREN",A="MN:OPTf_WARN_PAREN"$, ON)을 
+사용하면 코드에서 불필요한 괄호를 
+찾아 줍니다.
+
+* $LK,"Option",A="MN:Option"$($LK,"OPTf_WARN_DUP_TYPES",A="MN:OPTf_WARN_DUP_TYPES"$, ON)을 
+사용하면 불필요한 지역 변수 타입 
+선언을 찾아 줍니다.
+
+* $LK,"StartOS.HC",A="FI:::/StartOS.HC"$에 $LK,"Option",A="MN:Option"$($LK,"OPTf_ECHO",A="MN:OPTf_ECHO"$, 
+ON)을 넣으면 시동 스크립트를 화면에 
+출력합니다.
+
+* 일반 텍스트 파일을 편집하려면 
+$LK,"Plain",A="MN:Plain"$()을 사용하십시오. 파일에 $FG,2$$$$FG$가 
+있으면 필요합니다. $LK,"ToDolDoc",A="MN:ToDolDoc"$() 
+유틸리티로 $FG,2$$$$FG$를 두 번 써서 일반 
+텍스트를 DolDoc으로 변환할 수 
+있습니다.
+
+* $LK,"Silent",A="MN:Silent"$()로 화면 텍스트 출력을 끌 
+수 있습니다.
+
+* $FG,2${CTRL-LEFT-MOUSE-DRAG}$FG$로 언제든지 
+창을 잡아 스크롤할 수 있습니다. 
+$FG,2${CTRL-RIGHT-MOUSE}$FG$로 잡기 스크롤을 
+해제합니다.
+
+* $FG,2$<CTRL-ALT-z>$FG$로 확대하고 
+$FG,2$<CTRL-ALT-SHIFT-Z>$FG$로 축소합니다. 창 
+가장자리로 이동해 스크롤할 수도 
+있습니다. 원하면 
+$LK,"gr.continuous_scroll",A="MN:CGrGlbls"$을 $FG,2$TRUE$FG$로 
+설정하십시오.
+
+* $FG,2$<CTRL-ALT-g>$FG$와 
+$FG,2$<CTRL-ALT-SHIFT-G>$FG$로 화면에 격자를 
+표시합니다.
+
+* $FG,2$<CTRL-ALT-a>$FG$로 확장 ASCII 문자를 
+입력합니다.
+
+* $FG,2$<CTRL-ALT-f>$FG$로 $LK,"Std Font",A="FI:::/Kernel/FontStd.HC"$와 
+$LK,"Cyrillic Font",A="FI:::/Kernel/FontCyrillic.HC"$ 사이를 전환합니다.
+
+* $FG,2$<CTRL-ALT-s>$FG$는 화면을 스프라이트로 
+캡처해 클립보드에 넣습니다. 
+$FG,2$<CTRL-a>$FG$로 명령줄 문서를 텍스트로 
+저장할 수 있습니다.
+
+* 스프라이트 비트맵 메뉴에서 
+$FG,2$<CTRL-r>$FG$을 누르면 스프라이트를 $FG,2$.GR$FG$ 
+파일로 저장할 수 있습니다.
+
+* $FG,2$<CTRL-r>$FG$ 스프라이트 편집기에서 
+$FG,2$'c'$FG$를 누르면 색을 추출할 수 
+있습니다. 투명은 $FG,2$'t'$FG$입니다.
+
+* $LK,"~/HomeWrappers.HC"$에 정의된 편리한 
+함수 $FG,2$F(),R(),FD()$FG$와 $FG,2$RD()$FG$가 있습니다. 
+직접 고치거나 더 추가해도 좋습니다. 
+여러 파일에 걸쳐 찾기/바꾸기를 
+수행합니다. $FG,2$+l$FG$ 플래그는 전체 
+레이블로 제한하므로 특히 유용합니다. 
+$FG,2$+lb$FG$와 $FG,2$+la$FG$ 플래그는 바로 앞이나 뒤의 
+전체 레이블로 제한합니다. 명령줄 
+작업을 쉽게 하려면 편리한 래퍼 
+함수를 추가하거나 고치십시오.
+
+* 코드를 고치면서 $LK,"Find",A="MN:Find"$()를 쓸 때는 
+줄 번호가 맞도록 아래에서 위로 
+작업하십시오. 위에서 아래로 하면 
+줄을 넣거나 지울 때 아래쪽 파일 
+링크가 어긋납니다.
+
+* 도움말/매크로 파일을 보는 중이라도 
+편집기 안에서는 언제든 변경 후 
+저장할 수 있습니다. $FG,2$<CTRL-a>$FG$는 다른 
+이름으로, $FG,2$<CTRL-s>$FG$는 스크롤 제목 
+표시줄의 같은 이름으로 저장합니다. 
+$FG,2$<ESC>$FG$를 누르면 종료하며 
+저장하고($FG,2$<SHIFT-ESC>$FG$는 취소) 됩니다. 
+명령줄에 있을 때도 실제로는 편집기 
+안이므로 명령줄 창을 파일로 저장할 
+수 있습니다.
+
+* $FG,2$<CTRL-l>$FG$로 문서에 링크를 넣을 때 
+$FG,2$Tag Text$FG$는 보통 비워 두면 다른 
+항목을 바탕으로 자동으로 채워집니다.
+
+* 컴파일 도중에 코드를 실행하고 그 
+데이터를 컴파일 스트림에 넣는 
+전처리기 기능이 있습니다. 예제: 
+$LK,"#exe {",A="FF:::/Kernel/KMain.HC,#exe {"$.
+
+* 명령줄로 출력하면서 사용자가 
+스크롤해 데이터를 볼 수 있게 하려면 
+$LK,"View",A="MN:View"$()를 사용하십시오.
+
+* 팝업 매크로에서 $LK,"View",A="MN:View"$()를 쓰면 
+사용자가 $FG,2$<ESC>$FG$나 $FG,2$<SHIFT-ESC>$FG$를 누를 
+때까지 머뭅니다.
+
+* 커서 아래의 단어는 $LK,"ac.cur_word",A="MN:CAutoCompleteGlbls"$에서 
+얻을 수 있습니다.
+
+* $FG,2$AutoComplete$FG$를 닫은 뒤 
+$FG,2$<CTRL-Fun Key>$FG$나, 정의해 두었다면 
+$FG,2$<ALT-w>$FG$로 다시 열 수 있습니다.
+
+* $FG,2$<CTRL-SHIFT-T>$FG$로 커서 아래 $LK,"CDoc",A="MN:CDoc"$ 
+명령만 일반 텍스트로 전환합니다. 
+$LK,"::/Demo/DolDoc/TextDemo.HC"$를 
+참고하십시오.
+
+* 문서에서 그래픽을 다루다 일반 
+텍스트로 전환하면 같은 번호로 
+$FG,2$$$SP...$$$FG$ 명령을 입력해 스프라이트 
+항목을 중복 추가할 수 있습니다.
+
+* 그래픽을 다루다 일반 텍스트로 
+전환할 때 $FG,2$$$SP...$$$FG$ 항목에 문자열을 
+추가해 두면 추적하기 쉽습니다. 
+스프라이트 번호가 '2'라면 
+$FG,2$$$SP,"<2>",BI=2$$$FG$를 시도해 보십시오.
+
+* 크기를 줄이려고 모든 소스 파일에 
+공백을 탭으로 바꾸는 작업을 합니다. 
+다만 문자열 안의 공백도 변환되므로 
+주의해야 합니다. 그런 경우에는 
+$FG,2$<SHIFT-SPACE>$FG$ ' '를 씁니다. 공백을 
+탭으로 바꾸는 방법은 $LK,"S2T",A="MN:S2T"$()를 
+참고하십시오.
+
+* 기존 스프라이트는 커서를 올리고 
+$FG,2$<CTRL-r>$FG$를 누르면 편집할 수 
+있습니다.
+
+* 스프라이트를 편집할 때 사이드바 
+텍스트 목록 창에서 요소를 잘라내고 
+붙여넣을 수 있습니다.
+
+* CSprite는 다 만든 뒤 비트맵으로 
+변환하기 전까지 벡터 형식으로 두는 
+것이 좋습니다. 그래야 제어점을 
+편집할 수 있습니다. 그다음 
+비트맵으로 변환하면 플러드 필이 잘 
+동작합니다. 다만 보간을 한다면 
+벡터여야 합니다.
+
+* $LK,"GrFloodFill",A="MN:GrFloodFill"$()은 느립니다. 
+$LK,"GrRect",A="MN:GrRect"$()는 빠릅니다.
+
+* $FG,2$wallpaper$FG$를 바꿀 수 있습니다. 
+$LK,"::/Demo/Graphics/WallPaperFish.HC"$를 
+참고하십시오.
+
+* 메모리 위치가 바뀌지 않고 디스크가 
+온전하면 재부팅해도 RAM 디스크는 
+다시 포맷되지 않습니다.
+
+* 함수에 $FG,2$try{} catch{}$FG$가 있으면 모든 
+변수가 non-reg가 됩니다.
+
+* $FG,2$i.u8[3]$FG$처럼 하위 정수 배열을 쓰면 
+지역 변수가 강제로 non-reg가 됩니다.
+
+* $FG,4$~/Registry.HC.Z$FG$ 파일을 지워도 
+됩니다. 지우면 기본값으로 복원되는 
+정책입니다. 편집하려면 텍스트 
+문서입니다. 트리 들여쓰기에 
+주의하십시오.
+
+* 시스템 자원이 어떻게 구성되는지 
+배우려면 
+$LK,"::/Adam/Opt/Utils/MemRep.HC"$와 
+$LK,"WallPaper",A="MN:WallPaper"$()를 살펴보십시오.
+
+* 편집기의 선택 텍스트 기능은 떨어진 
+부분도 선택할 수 있습니다. 버그가 
+아니라 기능이며, 떨어진 텍스트를 
+잘라내고 붙여넣을 수 있습니다.
+
+* $LK,"cnts.time_stamp_freq",A="MN:CCntsGlbls"$는 계속 
+보정됩니다. 식의 값이 줄어들 수 
+있으니 주의하십시오. 
+$FG,2$timeout=$LK,"GetTSC",A="MN:GetTSC"$+$LK,"cnts.time_stamp_freq",A="MN:CCntsGlbls"$ 
+x seconds;$FG$처럼 스냅숏을 떠서 
+$LK,"GetTSC",A="MN:GetTSC"$()과 비교하십시오. $LK,"tS",A="MN:tS"$나 
+$LK,"cnts.jiffies",A="MN:CCntsGlbls"$만 쓰는 것을 권합니다.
+
+* $LK,"HeapLog",A="MN:HeapLog"$(), $LK,"HeapLogAddrRep",A="MN:HeapLogAddrRep"$(), 
+$LK,"HeapLogSizeRep",A="MN:HeapLogSizeRep"$()로 누수를 
+찾으십시오. $LK,"CDoc",A="MN:CDoc"$ 할당에 헷갈리지 
+마십시오. 명령줄 버퍼에 텍스트를 쓸 
+때 생기는 것입니다.
+
+* 고급 힙 디버깅은 $LK,"_CFG_HEAP_DBG",A="MN:_CFG_HEAP_DBG"$로 
+해 보십시오. 알아서 하셔야 합니다.
+
+* $LK,"Type",A="MN:Type"$()로 $FG,2$.GR$FG$ 파일을 표시할 수 
+있습니다.
+
+* $LK,"Man",A="MN:Man"$()으로 짧은 심볼 이름의 소스 
+코드로 이동합니다.
+
+* $LK,"Fix",A="MN:Fix"$()로 마지막 컴파일 오류를 
+편집해 고칩니다.
+
+* $FG,2$<CTRL-SHIFT-L>$FG$로 컴파일 오류를 
+검사할 수 있습니다.
+
+* $LK,"DocOpt",A="MN:DocOpt"$()로 링크를 최적화할 수 
+있습니다. (대부분 .Z를 제거할 
+뿐입니다.)
+
+* $LK,"ZipRep",A="MN:ZipRep"$()는 중복이 많은 소스 파일을 
+강조 표시할 수 있습니다.
+
+* $FG,2$start$FG$/$FG,2$end$FG$를 쓰면 뒤쪽 공통 코드는 
+빠르고 앞쪽 공통 코드는 느립니다.$FG$
+
+* $MA-X+PU,"Psalmody",LM="#include \"::/Apps/Psalmody/Run\"\n"$ $LK,"HolyC",A="FI:::/Doc/HolyC.DD"$ 노래 파일의 첫 줄은 
+$LK,"JukeBox",A="FF:::/Apps/Psalmody/JukeBox.HC,JukeBox"$()가 인식하는 범주가 있는 
+주석입니다. 범주는 $FG,2$"no nothing"$FG$, 
+$FG,2$"has words"$FG$, $FG,2$"has graphics"$FG$, 
+$FG,2$"special"$FG$입니다. 노래 주석의 세 번째 
+문자는 $LK,"JukeBox",A="FF:::/Apps/Psalmody/JukeBox.HC,JukeBox"$()에 표시되는 별점 
+숫자입니다. $LK,"JukeBox",A="FF:::/Apps/Psalmody/JukeBox.HC,JukeBox"$()에서 $FG,2$0$FG$-$FG,2$9$FG$를 눌러 
+별점을 정할 수 있습니다. $FG,2$<DEL>$FG$로 
+노래를 삭제합니다.
+
+* $FG,8$"Linux"는 Linus Torvalds의 
+상표입니다.$FG$

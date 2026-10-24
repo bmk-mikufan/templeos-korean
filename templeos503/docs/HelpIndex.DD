@@ -1,0 +1,183 @@
+$WW,1$$FG,5$$TX+CX,"도움말"$$FG$
+
+$WW+H,1$$TR,"키보드 조작"$
+$ID,2$$FG,2$<SPACE>$FG$	왼쪽 클릭
+$FG,2$<ENTER>$FG$	오른쪽 클릭
+$FG,2$<F1>$FG$		도움말
+$FG,2$<CTRL-m>$FG$	개인 메뉴
+$FG,2$<ESC>$FG$		저장 후 종료
+$FG,2$<SHIFT-ESC>$FG$	중단 후 종료
+$FG,2$<WINDOWS KEY>$FG$	풀다운 메뉴
+기타 키: $MA-X+PU,"키 맵",LM="KeyMap;View;\n"$
+$ID,-2$$TR,"마우스 조작"$
+$ID,2$$FG,2$Right-Click$FG$	오른쪽 클릭 메뉴
+$FG,2$Left-Click$FG$	편집(보기)
+$FG,2$Double-Left$FG$	저장 후 종료
+$FG,2$Double-Right$FG$	중단 후 종료
+$FG,2$Top of Scrn$FG$	풀다운 메뉴
+$ID,-2$$TR,"키보드-마우스 조작"$
+$ID,2$$FG,2$Ctrl-LeftDrag$FG$	창 잡고 스크롤
+$FG,2$Ctrl-Right$FG$	널 스크롤
+$FG,2$<CTRL-ALT-z>$FG$	마우스에서 확대
+$FG,2$<CTRL-ALT-Z>$FG$	마우스에서 축소
+$ID,-2$
+$LK,"환영합니다",A="FI:::/Doc/Welcome.DD"$		$LK,"TempleOS 소개",A="FI:::/Doc/AboutTempleOS.DD"$
+$LK,"명령 줄",A="FI:::/Doc/CmdLineOverview.DD"$	$MA-X+PU,"둘러보기",LM="User(\"Cd(\\\"::/Misc/Tour\\\");;InFile(\\\"Tour\\\");\n\");"$
+$LK,"데모 색인",A="FI:::/Doc/DemoIndex.DD"$	$MA-X+PU,"키 맵",LM="KeyMap;View;\n"$
+$LK,"기능",A="FI:::/Doc/Features.DD"$	$LK,"요구 사항",A="FI:::/Doc/Requirements.DD"$
+$LK,"헌장",A="FI:::/Doc/Charter.DD"$		$LK,"전략적 결정",A="FI:::/Doc/Strategy.DD"$
+$LK,"자주 묻는 질문",A="FI:::/Doc/FAQ.DD"$		$LK,"용어집",A="FI:::/Doc/Glossary.DD"$
+$LK,"HolyC",A="FI:::/Doc/HolyC.DD"$  		$LK,"컴파일러 색인",A="FI:::/Doc/CompilerOverview.DD"$
+$LK,"왜 더 없나?",A="FI:::/Doc/WhyNotMore.DD"$	$LK,"요구",A="FI:::/Doc/Demands.DD"$
+$LK,"표준 TempleOS PC",A="FI:::/Doc/StdTempleOSPC.DD"$
+	
+$TR,"사용자 도움말"$
+$ID,2$
+$LK,"키 할당",A="FI:::/Doc/KeyAlloc.DD"$
+$LK,"/Home Files",A="FF:::/Doc/GuideLines.DD,/Home Files"$
+$LK,"TOSZ 리눅스 유틸리티",A="FI:::/Doc/TOSZ.DD"$
+$LK,"팁",A="FI:::/Doc/Tips.DD"$
+$LK,"특이 사항",A="FI:::/Doc/Quirks.DD"$
+$LK,"디렉터리 구조",A="FF:::/Doc/GuideLines.DD,Directory Structure"$
+
+$SP,"",BI=1$	바탕 화면의 이 버튼은
+	터미널 창을 시작합니다.
+
+$TR,"DolDoc"$
+$ID,2$$LK,"DolDoc",A="FI:::/Doc/DolDocOverview.DD"$는 
+TempleOS 문서 형식입니다. 편집기, 
+컴파일러, 어셈블러는 물론 운영 체제 
+전체가 $FG,2$DolDoc$FG$ 문서를 
+매끄럽게 처리합니다. 
+$LK,"Dir",A="MN:Dir"$()와 
+$LK,"Find",A="MN:Find"$() 같은 명령은 
+명령 줄로 링크를 출력할 수 있습니다.
+$ID,-2$$TR,"CD/DVD 굽기"$
+$ID,2$* 구울 파일을 모아 둘 
+디렉터리를 준비합니다.
+
+* ISO 이미지 파일을 만들려면 
+$LK,"RedSeaISO",A="MN:RedSeaISO"$()를 
+사용합니다.
+
+* ISO 파일을 CD나 DVD에 구우려면 
+$LK,"DVDImageWrite",A="MN:DVDImageWrite"$()를 
+사용합니다.
+
+* 참고: 
+$LK,"배포 ISO 만들기",A="FI:::/Misc/DoDistro.HC"$.
+$ID,-2$$ID,-2$$TR,"관리자 도움말"$
+$ID,2$$LK,"Mount",A="MN:Mount"$()로 
+디스크 드라이브를 마운트합니다. 
+LiveCD로 부팅한 경우라면 필요할 수 
+있습니다.
+
+$LK,"BootHDIns",A="MN:BootHDIns"$()로 
+커널을 다시 컴파일하면서 부팅 시 
+마운트할 드라이브를 지정합니다. 
+$LK,"::/Misc/DoDistro.HC"$ 참고.
+
+$LK,"설치",A="FI:::/Doc/Install.DD"$
+
+$LK,"::/StartOS.HC"$는 
+$FG,2$AUTOEXEC.BAT$FG$에 해당하는 
+TempleOS 파일입니다. 시작할 때 
+$LK,"Adam 태스크",A="FF:::/Kernel/KMain.HC,\"StartOS"$가 
+실행합니다.
+$ID,-2$$TR,"프로그래머 도움말"$
+$ID,2$$LK,"지침",A="FI:::/Doc/GuideLines.DD"$
+$LK,"HolyC",A="FI:::/Doc/HolyC.DD"$
+$LK,"그래픽",A="FI:::/Doc/GraphicsOverview.DD"$
+$LK,"DolDoc 문서",A="FI:::/Demo/DolDoc/FileRead.HC"$
+$LK,"Lectures/AndNotMod.HC",A="FI:::/Demo/Lectures/AndNotMod.HC"$
+$LK,"Lectures/FixedPoint.HC",A="FI:::/Demo/Lectures/FixedPoint.HC"$
+$LK,"Lectures/NegDisp.HC",A="FI:::/Demo/Lectures/NegDisp.HC"$
+$LK,"Lectures/Optimization.HC",A="FI:::/Demo/Lectures/Optimization.HC"$
+$LK,"Lectures/ScrnMemory.HC",A="FI:::/Demo/Lectures/ScrnMemory.HC"$
+$LK,"Lectures/GraphicsCPULoad.HC",A="FI:::/Demo/Lectures/GraphicsCPULoad.HC"$
+$LK,"Lectures/InterruptDemo.HC",A="FI:::/Demo/Lectures/InterruptDemo.HC"$
+$ID,-2$$TR,"시스템 프로그래머 도움말"$
+$ID,2$$LK,"64BitAsmQuiz",A="FI:::/Demo/Lectures/64BitAsmQuiz.DD"$
+$LK,"해시 테이블",A="HI:Hash"$
+$LK,"디스크 스택",A="FI:::/Doc/FileLowLevel.DD"$
+$LK,"키보드 장치",A="HI:Keyboard Devices/System"$
+$LK,"PCIInterrupts.HC",A="FI:::/Demo/Lectures/PCIInterrupts.HC"$
+$LK,"MemRep",A="MN:MemRep"$
+$LK,"WallPaper",A="FI:::/Adam/WallPaper.HC"$
+$LK,"스케줄러",A="FL:::/Kernel/Sched.HC,1"$
+$LK,"Doc",A="FL:::/Adam/DolDoc/MakeDoc.HC,1"$
+$LK,"MiniGrLib",A="FI:::/Demo/Lectures/MiniGrLib.HC"$
+$LK,"MiniCompiler",A="FI:::/Demo/Lectures/MiniCompiler.HC"$
+$LK,"Backend",A="FL:::/Compiler/BackLib.HC,1"$$ID,-2$
+
+$WW,0$$FG,5$$TX+CX,"색인"$$FG$
+$LK,"AutoComplete",A="HI:AutoComplete"$
+$LK,"비트",A="HI:Bit"$
+$LK,"부팅",A="HI:Boot"$
+$LK,"호출",A="HI:Call"$
+$LK,"문자 개요",A="FI:::/Doc/CharOverview.DD"$
+$LK,"문자 루틴",A="HI:Char"$
+$LK,"순환 큐",A="HI:Data Types/Circular Queue"$
+$LK,"명령 줄 개요",A="FI:::/Doc/CmdLineOverview.DD"$
+$LK,"명령 줄 루틴",A="HI:Cmd Line (Typically)"$
+$LK,"컴파일러 개요",A="FI:::/Doc/CompilerOverview.DD"$
+$LK,"컴파일러 루틴",A="HI:Compiler"$
+$LK,"압축",A="HI:Compression"$
+$LK,"컨트롤",A="HI:Ctrls"$
+$LK,"데이터 형",A="HI:Data Types"$
+$LK,"날짜",A="HI:Date"$
+$LK,"디버깅 개요",A="FI:::/Doc/DbgOverview.DD"$
+$LK,"디버깅 루틴",A="HI:Debugging"$
+$LK,"정의",A="HI:Define"$
+$LK,"장치",A="HI:Devices"$
+$LK,"디스크",A="HI:File"$
+$LK,"Doc 개요",A="FI:::/Doc/DolDocOverview.DD"$
+$LK,"Doc 루틴",A="HI:DolDoc"$
+$LK,"예외",A="HI:Exceptions"$
+$LK,"파일",A="HI:File"$
+$LK,"파일 유틸",A="FI:::/Doc/FileUtils.DD"$
+$LK,"프레임",A="HI:Hash/Frame"$
+$LK,"God",A="HI:God"$
+$LK,"그래픽 개요",A="FI:::/Doc/GraphicsOverview.DD"$
+$LK,"그래픽 루틴",A="HI:Graphics"$
+$LK,"해시",A="HI:Hash"$
+$LK,"도움말 시스템",A="HI:Help System"$
+$LK,"HolyC",A="FI:::/Doc/HolyC.DD"$
+$LK,"InFile",A="HI:InFile"$
+$LK,"정보",A="HI:Info"$
+$LK,"설치",A="HI:Install"$
+$LK,"I/O",A="HI:I/O"$
+$LK,"작업",A="HI:Job"$
+$LK,"키 할당",A="FI:::/Doc/KeyAlloc.DD"$
+$LK,"키보드 장치",A="HI:Keyboard Devices"$
+$LK,"Link Types",A="MN:LK_FILE"$
+$LK,"수학",A="HI:Math"$
+$LK,"메모리 개요",A="FI:::/Doc/MemOverview.DD"$
+$LK,"메모리 루틴",A="HI:Memory"$
+$LK,"메뉴",A="HI:Menus"$
+$LK,"메시지",A="HI:Messages"$
+$LK,"기타",A="HI:Misc"$
+$LK,"마우스",A="HI:Mouse"$
+$LK,"MultiCore",A="HI:MultiCore"$
+$LK,"OpCodes",A="FF:::/Compiler/OpCodes.DD,MOV"$
+$LK,"연산자 우선순위",A="FF:::/Doc/HolyC.DD,operator precedence"$
+$LK,"PCI",A="HI:PCI"$
+$LK,"Print(\"\") Fmt Strings",A="FI:::/Doc/Print.DD"$
+$LK,"프로세서",A="HI:Processor"$
+$LK,"프로파일러",A="HI:Profiler"$
+$LK,"RedSea",A="FI:::/Doc/RedSea.DD"$
+$LK,"레지스트리",A="HI:Registry"$
+$LK,"스캔 코드",A="FI:::/Doc/CharOverview.DD"$
+$LK,"ScrnCast",A="HI:ScrnCast"$
+$LK,"사운드",A="HI:Snd"$
+$LK,"스프라이트",A="HI:Sprites"$
+$LK,"StdIn",A="HI:StdIn"$
+$LK,"StdOut",A="HI:StdOut"$
+$LK,"문자열",A="HI:Char"$
+$LK,"태스크",A="HI:Task"$
+$LK,"TextBase 계층",A="HI:TextBase Layer"$
+$LK,"시간",A="HI:Time"$
+$LK,"훈련",A="HI:Help System/Training"$
+$LK,"TOSZ",A="FI:::/Doc/TOSZ.DD"$
+$LK,"유틸",A="HI:Cmd Line (Typically)"$
+$LK,"창",A="HI:Windows"$

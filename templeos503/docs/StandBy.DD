@@ -1,0 +1,18 @@
+$FG,5$$TX+CX,"AutoComplete는 대기 중입니다"$$FG$
+
+$FG,4$$TX+CX+L+PU+UL,"시스템 키 빠른 안내",A="::/Doc/HelpIndex.DD"$$FG$
+$FG,4$$TX+CX,"(어디서나 작동)"$$FG$
+$FG,2$  <SPACE>   $FG$왼쪽 클릭
+$FG,2$  <ENTER>   $FG$오른쪽 클릭
+$FG,2$   <F1>     $FG$도움말
+$FG,2$ <CTRL-m>   $FG$개인 메뉴
+$FG,2$   <ESC>    $FG$저장 후 종료
+$FG,2$<SHIFT-ESC> $FG$중단 후 종료
+$FG,2$ <WINDOWS>  $FG$풀다운 메뉴
+
+$FG,4$$TX+CX+L+PU+UL,"방언",A="::/Adam/God/HSNotes.DD"$$FG$
+$FG,4$$TX+CX,"(어디서나 작동)"$$FG$
+$FG,2$   <F7>     $FG$God 말씀
+$FG,2$<SHIFT-F7>  $FG$God 구절
+$FG,2$   <F6>     $FG$God 노래
+$FG,2$<SHIFT-F6>  $FG$God 낙서
