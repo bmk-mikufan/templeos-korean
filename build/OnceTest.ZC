@@ -1,0 +1,19 @@
+U0 TT()
+{
+	I64 i = 0, len = 2;
+	U8 c = 0x81;
+	while (i < len)
+	{
+		if (i + 1 < len && c >= 0x81)
+			Print("KR1\n");
+		i++;
+	}
+}
+U0 Tmp()
+{
+	"Once test start\n";
+	TT;
+	"Once test end\n";
+}
+TT;
+Tmp;

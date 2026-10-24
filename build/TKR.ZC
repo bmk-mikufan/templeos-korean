@@ -1,0 +1,38 @@
+U16 *tkr;
+U0 TKR(CTask *task, I64 x, I64 y, I64 attr, I64 glyph_idx)
+{
+	I64 xx, yy;
+	if (!task || !tkr || glyph_idx < 0 || glyph_idx >= font_kr_num)
+		return;
+	xx = (task->scroll_x >> 3) + x + task->win_left;
+	yy = (task->scroll_y >> 3) + y + task->win_top;
+	if (xx < 0 || xx >= TEXT_COLS || xx < task->win_left || xx > task->win_right)
+		return;
+	if (yy < 0 || yy >= TEXT_ROWS || yy < task->win_top || yy > task->win_bottom)
+		return;
+	tkr[yy * TEXT_COLS + xx] = glyph_idx + 1;
+}
+U0 TLKR(CTask *task, I64 x, I64 y, I64 len, I64 attr, U8 *s)
+{
+	I64 i = 0, idx;
+	U8 c;
+	if (!s || len <= 0)
+		return;
+	while (i < len)
+	{
+		c = s[i];
+		if (i + 1 < len && c >= 0x81)
+		{
+			idx = FontKRIndex(c << 8 | s[i + 1]);
+			if (idx >= 0)
+			{
+				TKR(task, x + i, y, attr, idx);
+				TextChar(task, FALSE, x + i + 1, y, 32 | (attr & 0xFFFFFF00));
+				i += 2;
+				continue;
+			}
+		}
+		TextChar(task, FALSE, x + i, y, c | (attr & 0xFFFFFF00));
+		i++;
+	}
+}
