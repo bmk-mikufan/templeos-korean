@@ -20,6 +20,9 @@ PaletteSetSlate;
 FontKRLoad;
 if (!font_kr_num)
 	PrintErr("FontKR: Korean font not loaded\n");
+HangulIMELoad;
+if (!hime_num)
+	PrintErr("HangulIME: table not loaded\n");
 sys_os_version_str = "TempleOS-Korean V2.03.109";
 sys_os_version_nice = sys_os_version_str;
 sys_os_version_full = sys_os_version_str;

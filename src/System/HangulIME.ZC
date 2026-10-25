@@ -1,0 +1,576 @@
+// 두벌식 Hangul IME for TempleOS-Korean.
+//
+// Data file: /System/HangulIME.DAT
+//   "HIM1" | U32 num | U32 ver | U16 codes[num]
+//   codes[] is CP949, indexed by ((cho*21+jung)*28+jong) == Unicode-0xAC00.
+//
+// The IME hooks KeyDev at priority 0x70000000, i.e. after the raw keyboard
+// filter (0x60000000) and before KDDocPutKey (0x80000000), so it sees every
+// key first and can either consume it or let it through untouched.  It is
+// part of /System, so it is JIT-compiled at boot with the rest of the system.
+//
+// Composition works on the two bytes just before the insert point: a CP949
+// Hangul is two bytes, so a syllable is rewritten in place, and a syllable
+// that is taken apart is shortened by two bytes.  DocPutS inserts at
+// doc->cur_col inside the current text entry, so the composing syllable is
+// always the tail of that entry.
+//
+// Toggle: <ALT-SPACE>, or HangulIMEOn;/HangulIMEOff; from the command line.
+
+#help_index "Font/Korean;Input"
+
+#define HIME_MAX	12000
+
+public U8	 *hime_buf = NULL;
+public U16	 *hime_tbl = NULL;
+public I64	  hime_num = 0;
+public Bool	  hime_on = FALSE;
+
+// Composition state.  cho/jung are -1 when absent, jong is 0 when absent.
+public I64	  hime_cho = -1, hime_jung = -1, hime_jong = 0;
+public I64	  hime_shown = 0;	// bytes of the live syllable in the doc
+public U32	  hime_code = 0;	// CP949 code shown right now, 0 = none
+public CDoc	 *hime_doc = NULL;
+
+public I8	  hime_cho_tbl[128], hime_jung_tbl[128], hime_jong_tbl[128];
+public I64	  hime_j2c[28], hime_split[28];
+public I64	  hime_jc_a[8], hime_jc_b[8], hime_jc_c[8], hime_njc = 0;
+public I64	  hime_jt_a[12], hime_jt_b[12], hime_jt_c[12], hime_njt = 0;
+
+U0 HIMEAddJC(I64 a, I64 b, I64 c)
+{
+	hime_jc_a[hime_njc] = a;
+	hime_jc_b[hime_njc] = b;
+	hime_jc_c[hime_njc] = c;
+	hime_njc++;
+}
+
+U0 HIMEAddJT(I64 a, I64 b, I64 c)
+{
+	hime_jt_a[hime_njt] = a;
+	hime_jt_b[hime_njt] = b;
+	hime_jt_c[hime_njt] = c;
+	hime_njt++;
+}
+
+U0 HIMETables()
+{//Build the 두벌식 key maps and the compound jamo tables.
+	I64 i;
+
+	for (i = 0; i < 128; i++)
+	{
+		hime_cho_tbl[i] = -1;
+		hime_jung_tbl[i] = -1;
+		hime_jong_tbl[i] = 0;
+	}
+	for (i = 0; i < 28; i++)
+	{
+		hime_j2c[i] = 0;
+		hime_split[i] = 0;
+	}
+
+	// consonants: initial (cho) index
+	hime_cho_tbl['r'] = 0;	hime_cho_tbl['R'] = 1;	// ㄱ ㄲ
+	hime_cho_tbl['s'] = 2;	hime_cho_tbl['e'] = 3;	// ㄴ ㄷ
+	hime_cho_tbl['E'] = 4;	hime_cho_tbl['f'] = 5;	// ㄸ ㄹ
+	hime_cho_tbl['a'] = 6;	hime_cho_tbl['q'] = 7;	// ㅁ ㅂ
+	hime_cho_tbl['Q'] = 8;	hime_cho_tbl['t'] = 9;	// ㅃ ㅅ
+	hime_cho_tbl['T'] = 10;	hime_cho_tbl['d'] = 11;	// ㅆ ㅇ
+	hime_cho_tbl['w'] = 12;	hime_cho_tbl['W'] = 13;	// ㅈ ㅉ
+	hime_cho_tbl['c'] = 14;	hime_cho_tbl['z'] = 15;	// ㅊ ㅋ
+	hime_cho_tbl['x'] = 16;	hime_cho_tbl['v'] = 17;	// ㅌ ㅍ
+	hime_cho_tbl['g'] = 18;				// ㅎ
+
+	// consonants: final (jong) index, 0 = this key has no final form
+	hime_jong_tbl['r'] = 1;	hime_jong_tbl['R'] = 2;	// ㄱ ㄲ
+	hime_jong_tbl['s'] = 4;	hime_jong_tbl['e'] = 7;	// ㄴ ㄷ
+	hime_jong_tbl['f'] = 8;	hime_jong_tbl['a'] = 16;	// ㄹ ㅁ
+	hime_jong_tbl['q'] = 17;	hime_jong_tbl['t'] = 19;	// ㅂ ㅅ
+	hime_jong_tbl['T'] = 20;	hime_jong_tbl['d'] = 21;	// ㅆ ㅇ
+	hime_jong_tbl['w'] = 22;	hime_jong_tbl['c'] = 23;	// ㅈ ㅊ
+	hime_jong_tbl['z'] = 24;	hime_jong_tbl['x'] = 25;	// ㅋ ㅌ
+	hime_jong_tbl['v'] = 26;	hime_jong_tbl['g'] = 27;	// ㅍ ㅎ
+
+	// vowels
+	hime_jung_tbl['k'] = 0;	hime_jung_tbl['o'] = 1;	// ㅏ ㅐ
+	hime_jung_tbl['i'] = 2;	hime_jung_tbl['O'] = 3;	// ㅑ ㅒ
+	hime_jung_tbl['j'] = 4;	hime_jung_tbl['p'] = 5;	// ㅓ ㅔ
+	hime_jung_tbl['u'] = 6;	hime_jung_tbl['P'] = 7;	// ㅕ ㅖ
+	hime_jung_tbl['h'] = 8;	hime_jung_tbl['y'] = 12;	// ㅗ ㅛ
+	hime_jung_tbl['n'] = 13;	hime_jung_tbl['b'] = 17;	// ㅜ ㅠ
+	hime_jung_tbl['m'] = 18;	hime_jung_tbl['l'] = 20;	// ㅡ ㅣ
+
+	// compound vowels: (first, second) -> compound
+	hime_njc = 0;
+	HIMEAddJC(8, 0, 9);	// ㅗ+ㅏ=ㅘ
+	HIMEAddJC(8, 1, 10);	// ㅗ+ㅐ=ㅙ
+	HIMEAddJC(8, 20, 11);	// ㅗ+ㅣ=ㅚ
+	HIMEAddJC(13, 4, 14);	// ㅜ+ㅓ=ㅝ
+	HIMEAddJC(13, 5, 15);	// ㅜ+ㅔ=ㅞ
+	HIMEAddJC(13, 20, 16);	// ㅜ+ㅣ=ㅟ
+	HIMEAddJC(18, 20, 19);	// ㅡ+ㅣ=ㅢ
+
+	// compound finals: (first, second) -> compound
+	hime_njt = 0;
+	HIMEAddJT(1, 19, 3);	// ㄱ+ㅅ=ㄳ
+	HIMEAddJT(4, 22, 5);	// ㄴ+ㅈ=ㄵ
+	HIMEAddJT(4, 27, 6);	// ㄴ+ㅎ=ㄶ
+	HIMEAddJT(8, 1, 9);	// ㄹ+ㄱ=ㄺ
+	HIMEAddJT(8, 16, 10);	// ㄹ+ㅁ=ㄻ
+	HIMEAddJT(8, 17, 11);	// ㄹ+ㅂ=ㄼ
+	HIMEAddJT(8, 19, 12);	// ㄹ+ㅅ=ㄽ
+	HIMEAddJT(8, 25, 13);	// ㄹ+ㅌ=ㄾ
+	HIMEAddJT(8, 26, 14);	// ㄹ+ㅍ=ㄿ
+	HIMEAddJT(8, 27, 15);	// ㄹ+ㅎ=ㅀ
+	HIMEAddJT(17, 19, 18);	// ㅂ+ㅅ=ㅄ
+
+	// final -> initial, for when a vowel follows a final consonant
+	hime_j2c[1] = 0;	hime_j2c[2] = 1;	// ㄱ ㄲ
+	hime_j2c[4] = 2;	hime_j2c[7] = 3;	// ㄴ ㄷ
+	hime_j2c[8] = 5;	hime_j2c[16] = 6;	// ㄹ ㅁ
+	hime_j2c[17] = 7;	hime_j2c[19] = 9;	// ㅂ ㅅ
+	hime_j2c[20] = 10;	hime_j2c[21] = 11;	// ㅆ ㅇ
+	hime_j2c[22] = 12;	hime_j2c[23] = 14;	// ㅈ ㅊ
+	hime_j2c[24] = 15;	hime_j2c[25] = 16;	// ㅋ ㅌ
+	hime_j2c[26] = 17;	hime_j2c[27] = 18;	// ㅍ ㅎ
+
+	// final split: low byte = final left behind, high byte = next initial
+	for (i = 1; i < 28; i++)
+		hime_split[i] = hime_j2c[i] << 8;	//no remainder, all moves on
+	hime_split[3] = 1 | 9 << 8;	// ㄳ -> ㄱ | ㅅ
+	hime_split[5] = 4 | 12 << 8;	// ㄵ -> ㄴ | ㅈ
+	hime_split[6] = 4 | 18 << 8;	// ㄶ -> ㄴ | ㅎ
+	hime_split[9] = 8 | 0 << 8;	// ㄺ -> ㄹ | ㄱ
+	hime_split[10] = 8 | 6 << 8;	// ㄻ -> ㄹ | ㅁ
+	hime_split[11] = 8 | 7 << 8;	// ㄼ -> ㄹ | ㅂ
+	hime_split[12] = 8 | 9 << 8;	// ㄽ -> ㄹ | ㅅ
+	hime_split[13] = 8 | 16 << 8;	// ㄾ -> ㄹ | ㅌ
+	hime_split[14] = 8 | 17 << 8;	// ㄿ -> ㄹ | ㅍ
+	hime_split[15] = 8 | 18 << 8;	// ㅀ -> ㄹ | ㅎ
+	hime_split[18] = 17 | 9 << 8;	// ㅄ -> ㅂ | ㅅ
+}
+
+I64 HIMEJungComp(I64 a, I64 b)
+{
+	I64 i;
+
+	for (i = 0; i < hime_njc; i++)
+		if (hime_jc_a[i] == a && hime_jc_b[i] == b)
+			return hime_jc_c[i];
+	return -1;
+}
+
+I64 HIMEJongComp(I64 a, I64 b)
+{
+	I64 i;
+
+	for (i = 0; i < hime_njt; i++)
+		if (hime_jt_a[i] == a && hime_jt_b[i] == b)
+			return hime_jt_c[i];
+	return -1;
+}
+
+I64 HIMEJungSplit(I64 a)
+{//ㅘ -> ㅗ etc.  Returns -1 when a is a simple vowel.
+	I64 i;
+
+	for (i = 0; i < hime_njc; i++)
+		if (hime_jc_c[i] == a)
+			return hime_jc_a[i];
+	return -1;
+}
+
+I64 HIMEJongSplitIdx(I64 a)
+{//ㄺ -> ㄹ etc.  Returns 0 when a is a simple final.
+	I64 i;
+
+	for (i = 0; i < hime_njt; i++)
+		if (hime_jt_c[i] == a)
+			return hime_jt_a[i];
+	return 0;
+}
+
+U0 HIMECommit()
+{//The bytes on screen become permanent; forget the composition.
+	hime_cho = -1;
+	hime_jung = -1;
+	hime_jong = 0;
+	hime_shown = 0;
+	hime_code = 0;
+}
+
+U0 HIMEDelAt(CDocEntry *ce, I64 end)
+{//Drop the two bytes just before end.
+	if (end < ce->max_col)
+		MemCopy(ce->tag + end - 2, ce->tag + end, ce->max_col - end + 1);
+	else
+		ce->tag[end - 2] = 0;
+	ce->max_col -= 2;
+}
+
+Bool HIMETail(CDoc *doc, CDocEntry **_ce, I64 *_end, Bool any)
+{//Find the two bytes just before the insert point.
+//The doc merges neighbouring text entries as it redraws, so the composing
+//syllable is not necessarily an entry of its own; it is always the tail.
+	CDocEntry *ce;
+	I64		   end;
+
+	if (doc->cur_entry == doc)
+	{
+		ce = doc->cur_entry->last;
+		if (ce == doc)
+			return FALSE;
+		end = ce->max_col;
+	}
+	else
+	{
+		ce = doc->cur_entry;
+		end = doc->cur_col;
+	}
+	if (!ce->tag)
+		return FALSE;
+	if (end < 2)
+		return FALSE;
+	if (end > ce->max_col)
+		return FALSE;
+	if (!any)
+	{
+		if (ce->tag[end - 2] != (hime_code >> 8 & 0xFF))
+			return FALSE;
+		if (ce->tag[end - 1] != (hime_code & 0xFF))
+			return FALSE;
+	}
+	*_ce = ce;
+	*_end = end;
+	return TRUE;
+}
+
+U0 HIMEDel(CDoc *doc)
+{//Remove the composing syllable, in place.
+	CDocEntry *ce;
+	I64		   end;
+
+	if (HIMETail(doc, &ce, &end, FALSE))
+		HIMEDelAt(ce, end);
+}
+
+U0 HIMEPut(CDoc *doc, U32 code)
+{//Insert one CP949 syllable as two bytes at the insert point.
+//DocPrint appends it to the text run and leaves the cursor after it.
+	U8 buf[3];
+
+	buf[0] = code >> 8;
+	buf[1] = code & 0xFF;
+	buf[2] = 0;
+	DocPrint(doc, "%s", buf);
+}
+
+U0 HIMEShow(CDoc *doc)
+{//Make the doc show the syllable described by the current state.
+	CDocEntry *ce = NULL;
+	I64		   end = 0;
+	U32		   code = 0;
+	Bool	   unlock;
+
+	if (hime_cho >= 0 && hime_jung >= 0)
+		code = hime_tbl[(hime_cho * 21 + hime_jung) * 28 + hime_jong];
+	if (code == hime_code)
+		return;
+
+	unlock = DocLock(doc);
+	if (HIMETail(doc, &ce, &end, FALSE))
+	{
+		if (code)
+		{//Same width, so just overwrite the two bytes.
+			ce->tag[end - 2] = code >> 8;
+			ce->tag[end - 1] = code & 0xFF;
+			hime_code = code;
+		}
+		else
+		{//Syllable became empty.
+			HIMEDelAt(ce, end);
+			hime_shown = 0;
+			hime_code = 0;
+		}
+	}
+	else
+	{//Nothing usable on screen: drop the old one and put the new one in.
+		if (hime_shown == 2)
+			HIMEDel(doc);
+		hime_shown = 0;
+		hime_code = code;
+		if (code)
+		{
+			HIMEPut(doc, code);
+			hime_shown = 2;
+		}
+	}
+	if (unlock)
+		DocUnlock(doc);
+}
+
+Bool HIMERestore(CDoc *doc)
+{//Adopt the Hangul cell just before the insert point as the composing syllable,
+//so backspace can take it apart jamo by jamo.
+	CDocEntry *ce;
+	I64		   end, i;
+	U32		   code;
+
+	if (!HIMETail(doc, &ce, &end, TRUE))
+		return FALSE;
+	if (ce->tag[end - 2] < 0x81)
+		return FALSE;
+	code = (ce->tag[end - 2] << 8) | ce->tag[end - 1];
+	for (i = 0; i < hime_num; i++)
+		if (hime_tbl[i] == code)
+			break;
+	if (i >= hime_num)
+		return FALSE;
+	hime_cho = i / (28 * 21);
+	hime_jung = (i / 28) % 21;
+	hime_jong = i % 28;
+	hime_code = code;
+	hime_shown = 2;
+	return TRUE;
+}
+
+Bool HIMEBackspace(CDoc *doc)
+{//Returns TRUE if the IME ate the key.
+	I64 c;
+
+	if (hime_jong)
+	{
+		hime_jong = HIMEJongSplitIdx(hime_jong);
+		HIMEShow(doc);
+		return TRUE;
+	}
+	if (hime_jung >= 0)
+	{
+		if ((c = HIMEJungSplit(hime_jung)) >= 0)
+		{
+			hime_jung = c;
+			HIMEShow(doc);
+			return TRUE;
+		}
+		hime_jung = -1;
+		HIMEShow(doc);	// code 0: deletes the syllable
+		//No jamo glyphs in the font, so nothing can stay pending.
+		hime_cho = -1;
+		hime_shown = 0;
+		hime_code = 0;
+		return TRUE;
+	}
+	if (hime_cho >= 0)
+	{//A lone consonant is pending but has no glyph; just drop it.
+		hime_cho = -1;
+		hime_shown = 0;
+		hime_code = 0;
+		return TRUE;
+	}
+	if (HIMERestore(doc))
+		return HIMEBackspace(doc);	//take the previous syllable apart
+	if (doc->cur_col <= doc->cur_entry->min_col || doc->cur_entry == doc)
+	{//Nothing composing: delete a whole Hangul cell, not one of its bytes.
+		CDocEntry *ce;
+		I64		   end;
+		Bool	   unlock = DocLock(doc);
+
+		if (HIMETail(doc, &ce, &end, TRUE))
+		{
+			if (ce->tag[end - 2] >= 0x81)
+			{
+				HIMEDelAt(ce, end);
+				if (unlock)
+					DocUnlock(doc);
+				return TRUE;
+			}
+		}
+		if (unlock)
+			DocUnlock(doc);
+	}
+	return FALSE;
+}
+
+Bool HIMEPutKey(I64 ch, I64 sc)
+{//KeyDev handler.  Returns TRUE when the key was consumed.
+	CDoc *doc;
+	I64	 k, j, c;
+
+	if (sc & SCF_KEY_DESC)
+		return FALSE;	//menu description pass, never consume
+	if (!(doc = DocPut))
+		return FALSE;
+	if (!sys_focus_task || doc != sys_focus_task->put_doc)
+		return FALSE;	//another task printing: not a keystroke for us
+
+	if (ch == CH_SPACE && (sc & SCF_ALT) && !(sc & SCF_CTRL))
+	{//<ALT-SPACE> toggles, even while the IME is off.
+		hime_on = !hime_on;
+		HIMECommit;
+		return TRUE;
+	}
+	if (!hime_on || !hime_num)
+		return FALSE;
+	if (hime_doc != doc)
+		HIMECommit;	//focus moved: drop the state, keep the text
+	hime_doc = doc;
+	if (doc->flags & DOCF_IN_DOLLAR)
+	{//Inside a $$ macro: let the doc have the raw key.
+		HIMECommit;
+		return FALSE;
+	}
+
+	if (ch == CH_BACKSPACE && !(sc & (SCF_CTRL | SCF_ALT | SCF_SHIFT)))
+		return HIMEBackspace(doc);
+
+	if (ch <= 0 || ch > 127 || sc & (SCF_CTRL | SCF_ALT))
+	{
+		HIMECommit;
+		return FALSE;
+	}
+
+	if ((j = hime_jung_tbl[ch]) >= 0)
+	{//vowel
+		if (hime_jung < 0)
+		{
+			if (hime_cho < 0)
+			{
+				HIMECommit;
+				return FALSE;	//lone vowel: no glyph, pass it on
+			}
+			hime_jung = j;
+		}
+		else if (hime_jong)
+		{//final moves to the next syllable
+			c = hime_split[hime_jong];
+			hime_jong = c & 0xFF;
+			HIMEShow(doc);
+			hime_shown = 0;	//that syllable is done
+			hime_code = 0;
+			hime_cho = c >> 8;
+			hime_jung = j;
+			hime_jong = 0;
+		}
+		else if ((c = HIMEJungComp(hime_jung, j)) >= 0)
+			hime_jung = c;
+		else
+		{//not a compound vowel, and a lone vowel has no glyph
+			HIMECommit;
+			return TRUE;
+		}
+		HIMEShow(doc);
+		return TRUE;
+	}
+
+	if ((k = hime_cho_tbl[ch]) >= 0)
+	{//consonant
+		if (hime_jung < 0)
+		{
+			hime_cho = k;
+			return TRUE;
+		}
+		if (!hime_jong)
+		{
+			if (!(c = hime_jong_tbl[ch]))
+			{//ㄸ ㅃ ㅉ cannot end a syllable
+				HIMECommit;
+				hime_cho = k;
+				return TRUE;
+			}
+			hime_jong = c;
+		}
+		else if ((c = HIMEJongComp(hime_jong, hime_jong_tbl[ch])) >= 0)
+			hime_jong = c;
+		else
+		{//two separate finals: start a new syllable
+			HIMECommit;
+			hime_cho = k;
+			return TRUE;
+		}
+		HIMEShow(doc);
+		return TRUE;
+	}
+
+	HIMECommit;
+	return FALSE;
+}
+
+Bool HIMEPutS(U8 *st)
+{
+	return FALSE;
+}
+
+public Bool HangulIMELoad(U8 *filename = "::/System/HangulIME.DAT")
+{//Load the CP949 table and install the key hook.
+	U8	*buf;
+	I64	 size;
+	U32	 num;
+
+	hime_buf = NULL;
+	hime_tbl = NULL;
+	hime_num = 0;
+
+	buf = FileRead(filename, &size);
+	if (!buf)
+		return FALSE;
+	if (size < 12)
+		goto hl_bad;
+	if (buf[0] != 'H' || buf[1] != 'I' || buf[2] != 'M' || buf[3] != '1')
+		goto hl_bad;
+	num = buf(U32 *)[1];
+	if (num != 11172)
+		goto hl_bad;
+	if (size < 12 + num * 2)
+		goto hl_bad;
+
+	hime_buf = MAlloc(size, sys_task);
+	MemCopy(hime_buf, buf, size);
+	Free(buf);
+
+	hime_tbl = (hime_buf + 12)(U16 *);
+	hime_num = num;
+	HIMETables;
+	KeyDevAdd(&HIMEPutKey, &HIMEPutS, 0x70000000, FALSE);
+	return TRUE;
+
+hl_bad:
+	Free(buf);
+	return FALSE;
+}
+
+public U0 HangulIMESet(Bool on)
+{//Turn the IME on or off without printing anything.
+	hime_on = on;
+	HIMECommit;
+}
+
+public U0 HangulIMERep()
+{//Print IME status.
+	if (!hime_num)
+	{
+		"HangulIME: no table loaded\n";
+		return;
+	}
+	if (hime_on)
+		"HangulIME: %d syllables, ON  (<ALT-SPACE> toggles)\n", hime_num;
+	else
+		"HangulIME: %d syllables, OFF  (<ALT-SPACE> toggles)\n", hime_num;
+}
+
+public U0 HangulIMEOn()
+{
+	HangulIMESet(TRUE);
+	HangulIMERep;
+}
+
+public U0 HangulIMEOff()
+{
+	HangulIMESet(FALSE);
+	HangulIMERep;
+}
+
+public U0 HangulIMEToggle()
+{
+	HangulIMESet(!hime_on);
+	HangulIMERep;
+}

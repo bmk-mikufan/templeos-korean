@@ -20,8 +20,10 @@ It performs:
   System/DolDoc/DocRecalc.ZC  Doc text run uses TextLenStrKR
   System/FontKR.ZC         font loader / binary search (with precedence fix)
   System/FontKR.DAT        11,172 glyphs
-  System/MakeSystem.ZC     #include FontKR + KRText
-  StartOS.ZC               PaletteSetSlate + FontKRLoad + version branding
+  System/HangulIME.ZC      two-beolsik IME (KeyDev hook, in-place composition)
+  System/HangulIME.DAT     CP949 syllable table
+  System/MakeSystem.ZC     #include FontKR + KRText + HangulIME
+  StartOS.ZC               PaletteSetSlate + FontKRLoad + HangulIMELoad + version branding
   Once.ZC                  Korean boot greeting
 """
 import argparse
@@ -173,6 +175,8 @@ def main():
     for rel, srcp in [("System/KRText.ZC", SRC / "System/KRText.ZC"),
                       ("System/FontKR.ZC", SRC / "System/FontKR.ZC"),
                       ("System/FontKR.DAT", SRC / "System/FontKR.DAT"),
+                      ("System/HangulIME.ZC", SRC / "System/HangulIME.ZC"),
+                      ("System/HangulIME.DAT", SRC / "System/HangulIME.DAT"),
                       ("StartOS.ZC", SRC / "StartOS.ZC")]:
         tgt = root / rel
         if not srcp.is_file():
@@ -203,6 +207,8 @@ def main():
             out = out.replace('#include "Externs"', '#include "Externs"\n#include "FontKR"', 1)
         if '#include "KRText"' not in out:
             out = out.replace('#include "Sound"', '#include "KRText"\n#include "Sound"', 1)
+        if '#include "HangulIME"' not in out:
+            out = out.replace('#include "KRText"', '#include "KRText"\n#include "HangulIME"', 1)
         return None if out == s else out.encode("latin-1")
     patch_text(root / "System/MakeSystem.ZC", make_system, r, "MakeSystem.ZC  includes")
 

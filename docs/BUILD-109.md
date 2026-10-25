@@ -81,8 +81,9 @@ sudo qemu-nbd -d /dev/nbd0
 | `System/KRText.ZC` | CP949 2바이트 디코더 `TextCharKR`/`TextLenStrKR` |
 | `System/DolDoc/DocRecalc.ZC` | Doc 텍스트 run을 `TextLenStrKR`로 |
 | `System/FontKR.ZC` / `.DAT` | 폰트 로더 + 11,172 글리프 |
-| `System/MakeSystem.ZC` | `FontKR`, `KRText` include |
-| `StartOS.ZC` | `PaletteSetSlate`, `FontKRLoad`, 버전 |
+| `System/HangulIME.ZC` / `.DAT` | 두벌식 IME + CP949 음절 테이블 |
+| `System/MakeSystem.ZC` | `FontKR`, `KRText`, `HangulIME` include |
+| `StartOS.ZC` | `PaletteSetSlate`, `FontKRLoad`, `HangulIMELoad`, 버전 |
 | `Once.ZC` | 한국어 부팅 인사 |
 
 `final_build109.py`가 하는 일:
