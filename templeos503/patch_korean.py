@@ -117,6 +117,13 @@ def main():
     wr('/Adam/KRText.HC', kr)
     print('  /Adam/KRText.HC %d bytes' % len(kr))
 
+    print('== hangul ime')
+    shutil.copyfile(os.path.join(TPL, 'HangulIME.DAT'), P('/Adam/HangulIME.DAT'))
+    print('  /Adam/HangulIME.DAT %d bytes' % os.path.getsize(P('/Adam/HangulIME.DAT')))
+    hime = open(os.path.join(TPL, 'HangulIME.ZC'), 'rb').read()
+    wr('/Adam/HangulIME.HC', hime)
+    print('  /Adam/HangulIME.HC %d bytes' % len(hime))
+
     print('== graphics')
     sub('/Adam/Gr/GrGlbls.HC',
         b'  U16\t*win_z_buf;',
@@ -148,14 +155,25 @@ def main():
         b'#include "Gr/MakeGr"\n',
         b'#include "FontKR"\n#include "Gr/MakeGr"\n#include "KRText"\n',
         label='MakeAdam includes')
+    sub('/Adam/MakeAdam.HC',
+        b'#include "Host"\nCd("..");;',
+        b'#include "Host"\n#include "HangulIME"\nCd("..");;',
+        label='MakeAdam hangulime')
 
     print('== boot')
-    sub('/StartOS.HC',
-        b'#include "/Adam/MakeAdam"\n',
-        b'#include "/Adam/MakeAdam"\n\nFontKRLoad;\n',
-        label='FontKRLoad')
-    if b'FontKRLoad;' not in rd('/StartOS.HC'):
-        sys.exit('FAIL: FontKRLoad not inserted')
+    d = rd('/StartOS.HC')
+    if b'HangulIMELoad;' in d:
+        print('  skip (already patched) /StartOS.HC HangulIMELoad')
+    else:
+        if b'\nFontKRLoad;\n' not in d:
+            d = d.replace(b'#include "/Adam/MakeAdam"\n',
+                          b'#include "/Adam/MakeAdam"\n\nFontKRLoad;\n', 1)
+            print('  patched /StartOS.HC              FontKRLoad')
+        d = d.replace(b'\nFontKRLoad;\n', b'\nFontKRLoad;\nHangulIMELoad;\n', 1)
+        if b'HangulIMELoad;' not in d:
+            sys.exit('FAIL: HangulIMELoad not inserted')
+        wr('/StartOS.HC', d)
+        print('  patched /StartOS.HC              HangulIMELoad')
 
     print('== branding')
     sub('/HomeSys.HC', b'"\\nTempleOS V%5.3f', b'"\\nTempleOS-Korean V%5.3f',
